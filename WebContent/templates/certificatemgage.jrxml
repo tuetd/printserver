@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="847421b1-572b-46bd-906b-1a2e31b33df5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="433"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\DATA D\\NGUYENTHACH\\PROJECTJAVA\\PrintserverCore\\WebContent\\templates\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="certificatemgage" class="java.lang.Object"/>
+	<detail>
+		<band height="687">
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="0" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub1.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="38" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub2.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="eb575f5f-53e4-4e22-b418-e4f5e91fa3f5" x="0" y="37" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="75" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="76" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub3.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="5acaf23f-7944-4d95-885f-c212b3a73036" x="0" y="113" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="113" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub4.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="150" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="151" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub5.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="188" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="189" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub6.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="226" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="227" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub7.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="264" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="265" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub8.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="302" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="302" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub9.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="339" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="339" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub10.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="376" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="414" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="377" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub11.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="452" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="415" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub12.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="453" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub13.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="491" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="530" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="493" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub14.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="533" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub15.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="570" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="608" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="571" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub16.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="609" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub17.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="b6c5898f-a5a3-4563-a465-a45c8e5d891a" x="0" y="648" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="57cf8d60-1f24-4927-bfe3-a15f03cff34f" x="0" y="650" width="595" height="37"/>
+				<subreportParameter name="certificatemgage">
+					<subreportParameterExpression><![CDATA[$P{certificatemgage}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{certificatemgage}.listpaymet)]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificatemgage_sub18.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15">
+			<textField evaluationTime="Report">
+				<reportElement uuid="55057f22-ea0a-4405-9488-e1995d2e640f" x="536" y="0" width="14" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="73454993-aee6-45cb-b550-9588678f4912" x="419" y="0" width="117" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+"/"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="a7320e0f-b3d9-4137-a847-19dcea61976f" x="0" y="0" width="260" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Home Loan – Loan Agreement- Version 06/2016]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pruvn.tools.common.hibernate.finnone.lending">
+	<class name="LEA_RUU_UPLOADED_RECORD_DTL" table="LENDING.LEA_RUU_UPLOADED_RECORD_DTL">
+		<!-- 
+		<cache usage="read-only" /> -->
+		<cache usage="nonstrict-read-write" />
+		<id name="chequeid" column="CHEQUEID"></id>
+		<property name="upload_date" column="UPLOAD_DATE"></property>
+		<property name="receipt_date" column="RECEIPT_DATE"></property>
+		<property name="agreementno" column="AGREEMENTNO"></property>
+		<property name="cheque_no" column="CHEQUE_NO"></property>
+		<property name="bankacnum" column="BANKACNUM"></property>
+		<property name="receipt_amt" column="RECEIPT_AMT"></property>
+		<!-- 
+		 <id name="chequeid" type="int">
+            <column name="CHEQUEID" />
+        </id>
+        <property name="upload_date" type="date">
+            <column name="UPLOAD_DATE"  length="7" />
+        </property>
+        <property name="receipt_date" type="date">
+            <column name="RECEIPT_DATE" length="7"  />
+        </property>
+        <property name="agreementno" type="string">
+            <column name="AGREEMENTNO"  />
+        </property>
+        <property name="cheque_no" type="string">
+            <column name="CHEQUE_NO"  />
+        </property>
+        
+        <property name="bankacnum" type="java.lang.Integer">
+            <column name="BANKACNUM"  />
+        </property>
+        
+        <property name="receipt_amt" type="big_decimal">
+            <column name="RECEIPT_AMT"  precision="16"/>
+        </property>   -->  
+
+		<property name="batchid" type="java.lang.Integer">
+			<column name="BATCHID" precision="8" scale="0" />
+		</property>
+		<property name="drawnon" type="string">
+			<column name="DRAWNON" length="50" />
+		</property>
+		<property name="towards" type="string">
+			<column name="TOWARDS" length="80" />
+		</property>
+		<property name="chequedate" type="date">
+			<column name="CHEQUEDATE" length="7" />
+		</property>
+		<property name="city" type="string">
+			<column name="CITY" length="35" />
+		</property>
+		<property name="receipt_type" type="string">
+			<column name="RECEIPT_TYPE" length="1" />
+		</property>
+		<property name="receipt_num" type="string">
+			<column name="RECEIPT_NUM" length="20" />
+		</property>
+		<property name="cheque_status" type="string">
+			<column name="CHEQUE_STATUS" length="1" />
+		</property>
+		<property name="autoalloc" type="string">
+			<column name="AUTOALLOC" length="1" />
+		</property>
+		<property name="emiamt" type="big_decimal">
+			<column name="EMIAMT" precision="16" />
+		</property>
+		<property name="lppamt" type="big_decimal">
+			<column name="LPPAMT" precision="16" />
+		</property>
+		<property name="bccamt" type="big_decimal">
+			<column name="BCCAMT" precision="16" />
+		</property>
+		<property name="excessamt" type="big_decimal">
+			<column name="EXCESSAMT" precision="16" />
+		</property>
+		<property name="othcharge1" type="java.lang.Integer">
+			<column name="OTHCHARGE1" precision="8" scale="0" />
+		</property>
+		<property name="othamt1" type="big_decimal">
+			<column name="OTHAMT1" precision="16" />
+		</property>
+		<property name="othcharge2" type="java.lang.Integer">
+			<column name="OTHCHARGE2" precision="8" scale="0" />
+		</property>
+		<property name="othamt2" type="big_decimal">
+			<column name="OTHAMT2" precision="16" />
+		</property>
+		<property name="othcharge3" type="java.lang.Integer">
+			<column name="OTHCHARGE3" precision="8" scale="0" />
+		</property>
+		<property name="othamt3" type="big_decimal">
+			<column name="OTHAMT3" precision="16" />
+		</property>
+		<property name="othcharge4" type="java.lang.Integer">
+			<column name="OTHCHARGE4" precision="8" scale="0" />
+		</property>
+		<property name="othamt4" type="big_decimal">
+			<column name="OTHAMT4" precision="16" />
+		</property>
+		<property name="branchid" type="java.lang.Integer">
+			<column name="BRANCHID" precision="8" scale="0" />
+		</property>
+		<property name="remarks" type="string">
+			<column name="REMARKS" length="100" />
+		</property>
+		<property name="userid" type="string">
+			<column name="USERID" length="8" />
+		</property>
+		<property name="receiptno" type="string">
+			<column name="RECEIPTNO" length="20" />
+		</property>
+		<property name="receipt_channel" type="string">
+			<column name="RECEIPT_CHANNEL" length="8" />
+		</property>
+		<property name="agencyid" type="java.lang.Integer">
+			<column name="AGENCYID" precision="8" scale="0" />
+		</property>
+		<property name="old_receipt_num" type="string">
+			<column name="OLD_RECEIPT_NUM" length="20" />
+		</property>
+	</class>
+</hibernate-mapping>

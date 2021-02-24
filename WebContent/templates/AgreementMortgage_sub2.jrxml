@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AgreementMortgage_sub2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="63"/>
+	<property name="ireport.y" value="286"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<subDataset name="New Dataset 1" uuid="efadca37-51f6-40e9-9526-ec08e7180fa8"/>
+	<parameter name="certificate" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="730" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="34" width="140" height="32"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Giấy đăng ký kinh doanh số:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="69" width="140" height="30"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="101" width="140" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Số điện thoại:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="127" width="140" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Số fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="153" width="140" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Đại diện bởi:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="179" width="140" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Chức vụ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="205" width="353" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Theo Giấy ủy quyền ngày:   …………………………………………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="212" y="34" width="343" height="32"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[0304946247 do Sở Kế hoạch và Đầu tư TP HCM cấp lần
+6 ngày 16/08/2011]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="212" y="69" width="343" height="30"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Tầng 23, Trung tâm Thương mại Sài Gòn, 37 Tôn Đức
+Thắng, Quận 1, Thành phố Hồ Chí Minh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="231" width="140" height="30"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[XÉT RẰNG:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="263" width="30" height="63"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(A)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="326" width="30" height="38"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(B)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="262" width="483" height="64" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bên Nhận Thế chấp đồng ý cấp cho Bên Thế chấp một khoản vay có thời hạn theo Hợp<br />đồng Tín dụng số "+($P{certificate} == null ? "" : $P{certificate}.AGREEMENTNO) + " "+($P{certificate} == null ? "" : $P{certificate}.APPLICATION_DATE) + " ngày " +($P{certificate} == null ? "" : $P{certificate}.FINISH_DATE) +
+"<br />và các văn bản có liên quan khác <b>(“Hợp đồng Tín dụng”)</b> (có thể được sửa đổi, bổ<br />sung, hoặc gia hạn tại từng thời điểm); và "]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="326" width="483" height="38" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bên Thế chấp đã đồng ý thế chấp Tài sản Thế chấp (như được mô tả chi tiết tại Điều 2<br />dưới đây) để bảo đảm cho <b>Các Nghĩa vụ Được Bảo đảm</b> như được định nghĩa dưới đây."]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="42" y="364" width="483" height="33" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Trừ khi được định nghĩa khác trong Hợp đồng này, các thuật ngữ được sử dụng trong Hợp<br />đồng này sẽ có nghĩa như được định nghĩa trong Hợp đồng Tín dụng."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="402" width="221" height="30"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[CÁC BÊN THỎA THUẬN NHƯ SAU:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="439" width="285" height="30"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 1.     CÁC NGHĨA VỤ ĐƯỢC BẢO ĐẢM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="528" width="30" height="66"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="471" width="30" height="55"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1.1]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="471" width="483" height="55" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Bên Thế chấp đồng ý thế chấp toàn bộ Quyền Sử Dụng Đất và Tài Sản Gắn Liền Với<br />Đất của mình như được mô tả tại Điều 2 dưới đây để đảm bảo thực hiện nghĩa vụ dân<br />sự đối với Bên Nhận Thế chấp."]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="528" width="483" height="66" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nghĩa vụ được đảm bảo: toàn bộ các nghĩa vụ trả nợ hiện tại và phát sinh trong tương<br /> lai của Bên Thế chấp đối với Bên Nhận Thế chấp phát sinh từ Hợp đồng Tín dụng, Hợp<br />đồng này và các thỏa thuận khác, bao gồm nhưng không giới hạn việc thanh toán tất cả<br />các khoản nợ gốc, lãi, lãi quá hạn, tiền phạt, các chi phí có liên quan (“<b>Các Nghĩa vụ<br />Được Bảo đảm</b>”)."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="607" width="285" height="30"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 2.     TÀI SẢN THẾ CHẤP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="641" width="285" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2.1     Mô tả Tài sản Thế chấp]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="666" width="483" height="23" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["(a)	 Quyền Sử dụng Đất:"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="691" width="483" height="38" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Quyền Sử Dụng Đất của Bên A đối với thửa đất theo Giấy chứng nhận quyền sở hữu<br />nhà ở và quyền sử dụng đất ở số "+($P{certificate} == null ? "" : $P{certificate}.PROP_OWSHIP_CERTI_NO)+", số hồ sơ gốc "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="914e9291-8862-42a7-b65d-b40c4b85e878" x="212" y="152" width="343" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificate} == null ? "" : $P{certificate}.APPROVER]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9888d4ac-eb2c-48bc-bd98-ad70d14060ae" x="212" y="177" width="343" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificate} == null ? "" : $P{certificate}.APPROVER_TITLE]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

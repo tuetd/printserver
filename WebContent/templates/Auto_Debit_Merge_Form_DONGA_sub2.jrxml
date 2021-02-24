@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="auto_debit_merge_from_DongA_subreport2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c266913-eea4-4997-9184-acadd7e46518">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="4720738e-5f4f-4d9a-a868-8b982bfe0c7e" x="5" y="5" width="562" height="790"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="566623c0-fddc-4f17-b1fb-a9503ac45e9b" x="10" y="10" width="551" height="780"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="fb295b67-131a-4f64-b2d4-e631597acd90" x="18" y="12" width="530" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Các điều kiện và điều khoản sử dụng dịch vụ thanh toán tự động]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46278dd4-4722-4a65-9af6-94e1c242bf18" x="18" y="32" width="543" height="755"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[1.    Giải thích từ ngữ:
+          -     Ngân hàng: là Ngân hàng TMCP Đông Á
+          -     Người đăng ký dịch vụ thanh toán tự động (gọi tắt là Người đăng ký dịch vụ): là cá nhân, tổ chức đăng ký sử dụng dịch vụ thanh toán tự động tại Ngân hàng.
+          -     Nhà cung cấp dịch vụ: là các nhà cung cấp dịch vụ tiện ích như: điện, nước, bảo hiểm, viễn thông,… cho    Người đăng ký dịch vụ.
+2.    Quy định chung:
+          a.   Khi đăng ký dịch vụ này, Người đăng ký dịch vụ không thanh toán cho nhà cung cấp bằng các hình thức khác (tiền mặt, chuyển khoản, …).
+          b.   Trong trường hợp Người đăng ký dịch vụ thanh toán trùng (02 lần) cho cùng một hóa đơn, đề nghị Người đăng ký dịch vụ liên hệ Nhà cung cấp dịch vụ để nhận lại khoản tiền thanh toán chênh lệch.
+          c.    Nếu số tiền thanh toán vượt hạn mức Người đăng ký dịch vụ đã đăng ký ở trên, đề nghị Người đăng ký vui lòng liên hệ và thanh toán hóa đơn dịch vụ cho Nhà cung cấp.
+          d.    Người đăng ký dịch vụ sẽ nhận hóa đơn/phiếu thu từ Nhà cung cấp dịch vụ. Trường hợp Người đăng ký dịch vụ vẫn chưa nhận được hóa đơn/phiếu thu đề nghị Người đăng ký dịch vụ liên hệ nhà cung cấp dịch vụ để được  giải quyết.
+3.    Khoản thanh toán đầu tiên của Người đăng ký dịch vụ sẽ được thực thi ngay khi nhận được yêu cầu thanh toán lần đầu từ Nhà cung cấp dịch vụ khi đăng ký TTTĐ của Người đăng ký dịch vụ được Ngân hàng xác nhận hợp lệ và  được chấp thuận bởi ngân hàng và Nhà cung cấp dịch vụ.
+4.    Người đăng ký dịch vụ cam kết duy trì số dư tài khoản đủ để thực hiện thanh toán các khoản thu theo dịch vụ TTTĐ đã đăng ký và được chấp nhận bởi Ngân hàng và Nhà cung cấp dịch vụ.
+5.    Trong trường hợp tài khoản Người đăng ký dịch vụ không đủ tiền để thanh toán cho cùng lúc các khoản thu theo   dịch vụ TTTĐ, Người đăng ký dịch vụ cam kết ủy quyền Ngân hàng tự động chọn lựa một hoặc các khoản thu có số tiền (thứ tự từ nhỏ đến lớn) phù hợp với số dư tài khoản để thực hiện việc ghi nợ theo dịch vụ TTTĐ.
+6.    Ngân hàng có quyền chủ động trích nợ từ tài khoản của Người đăng ký dịch vụ để thu phí Dịch vụ TTTĐ đối với   mỗi giao dịch thanh toán tự động thành công hay không thành công theo biểu phí dịch vụ của Ngân hàng tùy từng thời điểm. Người đăng ký dịch vụ có nghĩa vụ thanh toán phí Dịch vụ TTTĐ cho Ngân hàng trong trường hợp tài khoản không đủ số dư để thanh toán.
+7.    Ngân hàng sẽ không chịu trách nhiệm hay chi trả cho Người đăng ký sử dụng dịch vụ bao gồm nhưng không giới   hạn trong bất cứ mất mát, thiệt hại cũng như các chi phí có liên quan, trực tiếp hay gián tiếp gây ra bởi Người đăng  ký sử dụng dịch vụ hay Nhà cung cấp dịch vụ hoặc gây ra bởi các giao dịch TTTĐ thành công hay không thành công theo yêu cầu của Nhà cung cấp dịch vụ hoặc gây ra bởi việc ghi nợ nhầm tài khoản Người đăng ký sử dụng dịch vụ  do việc nhận thông tin sai lệch, không chính xác từ Nhà cung cấp dịch vụ.
+8.    Nhằm mục đích thực hiện Dịch vụ TTTĐ, Người đăng ký dịch vụ đồng ý ủy quyền cho Ngân hàng được thông báo thông tin tài khoản cho Nhà cung cấp dịch vụ và miễn truy cứu trách nhiệm của Ngân hàng về việc tiết lộ thông tin này.
+9.    Ngân hàng bảo lưu quyền chấm dứt thực hiện yêu cầu TTTĐ và các ủy quyền thanh toán các khoản thanh toán trong tương lai bẳng việc hoặc thông báo bằng văn bản đến Người đăng ký sử dụng dịch vụ hoặc không thông báo đến người sử dụng dịch vụ sau khi đã thông báo cho đơn vị cung cấp dịch vụ việc không thực hiện nghĩa vụ thanh toán của ngân hàng cho yều cầu thu nợ của đơn vị cung cấp đối với Người đăng ký sử dụng dịch vụ hoặc chấm dứt mà không cần thông báo đến bất cứ bên nào.
+10.  Việc chấm dứt sử dụng dịch vụ TTTĐ sẽ không có hiệu lực cho đến khi Ngân hàng nhận được thông báo bằng văn bản của Người đăng ký dịch vụ hoặc của Nhà cung cấp dịch vụ hoặc của các bên có liên quan đến Người đăng ký dịch vụ. Bên có liên quan đến Người đăng ký dịch vụ là cá nhân, tổ chức có liên quan đến hoặc thừa hưởng quyền và nghĩa vụ của Người đăng ký dịch vụ trong trường hợp Người đăng ký dịch vụ tử vong, bị tuyên bố mất/hạn chế năng lực hành vi dân sự, bị tuyên bố mất tích hoặc chết, giải thể, phá sản hoặc mất khả năng thanh toán.
+11.  Ngân hàng bảo lưu quyền không thực hiện TTTĐ đối với các khoản thanh toán vượt quá hạn mức tối đa đăng ký bởi Người sử dụng dịch vụ, trong những trường hợp như thế, Người đăng ký sử dụng dịch vụ chịu trách nhiệm thanh  toán trực tiếp với đơn vị cung cấp dịch vụ. Về khía cạnh này, Người đăng ký sử dụng dịch vụ đồng ý ủy quyền cho ngân hàng được thông báo thông tin tài khoản cho đơn vị cung cấp dịch vụ và miễn truy cứu trách nhiệm của ngân hàng về việc tiết lộ thông tin]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

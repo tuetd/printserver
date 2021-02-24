@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AgreementMortgage_sub10" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="821"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<subDataset name="New Dataset 1" uuid="efadca37-51f6-40e9-9526-ec08e7180fa8"/>
+	<parameter name="certificate" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="800" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="15" width="41" height="75"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="15" width="442" height="75"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tài sản Thế chấp thuộc quyền sở hữu hợp pháp của Bên Thế chấp, không bị
+tranh chấp hoặc khiếu nại bởi bất kỳ bên thứ ba nào, hoặc không chịu ảnh
+hưởng của các biện pháp hành chính của bất kỳ cơ quan Nhà nước nào hoặc
+không được sử dụng làm tài sản bảo đảm cho bất kỳ chủ nợ nào khác ;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="91" width="41" height="50"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="91" width="442" height="50"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tài sản Thế chấp được xây dựng phù hợp với quy hoạch đã được cơ quan có
+thẩm quyền phê duyệt ;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="141" width="41" height="64"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="141" width="442" height="64"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[không có bất cứ thoả thuận, cam kết, hạn chế, điều kiện hoặc bảo lưu nào có thể
+gây ra ảnh hưởng bất lợi đáng kể đối với Tài sản Thế chấp theo quan điểm của
+Bên Nhận Thế chấp ;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="205" width="41" height="63"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(d)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="205" width="442" height="63"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp chưa thực hiện bất cứ chuyển nhượng nào đối với một phần hoặc
+toàn bộ Tài sản Thế chấp và chưa ký kết bất cứ hợp đồng nào nhằm chuyển
+nhượng Tài sản Thế chấp ;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="268" width="41" height="66"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="268" width="442" height="66"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp chưa vi phạm bất cứ quy định nào của pháp luật Việt Nam
+và/hoặc chính sách của Nhà nước có thể gây ra ảnh hưởng bất lợi đáng kể cho
+Tài sản Thế chấp;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="334" width="41" height="51"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(f)	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="334" width="442" height="51"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp có đầy đủ năng lực hành vi dân sự theo yêu cầu của pháp luật để
+ký kết, thực hiện và tuân thủ các nghĩa vụ theo Hợp đồng này ;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="450" width="442" height="45"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[các nghĩa vụ của Bên Thế chấp theo Hợp đồng này là hợp pháp, có hiệu lực
+ràng buộc và có thể thi hành;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="450" width="41" height="45"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(h)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="385" width="41" height="65"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(g)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="385" width="442" height="65"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp đã thực hiện và đáp ứng đầy đủ các điều kiện và thủ tục cần thiết
+để cho phép Bên Thế chấp ký kết, thực hiện và tuân thủ các nghĩa vụ theo Hợp
+đồng này;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="495" width="30" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="495" width="483" height="28"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thời điểm đưa ra các cam đoan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="525" width="442" height="48"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Các cam đoan đưa ra trong Hợp đồng này được đưa ra vào ngày ký Hợp đồng
+này;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="525" width="41" height="48"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="573" width="41" height="78"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="573" width="442" height="78"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mỗi cam đoan theo Hợp đồng này được xem là được Bên Thế chấp tái khẳng
+định trong suốt thời hạn của Hợp đồng này. Khi một nội dung cam đoan được
+tái khẳng định, cam đoan đó được áp dụng vào hoàn cảnh tại thời điểm được tái
+khẳng định.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="679" width="30" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[11.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="679" width="483" height="28"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ủy quyền của Bên Thế chấp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="651" width="513" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 11.	CÁC THỎA THUẬN KHÁC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="707" width="41" height="93"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="707" width="442" height="93"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trong trường hợp Bên Thế Chấp không phối hợp với Bên Thế Chấp để đăng ký
+thế chấp và/hoặc đăng ký giao dịch bảo đảm tại cơ quan có thẩm quyền, bằng
+Hợp đồng này, Bên Thế chấp ủy quyền không hủy ngang cho Bên Nhận Thế
+chấp hành động thay mặt cho Bên Thế chấp để đăng ký thế chấp và/hoặc đăng
+ký giao dịch bảo đảm Tài sản Thế chấp và đăng ký thay đổi thế chấp và/hoặc
+thay đổi giao dịch bảo đảm trong trường hợp Bên Thế chấp không đăng ký. Mọi ]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

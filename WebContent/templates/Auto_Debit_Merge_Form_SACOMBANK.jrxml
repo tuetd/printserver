@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Auto_Debit_Merge_Form_STB" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="00a74b7c-c1d0-447d-bc41-f648ffbb0c5c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\DATA D\\NGUYENTHACH\\PROJECTJAVA\\PrintserverCore\\WebContent\\templates\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="autodebitform" class="java.lang.Object"/>
+	<title>
+		<band height="115" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="ec9e7a93-702c-4e9f-8c66-b3b14c08e5f4" x="0" y="0" width="595" height="38"/>
+				<subreportParameter name="logo">
+					<subreportParameterExpression><![CDATA[$P{logo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="autodebitform">
+					<subreportParameterExpression><![CDATA[$P{autodebitform}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Auto_Debit_Merge_Form_SACOMBANK_sub1.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="bf402e1a-2a17-4032-8635-85bdac10d28b" x="0" y="38" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="46ec889d-f727-4b88-840c-82b1ae7ee2ca" x="0" y="39" width="595" height="39"/>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Auto_Debit_Merge_Form_SACOMBANK_sub2.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="44b4ebf7-2350-4b37-9488-75b6fcac4ecf" x="0" y="79" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="c59f1a75-c286-4d5f-b40a-773d4af53bca" x="0" y="80" width="595" height="35"/>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Auto_Debit_Merge_Form_SACOMBANK_sub3.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+</jasperReport>

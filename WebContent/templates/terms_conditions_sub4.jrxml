@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="terms_conditions_subreport4" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e14356ea-de83-4cc2-b75c-75cc53a32981">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="842" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="fb5b351c-bfce-4571-8c1a-4cda56fc68fd" x="14" y="56" width="278" height="397"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Cho Vay về bất cứ sự kiện quan trọng nào có thể ảnh hưởng đến khả năng hoàn trả Khoản Vay của Bên Vay hoặc bất cứ khoản tiền nào đến hạn phải trả cho Bên Cho Vay trong vòng 10 (mười) ngày lịch kể từ ngày sự kiện đó xảy ra;
+(d) Bên Vay cung cấp bản gốc của bất cứ/tất cả các bản sao các tài liệu đã nộp cho Bên Cho Vay nhằm mục đích đối chiếu và xác minh, ngay khi được Bên Cho Vay yêu cầu; và
+(e) Bên Vay cam kết chấp hành sự kiểm tra, giám sát (nếu có) của Bên Cho Vay trong quá trình vay vốn, sử dụng vốn vay và trả nợ;
+(f) Bên Vay phải báo cáo việc sử dụng vốn vay và chứng minh vốn vay được sử dụng đúng mục đích vay khi được Bên Cho Vay yêu cầu;
+(g) Bên Vay có nghĩa vụ phối hợp với Bên Cho Vay để xử lý nợ theo quy định tại Hợp đồng Tín dụng và các thỏa thuận khác (nếu có).
+7.2 Các cam kết không thực hiện
+Bên Vay cam kết với Bên Cho Vay rằng Bên Vay sẽ không rời khỏi Việt Nam trong hơn 30 (ba mươi) ngày lịch nếu không hoàn trả đầy đủ các khoản tiền phải thanh toán theo Hợp đồng Tín dụng, bao gồm cả Phí Tât Toán Khoản Vay Trước Hạn và các loại phí/tiền phạt khác (nếu có), trừ khi được Bên Cho Vay chấp thuận trước bằng văn bản.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5fa87ca5-5068-4f76-b84a-b5ca59e1c2b5" x="14" y="453" width="278" height="32"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 8. SỰ KIỆN VI PHẠM VÀ XỬ LÝ SỰ
+KIỆN VI PHẠM
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="63010079-4b4d-4ac0-a9a5-91bbcd410407" x="14" y="485" width="278" height="320"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.1 Sự Kiện Vi Phạm
+Sự Kiện Vi Phạm bao gồm các trường hợp sau:
+(a) Bên Vay không thanh toán hoặc không có khả năng thanh toán hoặc thừa nhận không có khả năng thanh toán bất cứ khoản tiền nào đến hạn phải trả theo quy định tại Hợp đồng Tín dụng;
+(b) Bên Vay vi phạm bất kỳ điều khoản nào của Phiếu đề nghị vay tiêu dùng và Hợp đồng Tín dụng; hoặc
+(c) Bất cứ thông tin hoặc bảo đảm nào do Bên Vay đưa ra liên quan đến Phiếu đề nghị vay tiêu dùng và Hợp đồng Tín dụng bị phát hiện là không chính xác hoặc cố ý cung cấp để gây nhầm lẫn; hoặc
+(d) Phiếu đề nghị vay tiêu dùng, Hợp đồng Tín dụng và các văn bản có liên quan bị trở nên vô hiệu theo quy định của pháp luật do lỗi của Bên Vay.
+8.2 Xử lý Sự Kiện Vi Phạm
+Khi có bất kỳ Sự Kiện Vi Phạm nào theo Điều 8.1 xảy ra, Bên Cho Vay có quyền, không ảnh hưởng đến bất
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="44420806-a495-4f53-bf56-0cedc53ea3fc" x="306" y="56" width="278" height="275"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[cứ quyền cụ thể nào khác theo Phiếu đề nghị vay tiêu dùng và Hợp đồng Tín dụng hoặc bất cứ thỏa thuận nào khác, đơn phương chấm dứt Hợp đồng Tín dụng bằng cách gửi Thông báo chấm dứt Hợp đồng trước hạn đến Bên Vay và theo đó, toàn bộ dư nợ của Khoản Vay cùng với tất cả tiền lãi, tiền phạt chậm trả nợ, phí (nếu có) đã phát sinh và các khoản thanh toán khác phải trả theo Hợp đồng Tín dụng dù đến hạn hay chưa đến hạn đều phải được Bên Vay thanh toán ngay cho Bên Cho Vay trong thời hạn 10 ngày kể từ ngày Bên Cho Vay gửi Thông báo chấm dứt Hợp đồng trước hạn.
+Trong trường hợp Hợp đồng Tín dụng bị đơn phương chấm dứt theo Điều 8.2 này thì Bên Cho Vay vẫn có các quyền truy đòi Bên Vay thanh toán khoản vay và hoàn thành nghĩa vụ theo quy định tại Hợp đồng Tín dụng kể cả sau khi Hợp đồng Tín dụng chấm dứt.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ff1ba538-f1b2-4982-9948-57719fe83f4b" x="306" y="331" width="278" height="35"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 9. NHỮNG THAY ĐỔI BẤT LỢI NGHIÊM TRỌNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e0be01f-01fa-4bed-87b3-eb89660692f3" x="306" y="366" width="278" height="140"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trong trường hợp có những thay đổi khách quan ngoài tầm kiểm soát của Bên Cho Vay dẫn đến việc cấp Khoản Vay hoặc đảm bảo hiệu lực của các nghĩa vụ quy định tại Hợp đồng Tín dụng trở nên vô hiệu theo quy định của pháp luật, Bên Cho Vay có quyền yêu cầu và Bên Vay ngay khi được yêu cầu phải thanh toán vào Ngày Thanh Toán Hàng Tháng kế tiếp toàn bộ dư nợ của Khoản Vay cùng với lãi phát sinh tính đến thời điểm phải thanh toán.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d9a46b57-4511-4d37-aa0c-19413dd1f264" x="306" y="506" width="278" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 10. NGHĨA VỤ CỦA BÊN CHO VAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0270944d-ce66-44de-9e67-10a8677f1006" x="306" y="523" width="278" height="77"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Cho Vay có các nghĩa vụ sau:
+a) Thực hiện đúng thoả thuận trong Hợp đồng Tín dụng;
+b) Lưu giữ hồ sơ tín dụng phù hợp với quy định của pháp luật
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="345d8d71-93a2-4b59-8077-9952cf0c9222" x="306" y="648" width="278" height="157"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Vay hiểu và đồng ý rằng các thông tin (bao gồm thông tin cá nhân  và thông tin không phải là thông tin cá nhân, gọi chung là “Thông tin”) mà Bên Vay cung cấp cho Bên Cho Vay sẽ được Bên Cho Vay thu thập, lưu trữ, sử dụng và cung cấp cho bên thứ ba không trái với quy định của pháp luật và trong thời hạn thẩm định và quản lý khoản vay (chấm dứt khi Bên Vay hoàn tất nghĩa vụ thanh toán theo (i) Hợp đồng Tín dụng hoặc (ii) bản án/quyết định của cơ quan xét xử có thẩm quyền kết thúc) theo các nguyên tắc dưới đây:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="58606350-58a9-4ee0-a7ed-1cf10d3a8fa6" x="306" y="600" width="278" height="48"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 11. QUY ĐỊNH VỀ VIỆC SỬ DỤNG
+THÔNG TIN TRONG THẨM ĐỊNH VÀ QUẢN LÝ KHOẢN VAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c113cfe2-c14f-400a-9dc9-916207385da5" x="14" y="805" width="570" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[    Thông tin cá nhân bao gồm những thông tin mà dựa vào đó có thể nhận biết hoặc định danh hay nhận dạng một con người cụ thể.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="11056302-b5a0-4a4e-bc26-064294460f35" x="397" y="660" width="14" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="11056302-b5a0-4a4e-bc26-064294460f35" x="19" y="800" width="14" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

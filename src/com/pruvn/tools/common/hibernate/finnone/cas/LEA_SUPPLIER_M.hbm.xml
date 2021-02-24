@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 31, 2011 2:37:36 PM by Hibernate Tools 3.2.4.CR1 -->
+<hibernate-mapping>
+    <class name="com.pruvn.tools.common.hibernate.finnone.cas.LEA_SUPPLIER_M" table="LEA_SUPPLIER_M" schema="CAS">
+     <cache usage="nonstrict-read-write"/>
+        <id name="SUPPLIERID" type="int">
+            <column name="SUPPLIERID" precision="8" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="SUPPLIERDESC" type="string">
+            <column name="SUPPLIERDESC" length="100" not-null="true" />
+        </property>
+        <property name="SSTNUM" type="string">
+            <column name="SSTNUM" length="35" />
+        </property>
+        <property name="CSTNUM" type="string">
+            <column name="CSTNUM" length="35" />
+        </property>
+        <property name="ITNUM" type="string">
+            <column name="ITNUM" length="35" />
+        </property>
+        <property name="SUPPLIER_DEALER_FLAG" type="string">
+            <column name="SUPPLIER_DEALER_FLAG" length="1" />
+        </property>
+        <property name="INTERNAL_FLAG" type="string">
+            <column name="INTERNAL_FLAG" length="1" />
+        </property>
+        <property name="DEALERCOMM" type="big_decimal">
+            <column name="DEALERCOMM" precision="5" />
+        </property>
+        <property name="MC_STATUS" type="string">
+            <column name="MC_STATUS" length="1" not-null="true" />
+        </property>
+        <property name="MAKERID" type="string">
+            <column name="MAKERID" length="8" not-null="true" />
+        </property>
+        <property name="MAKEDATE" type="date">
+            <column name="MAKEDATE" length="7" not-null="true" />
+        </property>
+        <property name="AUTHID" type="string">
+            <column name="AUTHID" length="8" not-null="true" />
+        </property>
+        <property name="AUTHDATE" type="date">
+            <column name="AUTHDATE" length="7" not-null="true" />
+        </property>
+        <property name="DATELASTUPDT" type="date">
+            <column name="DATELASTUPDT" length="7" />
+        </property>
+        <property name="BANKACNUM" type="string">
+            <column name="BANKACNUM" length="120" />
+        </property>
+        <property name="VATACNUM" type="string">
+            <column name="VATACNUM" length="15" />
+        </property>
+        <property name="AGGREGATELIMIT" type="big_decimal">
+            <column name="AGGREGATELIMIT" precision="18" scale="4" />
+        </property>
+        <property name="OS_RC_AMT" type="big_decimal">
+            <column name="OS_RC_AMT" precision="18" scale="4" />
+        </property>
+        <property name="ACTIVE_STATUS" type="string">
+            <column name="ACTIVE_STATUS" length="1" />
+        </property>
+        <property name="VALID_FROM" type="date">
+            <column name="VALID_FROM" length="7" />
+        </property>
+        <property name="VALID_TO" type="date">
+            <column name="VALID_TO" length="7" />
+        </property>
+        <property name="PAN_NO" type="string">
+            <column name="PAN_NO" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

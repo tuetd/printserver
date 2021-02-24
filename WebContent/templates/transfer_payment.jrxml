@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="transfer_payment" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fe12ef3c-42f6-424e-8354-f58b04c3307d">
+	<property name="ireport.zoom" value="1.3636363636363635"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
+	<parameter name="transferpayment" class="java.lang.Object"/>
+	<title>
+		<band height="842" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="36b837b0-3be6-4726-a117-7d82a78f68bd" x="10" y="45" width="570" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Phiếu Yêu Cầu Chuyển Tiền và Thanh Toán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fe50166e-975c-438e-bfbe-3ed26b9538e6" x="12" y="87" width="40" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tôi tên: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cdf7d8ad-67c2-4743-b87f-770b2676f84f" x="51" y="87" width="531" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.CUSTOMERNAME]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="0a1b956c-507e-4c27-be2d-cd6ecbe3f41a" x="12" y="104" width="112" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ngày, tháng, năm sinh:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c23512be-71dd-4b30-b2dd-4e250ca2689e" x="124" y="104" width="458" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.DOB]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="628762de-1d90-4065-aef1-bb255276d292" x="13" y="121" width="101" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[CMND/Hộ chiếu số: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b6b38b39-c2b0-4684-9149-53588762afde" x="114" y="121" width="130" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.PAN_NO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9c107026-5de5-48f1-8ecc-82148f7e5daa" x="245" y="122" width="50" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cấp ngày:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e71aa892-10fe-4332-bd46-7df0f3d0a044" x="295" y="121" width="288" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.PAN_NO_ISSUED_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="97a5d5b2-cc7d-47d2-bf5c-7860aa507710" x="13" y="139" width="125" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Thẻ căn cước số (nếu có): ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="2b06566f-3497-40e6-8268-de8e3240abf1" x="137" y="139" width="108" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.PASSPORTNO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5272403f-b2f5-478a-bb3c-919018ee7082" x="244" y="139" width="51" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cấp ngày:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="05385aeb-ceb1-4648-8e7d-d1c6bf630e67" x="295" y="139" width="99" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.PASSPORT_ISSUED_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f93a2d2e-463e-4a27-a4e9-f5c95bddb102" x="13" y="155" width="184" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1. Căn cứ vào Hợp đồng Tín dụng số]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="966c4341-a20a-4f52-acdf-eba6479ac4ac" x="197" y="155" width="77" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.NEW_AGREEMENTNO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="22712f48-7337-47ac-b7f8-6c87a64197a0" x="274" y="155" width="45" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ngày]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1981dafb-3c6c-4aa5-a58a-a64db2d29f46" x="318" y="155" width="76" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.NEW_DISB_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d77646f5-1263-4c23-9914-59bf91b6dbe1" x="394" y="155" width="128" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[mà tôi là Bên Vay, bằng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="528ac4b2-bf46-4634-9e19-aa4b7018619c" x="13" y="172" width="287" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[văn bản này tôi yêu cầu Bên Cho Vay chuyển khoản số tiền :]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c1e0f4e3-04b9-4219-bc5a-7b103bb96b2b" x="310" y="172" width="212" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}!=null&$P{transferpayment}.DISBAMT!=null ? $P{transferpayment}.DISBAMT + " đồng (A)" : " đồng (A)"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="57a5837e-a046-45d1-8782-00e3daf60ff8" x="12" y="187" width="52" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Bằng chữ:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="06805109-b037-4575-8ec6-d2f3bec26220" x="64" y="187" width="458" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.LOANAMOUNTTEXT]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5df61b67-3a73-4dba-a2d5-c5cc2b360ec1" x="12" y="465" width="52" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2. Số tiền ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2a408998-5630-45ec-ab1b-1f3d4079c59d" x="12" y="224" width="287" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[- Thông tin tài khoản:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dd2ccfd3-8da7-4115-8abe-a434c7606d2c" x="49" y="241" width="287" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Đồng ý theo thông tin tài khoản bên dưới]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="559ba8e8-d9b2-4106-b948-1f4456fc6c08" x="29" y="245" width="11" height="9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3cf3bae6-a5d9-406e-a423-a5650a1f5f95" x="12" y="255" width="111" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tên chủ tài khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5602b1ad-5f08-4fdb-ad89-fba13ce2c1ae" x="123" y="255" width="111" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tài khoản số]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2524aee8-5864-483d-bc4c-b4b30ed08f1f" x="234" y="255" width="126" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tên Ngân hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9bd9d62e-2895-440e-8f38-5277e564a79e" x="360" y="255" width="126" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chi nhánh Ngân hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c3fcd76-51e9-4e4e-b3c2-83381eb470dd" x="486" y="255" width="96" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ký xác nhận]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3dfd3646-a6b9-46ce-a81e-04a771cbf8d6" stretchType="RelativeToBandHeight" x="12" y="269" width="111" height="78"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.CUSTOMERNAME]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="679e775e-05e4-4028-97a4-8beadbbe8726" stretchType="RelativeToBandHeight" x="123" y="269" width="111" height="78"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.ACCOUNT_NO]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d5e08912-c60a-46f1-99fb-8ec152eb4c52" stretchType="RelativeToBandHeight" x="234" y="269" width="126" height="78"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.BANK_NAME]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3ee131a3-d265-4c60-add6-43dc6dbedf7a" stretchType="RelativeToBandHeight" x="360" y="269" width="126" height="78"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.BRANCH_NAME]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="046b486c-22a2-46c9-adcb-49f44ad02ab2" stretchType="RelativeToBandHeight" x="486" y="269" width="96" height="78"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="146c9c2a-cd72-4bfc-9bdc-43e77aa53522" x="49" y="347" width="311" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Không đồng ý. Đề nghị chuyển khoản vào tài khoản khác như sau:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81f9e76e-5b6e-4516-8c57-d5627b22424b" x="29" y="350" width="11" height="9"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a18d338-227a-460a-9cb7-cf133be40e2b" x="12" y="366" width="111" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tên chủ tài khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="85df4946-ff31-4468-a43c-43905e209233" x="123" y="366" width="111" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tài khoản số]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d795b2a6-16c0-468b-8a2e-3364a79c3a3f" x="234" y="366" width="126" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tên Ngân hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4c87004e-a002-4022-b142-611ea4ccfb9e" x="360" y="366" width="126" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chi nhánh Ngân hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4543ec86-3f6b-4211-bf60-b943e1c34267" x="486" y="366" width="96" height="14"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ký xác nhận]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d5990832-576b-416b-8c55-f18977d83ea5" x="12" y="380" width="111" height="73"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.CUSTOMERNAME]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a49be710-0ea1-4da2-8f44-0e5da733ff39" x="123" y="380" width="111" height="73"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ba553d6a-fff3-46d8-b814-cec52cb4f46d" x="234" y="380" width="126" height="73"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="45d8cc11-2851-4430-a479-cd20a0894756" x="360" y="380" width="126" height="73"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b9eeb794-2396-4a59-879a-ad64919806dd" x="486" y="380" width="96" height="73"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3b958213-1e42-41ce-beb8-bf1520c58035" x="13" y="204" width="287" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[vào tài khoản của tôi như được nêu bên dưới:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="886e1223-560f-43e9-a915-5845e62f34c6" x="63" y="465" width="36" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[còn lại ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="754bee85-786e-4167-8b82-fd528bb05a9d" x="98" y="465" width="388" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[sau khi Bên Cho Vay đã chuyển tiền cho tôi theo yêu cầu tại Mục 1 nêu trên là ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="28c2822b-be59-4b1f-9b56-49f868d8dcb3" x="485" y="465" width="97" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.FCL_AMOUNT_OLDAPP]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6772dea3-78c4-4df7-a2f2-dca6abda66aa" x="12" y="479" width="51" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[đồng (B)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ff1ff026-4731-4096-b626-a59f6581c8cf" x="13" y="493" width="52" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Bằng chữ: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="36e0791c-afe5-4680-bafb-d433cd2f69ee" x="64" y="493" width="518" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.FCL_AMOUNT_TEXT]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="32a2cd3e-75f6-4805-9b46-2cfbc18f5428" x="13" y="507" width="297" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[được dùng để tất toán khoản vay trước hạn cho Hợp đồng số ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a0159b0d-9274-4dcd-a1bc-250846dac910" x="310" y="507" width="110" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.OLD_AGREEMENTNO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b81a11bf-51e3-4378-a96b-1d307a3e67d6" x="420" y="507" width="40" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ký ngày]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="848fcef0-c878-4951-8db1-ac0d4f7fd4d4" x="460" y="507" width="123" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.DISBDATE_OLD]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="85c376e7-836a-485d-891d-a6d264381e5b" x="13" y="521" width="570" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[giữa tôi và Công ty Tài chính Prudential Việt Nam theo Phiếu yêu cầu chấm dứt Hợp đồng Tín dụng trước hạn.
+Tôi theo đây xác nhận rằng tôi hoàn toàn hiểu và chịu trách nhiệm trước pháp luật về những yêu cầu nêu trên.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4622a5f1-cfa8-4a2c-a3ee-c58ff877981b" x="11" y="593" width="297" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chữ ký của Bên Vay]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8ffd3043-97c9-4d77-a696-0dd1fb33a19a" x="10" y="674" width="171" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="266dd5db-a516-49a7-a6dc-cec95c5bd742" x="8" y="675" width="299" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(Ghi đầy đủ họ tên)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9ac03229-4b56-40cc-b4de-edb33e49b224" x="10" y="696" width="297" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ngày: _______________________]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fc6d70e6-70d8-4bd7-9bb8-2a69d35b3785" x="10" y="760" width="246" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.RO_NAME]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2813d107-38aa-459b-95c2-d064f7061509" x="10" y="774" width="297" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ghi chú: (A) + (B) = (Khoản vay) theo Hợp đồng tín dụng số ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="07c95090-683f-48c2-9ce5-6a10e4b9be9f" x="308" y="774" width="90" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.NEW_AGREEMENTNO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="7343e5d9-25ed-4df0-a303-d681e42fa212" x="398" y="774" width="34" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ngày]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ddd7d485-85b6-4456-8e77-8016b0205eef" x="432" y="774" width="148" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{transferpayment}.NEW_DISB_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="926f971a-2384-4cc8-aa5e-3b73127070b1" x="10" y="788" width="297" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trừ đi Phí bảo hiểm (nếu có) ]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CollateralRegistrationMortgage_sub3" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="511" leftMargin="42" rightMargin="42" topMargin="14" bottomMargin="18" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="355"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<subDataset name="dataset1" uuid="4bcce234-1e32-4461-a94e-5ecdd7b9da21"/>
+	<parameter name="registration" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="field" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="778" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="1" y="503" width="512" height="275"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="0" y="199" width="510" height="51"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="0" y="118" width="510" height="81"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="0" y="47" width="510" height="71"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="0" y="31" width="510" height="18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="3164601d-2d68-489e-a66e-94b588db1506" x="0" y="15" width="510" height="17"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="c2c4bd57-8a01-4b49-9262-59fa1e436879" x="5" y="14" width="504" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>4. Hợp đồng thế chấp:</b> số (nếu có) "+
+($P{registration}!=null?$P{registration}.MORTGAGE_AGREEMENT_NO:"")
++", ký kết ngày "+
+($P{registration}!=null?$P{registration}.FINISH_DATE_MORTGAGE:"")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="5" y="31" width="503" height="17"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[5. Thuộc đối tượng không phải nộp lệ phí đăng ký       ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="7d68f6ea-5919-4dad-9b54-1d32f8e65c71" x="467" y="34" width="11" height="13"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="93844f76-4d3c-412d-b2c3-8788fd302b53" x="5" y="49" width="502" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>6. Tài liệu kèm theo:</b>........................................................................................................................"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="6" y="66" width="502" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="6" y="83" width="502" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="6" y="100" width="502" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="6" y="118" width="174" height="18"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[7. Phương thức nhận kết quả ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="6" y="135" width="100" height="18"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[đăng ký:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="212" y="118" width="98" height="18"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nhận trực tiếp ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="7d68f6ea-5919-4dad-9b54-1d32f8e65c71" x="196" y="120" width="13" height="13"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="212" y="138" width="296" height="18"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Nhận qua đường bưu điện (ghi rõ địa chỉ)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement uuid="7d68f6ea-5919-4dad-9b54-1d32f8e65c71" x="196" y="139" width="13" height="13"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="212" y="155" width="296" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="212" y="174" width="296" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="5" y="199" width="503" height="51"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Các bên cam đoan những thông tin được kê khai trên đơn này là trung thực, đầy đủ, phù hợp với thoả thuận của các bên và hoàn toàn chịu trách nhiệm trước pháp luật về các thông tin đã kê khai.]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="9df6ac48-3999-419f-9f68-5cb9524b3eb9" x="19" y="267" width="196" height="103"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>BÊN THẾ CHẤP<br/>(HOẶC NGƯỜI ĐƯỢC BÊN THẾ<br/> CHẤP ỦY QUYỀN)<br/></b><i>(Ký, ghi rõ họ tên và đóng dấu, <br/>nếu là tổ chức)</i>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9df6ac48-3999-419f-9f68-5cb9524b3eb9" x="215" y="267" width="294" height="103"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>BÊN NHẬN THẾ CHẤP<br/>(HOẶC NGƯỜI ĐƯỢC BÊN NHẬN THẾ<br/> CHẤP ỦY QUYỀN/QUẢN TÀI VIÊN)<br/></b><i>(Ký, ghi rõ họ tên và đóng dấu,<br/>nếu là tổ chức)</i>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" mode="Opaque" x="1" y="503" width="512" height="19" backcolor="#CCCCCC"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[PHẦN CHỨNG NHẬN CỦA CƠ QUAN ĐĂNG KÝ ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1972a61b-2ab3-45eb-97fe-b8c4ba3f910b" x="6" y="522" width="503" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Văn phòng đăng ký đất đai:<b>.............."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e3656b16-035f-4b24-9f79-5386544ab529" mode="Transparent" x="6" y="539" width="504" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[................................................................................................................................................................................................................................]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1972a61b-2ab3-45eb-97fe-b8c4ba3f910b" x="6" y="556" width="507" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Chứng nhận việc thế chấp <b>.............................................................................................................."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="72b717a0-58a7-45f6-8c72-36db1cad508f" x="6" y="574" width="503" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[đã được đăng ký theo những nội dung kê khai tại đơn này tại thời điểm …. giờ…. phút, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="82b95b28-a0a8-4f55-82a2-843b52755202" x="6" y="592" width="503" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ngày…. tháng…. năm…..]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1972a61b-2ab3-45eb-97fe-b8c4ba3f910b" x="271" y="622" width="238" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[".................<b>ngày</b>.....<b>tháng</b>......<b>năm</b>........."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="98017552-2893-42ec-a97a-498bada76184" x="257" y="639" width="236" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[THỦ TRƯỞNG CƠ QUAN ĐĂNG KÝ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="96ddb5fa-ff23-49b1-be2a-8fdc95f338c4" x="251" y="656" width="236" height="18"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="13" isBold="false" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(Ghi rõ chức danh, họ tên, ký và đóng dấu)]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

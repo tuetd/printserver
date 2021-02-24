@@ -1,0 +1,52 @@
+#add column table usermaster
+ALTER TABLE `cfclongdev`.`usermaster` ADD COLUMN `department` VARCHAR(200) AFTER `user_place`,
+ ADD COLUMN `fullname` VARCHAR(200) AFTER `department`,
+ ADD COLUMN `usercodeid` VARCHAR(200) AFTER `fullname`;
+ALTER TABLE `cfclongdev`.`usermaster` ADD COLUMN `status` INTEGER(11) UNSIGNED AFTER `usercodeid`,
+ ADD COLUMN `lastlogindate` DATETIME AFTER `status`;
+ ALTER TABLE `cfclongdev`.`usermaster` ADD COLUMN `date_login_temp` DATETIME AFTER `lastlogindate`,
+ ADD COLUMN `count_login_temp` INTEGER UNSIGNED AFTER `date_login_temp`;
+ ALTER TABLE `cfclongdev`.`usermaster` ADD COLUMN `reason_lock` VARCHAR(200) AFTER `count_login_temp`;
+# set valued  
+update usermaster u set u.status = '0';
+# create table userplace
+CREATE TABLE `cfclongdev`.`userplace` (
+  `id` INTEGER(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100),
+  `numberphone` VARCHAR(100),
+  `fax` VARCHAR(100),
+  `address` VARCHAR(100),
+  `createdate` DATETIME,
+  `modifieddate` DATETIME,
+  PRIMARY KEY (`id`)
+);
+# create table department
+CREATE TABLE `cfclongdev`.`department` (
+  `id` INTEGER(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100),
+  `namecompany` VARCHAR(100),
+  `namecode` VARCHAR(100),
+  `createdate` DATETIME,
+  `modifieddate` DATETIME,
+  PRIMARY KEY (`id`)
+);
+# add column serverconfig
+ALTER TABLE `cfclongdev`.`serverconfig` ADD COLUMN `CONFIGCODE` VARCHAR(45) NOT NULL AFTER `TYPEID`;
+update serverconfig s set s.configcode = 'FINNONE' where s.id = 2;
+update serverconfig s set s.configcode = 'DWH' where s.id = 5;
+# create column user_log
+CREATE TABLE `cfclongdev`.`user_log` (
+  `id` INTEGER(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(100),
+  `iplogin` VARCHAR(100),
+  `session` VARCHAR(100),
+  `date` DATETIME,
+  `noidung` VARCHAR(200),
+  PRIMARY KEY (`id`)
+);
+ALTER TABLE `cfclongdev`.`user_log` ADD COLUMN `noidung_1` VARCHAR(200) AFTER `noidung`,
+ ADD COLUMN `noidung_2` VARCHAR(200) AFTER `noidung_1`,
+ ADD COLUMN `noidung_3` VARCHAR(200) AFTER `noidung_2`,
+ ADD COLUMN `noidung_4` VARCHAR(200) AFTER `noidung_3`;
+
+

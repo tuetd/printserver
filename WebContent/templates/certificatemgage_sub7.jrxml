@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub7" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4bce0f91-b9ab-48a5-98f8-2ca31cb9e9f6">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="86"/>
+	<title>
+		<band height="754" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="04220f5c-ec68-4f71-8086-53bb9cd6ba56" x="10" y="13" width="571" height="667"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Vay phải trả cho Bên Cho Vay liên quan đến việc Tất Toán Khoản Vay Trước Hạn sẽ được Bên Cho Vay thông báo cho Bên Vay tại thời điểm thực trả.
+
+(c) Trong trường hợp Bên Vay không tuân thủ đúng quy định tại Điều 4.2 (a) và/hoặc Bên Cho Vay không nhận được đầy đủ số tiền để Tất Toán Khoản Vay Trước Hạn theo quy định tại Điều 4.2 (b) (‘Số Tiền’), Bên Vay theo đây đồng ý rằng Bên Cho Vay có toàn quyền:
+
+       (i)  Từ chối yêu cầu Tất Toán Khoản Vay Trước Hạn của Bên Vay/Người đề nghị, và
+
+       (ii)   Khấu trừ Số Tiền mà Bên Cho Vay nhận được từ Bên Vay và/hoặc Người đề nghị vào các khoản nợ quá hạn (nếu có) và/hoặc các kỳ thanh toán tiếp theo (nếu có) và/hoặc các khoản tiền phải trả khác theo Bộ Hợp đồng Tín dụng này hoặc theo các văn bản khác cho đến khi toàn bộ Số Tiền này được khấu trừ hết.
+
+       (iii)  Bên Vay cam kết thanh toán đầy đủ các khoản phải trả theo Hợp đồng này cho Bên Cho Vay trong trường hợp Số Tiền sau khi đã khấu trừ hết vẫn không đủ để thanh toán cho các khoản nợ quá hạn (nếu có) và các Khoản Thanh Toán Hàng Tháng tiếp theo; và
+
+       (iv) Bên Vay/Người đề nghị xác nhận và đồng ý rằng Bên Vay/Người đề nghị sẽ chịu trách nhiệm bồi thường cho Bên Cho Vay tất cả những chi phí và/hoặc thiệt hại phát sinh trực tiếp hoặc gián tiếp từ bất kỳ khiếu nại nào có liên quan đến việc khấu trừ theo Mục (ii) Điểm (c) Điều này (nếu có).
+
+4.3  Lãi quá hạn:
+
+Lãi quá hạn sẽ được áp dụng trong trường hợp Bên Vay vi phạm bất kỳ thời hạn trả các Khoản Thanh Toán Hàng Tháng theo quy định tại Hợp đồng Tín dụng, được tính từ ngày đến hạn phải thanh toán cho đến ngày thực trả đầy đủ số nợ gốc quá hạn và nợ lãi quá hạn, theo quy định như sau:
+                     (a) Đối với các khoản nợ gốc quá hạn:  mức lãi suất bằng 150% (một trăm năm mươi phần trăm) của Lãi Suất ghi trên Hợp đồng Tín dụng, và
+
+                     (b) Đối với các khoản nợ lãi quá hạn: mức lãi suất bằng 100% (một trăm phần trăm) của Lãi Suất ghi trên Hợp đồng Tín dụng.
+
+4.4  Phí cung cấp dịch vụ liên quan đến hồ sơ tín dụng theo yêu cầu của khách hàng và thuế
+
+Bên Vay cam kết thanh toán cho Bên Cho Vay tất cả các phí cung cấp dịch vụ liên quan đến hồ sơ tín dụng theo yêu cầu của khách hàng và các loại thuế (nếu có) theo Biểu phí áp dụng cho sản phẩm Vay tiêu dùng cá nhân do Bên Cho Vay quy định và có hiệu lực tại thời điểm khách hàng vay có yêu cầu. Biểu phí cung cấp các dịch vụ liên quan đến hồ sơ tín dụng theo yêu cầu của khách hàng vay được Bên Cho Vay thông báo và niêm yết công khai tại: (i) trang thông tin điện tử chính thức của Bên Cho Vay và (ii) tại các chi nhánh, phòng giao dịch, Điểm giới thiệu dịch vụ của Bên Cho Vay.
+
+4.5. Thay đổi
+
+Bên Vay đồng ý rằng các khoản  phí cung cấp dịch vụ liên quan đến hồ sơ tín dụng theo yêu cầu của khách hàng được quy định tại Biểu phí áp dụng cho sản phẩm vay tiêu dùng cá nhân có thể được Bên Cho Vay điều chỉnh bằng một thông báo niêm yết công khai tại các văn phòng và/hoặc trên trang thông tin điện tử của Bên Cho Vay và/ hoặc gửi qua tin nhắn/thư điện tử/thư đến Bên Vay.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="456688a5-27f5-4d71-bc29-6a354a4f24d2" x="10" y="701" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 5. BỒI HOÀN ]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

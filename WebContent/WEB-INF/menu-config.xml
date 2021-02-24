@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+    
+		<Menu name="Bookmarkmaster" title="menu.bookmarkmaster.title">
+			<Item name="BookmarkmasterList" title="bookmarkmasterList.title" page="/listBookmarkmaster.html"/>
+			<Item name="BookmarkmasterSearch" title="menu.search.bookmarkmasterList.title" page="/searchBookmarkmaster.html"/>
+			<Item name="BookmarkmasterAdd" title="menu.add.title" page="/addBookmarkmaster.html"/>
+		</Menu>		
+			
+		<Menu name="Datasourcemaster" title="menu.datasourcemaster.title">
+			<Item name="DatasourcemasterList" title="datasourcemasterList.title" page="/listDatasourcemaster.html"/>
+			<Item name="DatasourcemasterSearch" title="menu.search.datasourcemasterList.title" page="/searchDatasourcemaster.html"/>
+			<Item name="DatasourcemasterAdd" title="menu.add.title" page="/addDatasourcemaster.html"/>
+		</Menu>		
+			
+		<Menu name="Docmaster" title="menu.docmaster.title">
+			<Item name="DocmasterList" title="docmasterList.title" page="/listDocmaster.html"/>
+			<Item name="DocmasterSearch" title="menu.search.docmasterList.title" page="/searchDocmaster.html"/>
+			<Item name="DocmasterAdd" title="menu.add.title" page="/addDocmaster.html"/>
+		</Menu>		
+			
+		<Menu name="EmailSysMonitorM" title="menu.emailSysMonitorM.title">
+			<Item name="EmailSysMonitorMList" title="emailSysMonitorMList.title" page="/listEmailSysMonitorM.html"/>
+			<Item name="EmailSysMonitorMSearch" title="menu.search.emailSysMonitorMList.title" page="/searchEmailSysMonitorM.html"/>
+			<Item name="EmailSysMonitorMAdd" title="menu.add.title" page="/addEmailSysMonitorM.html"/>
+		</Menu>		
+			
+		<Menu name="EmailUserSysMonitor" title="menu.emailUserSysMonitor.title">
+			<Item name="EmailUserSysMonitorList" title="emailUserSysMonitorList.title" page="/listEmailUserSysMonitor.html"/>
+			<Item name="EmailUserSysMonitorSearch" title="menu.search.emailUserSysMonitorList.title" page="/searchEmailUserSysMonitor.html"/>
+			<Item name="EmailUserSysMonitorAdd" title="menu.add.title" page="/addEmailUserSysMonitor.html"/>
+		</Menu>		
+			
+		<Menu name="Fieldmaster" title="menu.fieldmaster.title">
+			<Item name="FieldmasterList" title="fieldmasterList.title" page="/listFieldmaster.html"/>
+			<Item name="FieldmasterSearch" title="menu.search.fieldmasterList.title" page="/searchFieldmaster.html"/>
+			<Item name="FieldmasterAdd" title="menu.add.title" page="/addFieldmaster.html"/>
+		</Menu>		
+			
+		<Menu name="Fieldtypemaster" title="menu.fieldtypemaster.title">
+			<Item name="FieldtypemasterList" title="fieldtypemasterList.title" page="/listFieldtypemaster.html"/>
+			<Item name="FieldtypemasterSearch" title="menu.search.fieldtypemasterList.title" page="/searchFieldtypemaster.html"/>
+			<Item name="FieldtypemasterAdd" title="menu.add.title" page="/addFieldtypemaster.html"/>
+		</Menu>		
+			
+		<Menu name="Filemaster" title="menu.filemaster.title">
+			<Item name="FilemasterList" title="filemasterList.title" page="/listFilemaster.html"/>
+			<Item name="FilemasterSearch" title="menu.search.filemasterList.title" page="/searchFilemaster.html"/>
+			<Item name="FilemasterAdd" title="menu.add.title" page="/addFilemaster.html"/>
+		</Menu>		
+			
+		<Menu name="Fileparamfilelink" title="menu.fileparamfilelink.title">
+			<Item name="FileparamfilelinkList" title="fileparamfilelinkList.title" page="/listFileparamfilelink.html"/>
+			<Item name="FileparamfilelinkSearch" title="menu.search.fileparamfilelinkList.title" page="/searchFileparamfilelink.html"/>
+			<Item name="FileparamfilelinkAdd" title="menu.add.title" page="/addFileparamfilelink.html"/>
+		</Menu>		
+			
+		<Menu name="Fileparammaster" title="menu.fileparammaster.title">
+			<Item name="FileparammasterList" title="fileparammasterList.title" page="/listFileparammaster.html"/>
+			<Item name="FileparammasterSearch" title="menu.search.fileparammasterList.title" page="/searchFileparammaster.html"/>
+			<Item name="FileparammasterAdd" title="menu.add.title" page="/addFileparammaster.html"/>
+		</Menu>		
+			
+		<Menu name="Filetypemaster" title="menu.filetypemaster.title">
+			<Item name="FiletypemasterList" title="filetypemasterList.title" page="/listFiletypemaster.html"/>
+			<Item name="FiletypemasterSearch" title="menu.search.filetypemasterList.title" page="/searchFiletypemaster.html"/>
+			<Item name="FiletypemasterAdd" title="menu.add.title" page="/addFiletypemaster.html"/>
+		</Menu>		
+			
+		<Menu name="OpenOfficeTraffic" title="menu.openOfficeTraffic.title">
+			<Item name="OpenOfficeTrafficList" title="openOfficeTrafficList.title" page="/listOpenOfficeTraffic.html"/>
+			<Item name="OpenOfficeTrafficSearch" title="menu.search.openOfficeTrafficList.title" page="/searchOpenOfficeTraffic.html"/>
+			<Item name="OpenOfficeTrafficAdd" title="menu.add.title" page="/addOpenOfficeTraffic.html"/>
+		</Menu>		
+			
+		<Menu name="Parammaster" title="menu.parammaster.title">
+			<Item name="ParammasterList" title="parammasterList.title" page="/listParammaster.html"/>
+			<Item name="ParammasterSearch" title="menu.search.parammasterList.title" page="/searchParammaster.html"/>
+			<Item name="ParammasterAdd" title="menu.add.title" page="/addParammaster.html"/>
+		</Menu>		
+			
+		<Menu name="Projectmaster" title="menu.projectmaster.title">
+			<Item name="ProjectmasterList" title="projectmasterList.title" page="/listProjectmaster.html"/>
+			<Item name="ProjectmasterSearch" title="menu.search.projectmasterList.title" page="/searchProjectmaster.html"/>
+			<Item name="ProjectmasterAdd" title="menu.add.title" page="/addProjectmaster.html"/>
+		</Menu>		
+			
+		<Menu name="Recordsetfieldlink" title="menu.recordsetfieldlink.title">
+			<Item name="RecordsetfieldlinkList" title="recordsetfieldlinkList.title" page="/listRecordsetfieldlink.html"/>
+			<Item name="RecordsetfieldlinkSearch" title="menu.search.recordsetfieldlinkList.title" page="/searchRecordsetfieldlink.html"/>
+			<Item name="RecordsetfieldlinkAdd" title="menu.add.title" page="/addRecordsetfieldlink.html"/>
+		</Menu>		
+			
+		<Menu name="Recordsetmaster" title="menu.recordsetmaster.title">
+			<Item name="RecordsetmasterList" title="recordsetmasterList.title" page="/listRecordsetmaster.html"/>
+			<Item name="RecordsetmasterSearch" title="menu.search.recordsetmasterList.title" page="/searchRecordsetmaster.html"/>
+			<Item name="RecordsetmasterAdd" title="menu.add.title" page="/addRecordsetmaster.html"/>
+		</Menu>		
+			
+		<Menu name="Serverconfig" title="menu.serverconfig.title">
+			<Item name="ServerconfigList" title="serverconfigList.title" page="/listServerconfig.html"/>
+			<Item name="ServerconfigSearch" title="menu.search.serverconfigList.title" page="/searchServerconfig.html"/>
+			<Item name="ServerconfigAdd" title="menu.add.title" page="/addServerconfig.html"/>
+		</Menu>		
+			
+		<Menu name="Sqlparammaster" title="menu.sqlparammaster.title">
+			<Item name="SqlparammasterList" title="sqlparammasterList.title" page="/listSqlparammaster.html"/>
+			<Item name="SqlparammasterSearch" title="menu.search.sqlparammasterList.title" page="/searchSqlparammaster.html"/>
+			<Item name="SqlparammasterAdd" title="menu.add.title" page="/addSqlparammaster.html"/>
+		</Menu>		
+			
+		<Menu name="Sqlquerymaster" title="menu.sqlquerymaster.title">
+			<Item name="SqlquerymasterList" title="sqlquerymasterList.title" page="/listSqlquerymaster.html"/>
+			<Item name="SqlquerymasterSearch" title="menu.search.sqlquerymasterList.title" page="/searchSqlquerymaster.html"/>
+			<Item name="SqlquerymasterAdd" title="menu.add.title" page="/addSqlquerymaster.html"/>
+		</Menu>		
+			
+		<Menu name="Statusmaster" title="menu.statusmaster.title">
+			<Item name="StatusmasterList" title="statusmasterList.title" page="/listStatusmaster.html"/>
+			<Item name="StatusmasterSearch" title="menu.search.statusmasterList.title" page="/searchStatusmaster.html"/>
+			<Item name="StatusmasterAdd" title="menu.add.title" page="/addStatusmaster.html"/>
+		</Menu>		
+			
+		<Menu name="Systemtypemaster" title="menu.systemtypemaster.title">
+			<Item name="SystemtypemasterList" title="systemtypemasterList.title" page="/listSystemtypemaster.html"/>
+			<Item name="SystemtypemasterSearch" title="menu.search.systemtypemasterList.title" page="/searchSystemtypemaster.html"/>
+			<Item name="SystemtypemasterAdd" title="menu.add.title" page="/addSystemtypemaster.html"/>
+		</Menu>		
+			
+		<Menu name="UserRoleM" title="menu.userRoleM.title">
+			<Item name="UserRoleMList" title="userRoleMList.title" page="/listUserRoleM.html"/>
+			<Item name="UserRoleMSearch" title="menu.search.userRoleMList.title" page="/searchUserRoleM.html"/>
+			<Item name="UserRoleMAdd" title="menu.add.title" page="/addUserRoleM.html"/>
+		</Menu>		
+			
+		<Menu name="Userdocprinter" title="menu.userdocprinter.title">
+			<Item name="UserdocprinterList" title="userdocprinterList.title" page="/listUserdocprinter.html"/>
+			<Item name="UserdocprinterSearch" title="menu.search.userdocprinterList.title" page="/searchUserdocprinter.html"/>
+			<Item name="UserdocprinterAdd" title="menu.add.title" page="/addUserdocprinter.html"/>
+		</Menu>		
+			
+		<Menu name="Usermaster" title="menu.usermaster.title">
+			<Item name="UsermasterList" title="usermasterList.title" page="/listUsermaster.html"/>
+			<Item name="UsermasterSearch" title="menu.search.usermasterList.title" page="/searchUsermaster.html"/>
+			<Item name="UsermasterAdd" title="menu.add.title" page="/addUsermaster.html"/>
+		</Menu>		
+			
+		<Menu name="Userparamlink" title="menu.userparamlink.title">
+			<Item name="UserparamlinkList" title="userparamlinkList.title" page="/listUserparamlink.html"/>
+			<Item name="UserparamlinkSearch" title="menu.search.userparamlinkList.title" page="/searchUserparamlink.html"/>
+			<Item name="UserparamlinkAdd" title="menu.add.title" page="/addUserparamlink.html"/>
+		</Menu>		
+			
+		<Menu name="Userparammaster" title="menu.userparammaster.title">
+			<Item name="UserparammasterList" title="userparammasterList.title" page="/listUserparammaster.html"/>
+			<Item name="UserparammasterSearch" title="menu.search.userparammasterList.title" page="/searchUserparammaster.html"/>
+			<Item name="UserparammasterAdd" title="menu.add.title" page="/addUserparammaster.html"/>
+		</Menu>		
+			
+		<Menu name="Userrecordsetprintedlink" title="menu.userrecordsetprintedlink.title">
+			<Item name="UserrecordsetprintedlinkList" title="userrecordsetprintedlinkList.title" page="/listUserrecordsetprintedlink.html"/>
+			<Item name="UserrecordsetprintedlinkSearch" title="menu.search.userrecordsetprintedlinkList.title" page="/searchUserrecordsetprintedlink.html"/>
+			<Item name="UserrecordsetprintedlinkAdd" title="menu.add.title" page="/addUserrecordsetprintedlink.html"/>
+		</Menu>		
+			
+    </Menus>
+</MenuConfig>

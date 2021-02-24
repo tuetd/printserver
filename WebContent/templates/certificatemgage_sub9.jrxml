@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub9" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="710ef7e6-4db1-4b83-bcb9-a75db4f62f3f">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="131"/>
+	<title>
+		<band height="814" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0c9c627b-ac98-4d38-ac19-4b4f65d83cca" x="10" y="13" width="571" height="244"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(f) Bên Vay phải báo cáo việc sử dụng vốn vay và chứng minh vốn vay được sử dụng đúng mục đích vay khi được Bên Cho Vay yêu cầu;
+
+(g) Bên Vay có nghĩa vụ phối hợp với Bên Cho Vay để xử lý nợ theo quy định tại Bộ Hợp đồng Tín dụng và các thỏa thuận khác (nếu có);
+
+(h) Bên Vay cam kết duy trì bảo hiểm cho Tài sản đối với mọi rủi ro liên quan, bao gồm nhưng không giới hạn các tổn thất hoặc thiệt hại do hỏa hoạn, cháy nổ hoặc bất kỳ thiệt hại nào khác trong suốt thời hạn của Hợp đồng này; và
+
+7.2 Các cam kết không thực hiện
+
+Bên Vay cam kết với Bên Cho Vay rằng Bên Vay sẽ không rời khỏi Việt Nam trong hơn 30 (ba mươi) ngày dương lịch nếu không hoàn trả đầy đủ các khoản tiền phải thanh toán theo Hợp đồng Tín dụng, bao gồm cả Phí Tất Toán Khoản Vay Trước Hạn và các loại phí/tiền phạt khác (nếu có), trừ khi được Bên Cho Vay chấp thuận trước bằng văn bản.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3230eb5-a256-4680-ac3d-44def48e83b9" x="10" y="275" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 8. SỰ KIỆN VI PHẠM VÀ XỬ LÝ SỰ KIỆN VI PHẠM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="eb9a1a25-75b3-4df3-ba63-19420aa2994b" x="10" y="308" width="571" height="457"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[8.1 Sự Kiện Vi Phạm
+
+Sự Kiện Vi Phạm bao gồm các trường hợp sau:
+
+(a) Bên Vay không thanh toán hoặc không có khả năng thanh toán hoặc thừa nhận không có khả năng thanh toán bất cứ khoản tiền nào đến hạn phải trả theo quy định tại Hợp đồng Tín dụng
+
+(b) Bên Vay vi phạm bất kỳ điều khoản nào của Phiếu đề nghị vay và/hoặc Hợp đồng Tín dụng và/hoặc Hợp đồng Thế chấp; hoặc
+
+(c) bất cứ thông tin hoặc bảo đảm nào do Bên Vay đưa ra liên quan đến Phiếu đề nghị vay và/hoặc Hợp đồng Tín dụng và hoặc Hợp đồng Thế chấp bị phát hiện là không chính xác hoặc cố ý cung cấp để gây nhầm lẫn; hoặc
+
+(d) Phiếu đề nghị vay, Hợp đồng Tín dụng, Hợp đồng Thế chấp và các văn bản có liên quan bị trở nên vô hiệu theo quy định của pháp luật do lỗi của Bên Vay.
+
+(e) Tài sản bị phá hủy hoặc hư hỏng đáng kể hoặc là đối tượng bị giải tỏa hay bồi thường; hoặc
+
+(f) Giấy chứng nhận và hợp đồng bảo hiểm liên quan đến Tài sản bị chấm dứt, hủy bỏ hoặc hết hạn.
+
+8.2 Xử lý Sự Kiện Vi Phạm
+
+Khi có bất kỳ Sự Kiện Vi Phạm nào theo Điều 8.1 xảy ra, Bên Cho Vay có quyền, không ảnh hưởng đến bất cứ quyền cụ thể nào khác theo Phiếu đề nghị vay tiêu dùng và Hợp đồng Tín dụng hoặc bất cứ thỏa thuận nào khác, đơn phương chấm dứt Hợp đồng Tín dụng bằng cách gửi Thông báo chấm dứt Hợp đồng trước hạn đến Bên Vay và theo đó  toàn bộ dư nợ của Khoản Vay cùng với tất cả tiền lãi, tiền phạt chậm trả nợ, phí (nếu có) đã phát sinh và các khoản thanh toán khác phải trả theo Hợp đồng Tín dụng là đến hạn phải trả ngay lập tức và yêu cầu Bên Vay thanh toán ngay toàn bộ số tiền đó dù đến hạn hay chưa đến hạn đều phải được Bên Vay thanh toán ngay cho Bên Cho Vay trong thời hạn 10 ngày kể từ ngày Bên Cho Vay gửi Thông báo chấm dứt Hợp đồng trước hạn.
+]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

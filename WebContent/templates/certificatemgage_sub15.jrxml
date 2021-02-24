@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub15" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="a03b4ab5-2a87-4d8f-b135-677c2cf6eb11">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="10"/>
+	<parameter name="certificatemgage" class="java.lang.Object"/>
+	<title>
+		<band height="652" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="30098470-7800-4ed0-b8f2-514cf080d35d" x="10" y="46" width="570" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[CAM KẾT NHẬN NỢ VÀ YÊU CẦU GIẢI NGÂN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b09da195-f0f6-4533-88da-03440ec09619" x="10" y="13" width="570" height="17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHỤ LỤC 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fc863cca-0f23-482b-9ba5-d327f9d3026c" x="10" y="88" width="144" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. CAM KẾT NHẬN NỢ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="febe0258-276e-4ba5-9663-84e506763633" x="10" y="115" width="128" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[BÊN VAY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="93434d42-6f83-43c1-b9b2-d90bf4ed5c6b" x="10" y="142" width="28" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ông:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b2000752-40ee-4cff-9f8f-99d43e969271" x="37" y="142" width="163" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.APPLICANT_NAME_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5eeeec71-ff8e-4954-95f1-61b6b972652d" x="10" y="158" width="58" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CMND số:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="682a5380-b1ee-4455-975b-5fe78c38b620" x="68" y="158" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_NO_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4f3282ec-b4db-481c-9c52-d59f10b16edf" x="199" y="158" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="848b0155-d6d8-4eb3-a879-003493ec742a" x="259" y="158" width="105" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_DATE_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="17823d1b-3643-4f94-a004-c3aa189d3cc0" x="363" y="158" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="29b69bca-67c1-4e51-b84b-20453fc1ff1d" x="423" y="158" width="158" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_ISSUED_PLACE_1]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="8d8df768-c89a-494d-9988-c205416cc255" x="147" y="175" width="124" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.CITIZEN_ID_1]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1cbcd6f9-f343-47c8-9438-d1b597a9e449" x="10" y="192" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_CITIZEN_ID_ISSUED_PLACE_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="069abd7e-91ec-4e69-8623-564f11b220f3" x="271" y="175" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cf71f95f-6322-4d98-a886-4ef4f2040e86" x="10" y="175" width="138" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thẻ căn cước số (nếu có):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c4462b07-48e1-4286-8439-846197824fd6" x="470" y="175" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="853790e1-8c35-446c-91bb-3de994f0b593" x="332" y="175" width="137" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_CITIZEN_ID_DATE_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d975e016-c080-47a4-bfd0-fd1d97494d10" x="10" y="209" width="149" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ thường trú/ tạm trú: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="15086607-b85a-482c-931a-48c1a8def3c4" x="159" y="209" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.CURRENT_RESIDENCE_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1040f5df-b796-4e46-a7b3-086492d5b9e3" x="10" y="241" width="28" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bà:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="770a13c2-fe8e-4910-942a-625832e835a3" x="37" y="241" width="163" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.APPLICANT_NAME_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cba150d9-5321-42e6-a7e0-b735cb7f8272" x="10" y="257" width="58" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CMND số:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="82bd6d84-79c5-4530-b28c-721d75f5a339" x="68" y="257" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_NO_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2467e61b-ac99-4855-a645-ddd421ae5341" x="199" y="257" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="196b9998-defe-4e84-a902-0b9a1ca03db5" x="259" y="257" width="105" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_DATE_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="bd4b7289-425b-4fe1-a005-f18c02ce0130" x="363" y="257" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="11163768-56a6-4f3d-ac1a-9e4642ad0941" x="423" y="257" width="158" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_ID_ISSUED_PLACE_2]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d0e1a1ad-19b9-48f0-943e-022d8fbd8367" x="147" y="274" width="124" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.CITIZEN_ID_2]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d709c5a8-4a18-47d9-9c64-e506e78c26d8" x="10" y="291" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_CITIZEN_ID_ISSUED_PLACE_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fdc5b583-5535-4d4b-8f65-4be8132064d1" x="271" y="274" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="df94c237-b8cf-4aa5-8af7-680731b81d0c" x="10" y="274" width="138" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thẻ căn cước số (nếu có):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ab25093c-b3ab-4900-a105-8c29bc4c1a5d" x="470" y="274" width="61" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9b318bca-15ec-495b-9cff-b3be8a6d68ab" x="332" y="274" width="137" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.VALID_CITIZEN_ID_DATE_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="4495f61d-e4bd-4d85-8503-1e5430b21b63" x="10" y="308" width="149" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ thường trú/ tạm trú: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e1b8fd4b-10bb-434e-917d-8f4a4235e9de" x="159" y="308" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.CURRENT_RESIDENCE_2]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cdd475b6-a00e-4289-93f7-68f44261af12" x="10" y="336" width="354" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[bằng văn bản này, nhận nợ với Bên Cho Vay một khoản tiền gốc (“]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e6a1be42-c9db-4711-81bb-c173bd26b453" x="364" y="336" width="70" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Khoản Vay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9afcbe01-01c3-4a0f-97bd-9a08f7bf50b4" x="434" y="336" width="28" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[”)là :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="999482a9-a090-4304-8e99-da77fd16fec5" x="27" y="353" width="75" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[•     Bằng số : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fba91e57-0a1f-4aa9-8e56-be0c1f4e83e0" x="27" y="370" width="115" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[•     Số tiền bằng chữ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27142877-dd38-4299-84fe-6672c9b48c83" x="27" y="387" width="115" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[•     Ngày rút vốn:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="433e9790-ae7f-49a1-9255-82af4951df8c" x="27" y="404" width="157" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[•     Lãi suất áp dụng hiện tại:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b7ee0288-95b1-437f-84f4-687824f6de2a" x="102" y="353" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.AMOUNT_LOAN]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9549938f-081f-4785-8a26-fba0d58238cb" x="142" y="370" width="437" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{certificatemgage}!=null?$P{certificatemgage}.AMOUNT_LOAN_WORDS:"") + " đồng chẵn) (“Khoản vay”)."]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fb3078c5-50a6-4d0b-9816-f0d4b95cd0ae" x="142" y="387" width="132" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.DISBURSAL_DATE]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="5fec6540-f091-405a-9a54-b88e3a989c17" x="184" y="404" width="117" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.INTEREST_RATE_MONTH]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2e737424-70e2-42f2-b1a4-8624da118cdc" x="301" y="404" width="75" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[/tháng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="549e89ba-d52f-483c-b9a0-ba0dafe43769" x="9" y="432" width="571" height="110"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Vay cam kết sẽ hoàn trả Khoản Vay cho Bên Cho Vay khi đến thời hạn thanh toán và/hoặc theo thông báo của Bên Cho Vay (phù hợp với quy định trong Hợp đồng Tín dụng) bao gồm tiền gốc cùng với lãi và các khoản phí/phạt (nếu có) phát sinh kể từ Ngày Giải Ngân đến ngày hoàn trả toàn bộ Khoản Vay. Mức lãi suất và thời điểm thanh toán tiền gốc và lãi được quy định tại Hợp đồng Tín dụng, trừ khi Bên Cho Vay có thông báo điều chỉnh.
+Bên Vay cam kết về việc thanh toán Khoản Vay và không có điều khoản nào trong văn bản này bị hủy bỏ vô điều kiện hoặc hủy ngang.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c49333ef-baaf-4c8d-a06a-607461464a52" x="9" y="539" width="149" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. YÊU CẦU GIẢI NGÂN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b8db540c-c233-44d2-b2b2-fe038e25fd5b" x="9" y="556" width="68" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Khoản vay:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3da360d4-61b4-444b-978b-c11fc9bfc604" x="77" y="556" width="254" height="17"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.AMOUNT_LOAN]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="92edaf3b-6270-48c3-ad60-fd9ccad1c15a" x="9" y="573" width="570" height="79"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Phí bảo hiểm theo Hợp đồng bảo hiểm:
+Bên Vay, theo đây ủy quyền cho Bên Cho Vay, trước khi giải ngân Khoản Vay vào tài khoản của Bên Vay, được trích từ Khoản Vay một khoản tiền tương đương với Phí bảo hiểm để thanh toán cho Công ty bảo hiểm theo Hợp đồng bảo hiểm. Bên Vay công nhận và đồng ý rằng Bên Vay được cho là đã nhận được đầy đủ Khoản Vay vào thời điểm việc giải ngân được xem là hoàn thành và Số tiền còn lại của ]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

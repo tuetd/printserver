@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PropertyInsuranceMortgage1" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c78fd1a3-7594-4b97-a2d8-63cf51c5f7bb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA["C:\\DATA D\\NGUYENTHACH\\PROJECTJAVA\\PrintserverCore\\WebContent\\templates\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="insurance" class="java.lang.Object"/>
+	<detail>
+		<band height="114" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="70a79beb-559c-49b1-b343-04212d95b840" x="0" y="0" width="595" height="37"/>
+				<subreportParameter name="insurance">
+					<subreportParameterExpression><![CDATA[$P{insurance}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "PropertyInsuranceMortgage_sub1.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="225e8818-ba68-4d96-9bad-2d16bf277828" x="0" y="37" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="891bc58d-7b4a-4be3-a7fc-7704eb218e7a" x="0" y="75" width="595" height="1"/>
+			</break>
+			<break>
+				<reportElement uuid="891bc58d-7b4a-4be3-a7fc-7704eb218e7a" x="0" y="113" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="70a79beb-559c-49b1-b343-04212d95b840" x="0" y="38" width="595" height="37"/>
+				<subreportParameter name="insurance">
+					<subreportParameterExpression><![CDATA[$P{insurance}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "PropertyInsuranceMortgage_sub2.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement uuid="70a79beb-559c-49b1-b343-04212d95b840" x="0" y="76" width="595" height="37"/>
+				<subreportParameter name="insurance">
+					<subreportParameterExpression><![CDATA[$P{insurance}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "PropertyInsuranceMortgage_sub3.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15">
+			<textField evaluationTime="Report">
+				<reportElement uuid="55057f22-ea0a-4405-9488-e1995d2e640f" x="530" y="0" width="14" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="73454993-aee6-45cb-b550-9588678f4912" x="514" y="0" width="16" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+"/"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f1f028bb-921c-4b1d-8126-ca2292698fad" x="300" y="0" width="214" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Home Loan - Mortgage Agreement-Version 06/2016 ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AgreementMortgage_sub9" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.3310000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="667"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<subDataset name="New Dataset 1" uuid="efadca37-51f6-40e9-9526-ec08e7180fa8"/>
+	<parameter name="certificate" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="800" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="28" width="41" height="57"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(e)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="28" width="442" height="57"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp cam kết thực hiện nghiêm chỉnh các nghĩa vụ của mình theo hợp
+đồng bảo hiểm (bao gồm việc thanh toán đúng hạn bất cứ khoản phí bảo hiểm
+nào hoặc các khoản tiền khác cho các công ty bảo hiểm) nhằm duy trì tính hợp
+pháp và hiệu lực đầy đủ của các hợp đồng bảo hiểm trong thời hạn của Hợp
+đồng Tín dụng và Hợp đồng này; và]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="85" width="41" height="64"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(f)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="85" width="442" height="64"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sau khi xảy ra bất cứ sự kiện bảo hiểm nào, Bên Thế chấp phải gửi cho Bên
+Nhận Thế chấp một thông báo bằng văn bản thông báo về tình trạng của các tổn
+thất, thiệt hại cũng như kế hoạch phục hồi hoạt động kinh doanh.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="149" width="513" height="33"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.2	Thông báo và xác nhận thế chấp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="182" width="41" height="88"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="182" width="442" height="88"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trừ khi Bên Nhận Thế chấp chấp thuận khác đi, trong vòng ba (03) Ngày Làm
+việc sau ngày ký kết bất cứ hợp đồng bảo hiểm nào, Bên Thế chấp phải gửi một
+thông báo bằng văn bản cho Bên Nhận Thế chấp. Bên Nhận Thế chấp sẽ gửi
+cho công ty bảo hiểm liên quan một thông báo về thế chấp, thông báo đó về cơ
+bản phải theo hình thức của Phụ lục I của Hợp đồng này;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="270" width="41" height="77"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="270" width="442" height="77"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sau khi gửi thông báo theo quy định tại Điểm (a) của Điều 8.2 này, Bên Thế
+chấp sẽ yêu cầu công ty bảo hiểm liên quan gửi cho Bên Nhận Thế chấp (trong
+vòng ba mươi (30) ngày kể từ ngày ký thông báo đó) một xác nhận bằng văn
+bản về thế chấp về cơ bản theo hình thức của Phụ lục II của Hợp đồng này.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="347" width="513" height="33"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8.3	Quyền của Bên Nhận Thế chấp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="380" width="41" height="115"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="380" width="442" height="115"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Nhận Thế chấp có quyền (nhưng không có nghĩa vụ) thanh toán mọi khoản
+phí bảo hiểm thay mặt Bên Thế chấp nếu Bên Thế chấp không thanh toán các
+khoản phí bảo hiểm đó. Bên Nhận Thế chấp có thể yêu cầu Bên Thế chấp bồi
+hoàn ngay các khoản thanh toán đó cho Bên Nhận Thế chấp cùng với bất cứ
+khoản tiền lãi phát sinh nào đối với khoản thanh toán đó với mức lãi suất quá
+hạn được quy định trong Hợp đồng Tín dụng tính từ ngày Bên Nhận Thế chấp
+thanh toán tới ngày Bên Thế chấp bồi hoàn trên thực tế cho Bên Nhận Thế chấp;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="495" width="41" height="105"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="113" y="495" width="442" height="105"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Nhận Thế chấp có thể yêu cầu công ty bảo hiểm liên quan thanh toán bất cứ
+khoản tiền bảo hiểm nào theo hợp đồng bảo hiểm trực tiếp vào tài khoản của
+Bên Nhận Thế chấp nếu xảy ra một sự kiện bảo hiểm. Bên Nhận Thế chấp có
+quyền quyết định việc sử dụng số tiền bảo hiểm nhận được để thay thế hoặc sửa
+chữa Tài sản Thế chấp hoặc sử dụng số tiền đó để trả nợ trước hạn bắt buộc theo
+Hợp đồng Tín dụng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="628" width="30" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="600" width="513" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 9.	PHƯƠNG THỨC GIẢI QUYẾT TRANH CHẤP HỢP ĐỒNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="628" width="483" height="28"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hợp đồng này được điều chỉnh theo pháp luật Việt Nam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="656" width="483" height="51"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Các tòa án Việt Nam có thẩm quyền xét xử để giải quyết bất kỳ tranh chấp nào phát
+sinh từ hoặc liên quan đến Hợp đồng này.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="656" width="30" height="51"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="708" width="513" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 10.	CAM ĐOAN CỦA BÊN THẾ CHẤP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="736" width="30" height="28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[10.1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="736" width="483" height="28"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Bên Thế chấp cam đoan và bảo đảm rằng:]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub12" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="45a872d5-674d-4992-a185-8f0259574228">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="111"/>
+	<title>
+		<band height="787" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="0e1d6961-7240-479b-a8da-4b8cf092ea42" x="10" y="13" width="571" height="67"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[tiền nào mà Bên Vay còn nợ Bên Cho Vay hoặc xử lý tài sản bảo đảm (nếu có). Vì mục đích của điều này, Bên Cho Vay sẽ gửi thông báo cho Bên Vay về việc chỉ định Đại diện Cung cấp Dịch vụ của mình khi cần thiết. Bên Cho Vay cam kết chịu trách nhiệm về hành động của Đại diện Cung cấp Dịch vụ theo quy định của pháp luật.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3135a9eb-998a-49b5-8a28-743a728e6986" x="10" y="105" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 15. VÔ HIỆU TỪNG PHẦN, BIỆN PHÁP KHẮC PHỤC VÀ TỪ BỎ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d1a552e4-5a3e-48aa-9a27-45f0b2f71576" x="10" y="123" width="571" height="135"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[15.1 Nếu bất kỳ điều khoản nào của Hợp đồng tín dụng bị cho là bất hợp pháp, vô hiệu hoặc không thể thực thi được thì hiệu lực pháp lý của các điều khoản còn lại sẽ không bị ảnh hưởng vì bất cứ lý do gì.
+
+15.2 Việc Bên Cho Vay không thực hiện hoặc trì hoãn việc thực hiện bất cứ quyền và biện pháp khắc phục nào theo Hợp đồng Tín dụng không có nghĩa là Bên Cho Vay từ bỏ hoặc việc Bên Cho Vay chỉ thực hiện đơn lẻ hoặc một phần bất cứ quyền hoặc biện pháp khắc phục nào sẽ không ngăn cản Bên Cho Vay thực hiện thêm hoặc tiếp tục thực hiện bất cứ quyền và biện pháp khắc phục nào khác. Các quyền và biện pháp khắc phục được quy định tại Hợp đồng Tín dụng được cộng dồn và không loại trừ các quyền và biện pháp khắc phục theo quy định của pháp luật, trừ trường hợp Bên Cho Vay có thông báo khác bằng văn bản
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5713cb57-d8ef-4979-a16a-4137aa6565ac" x="10" y="285" width="403" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 16:  TIẾP THỊ, QUẢNG CÁO VÀ NGHIÊN CỨU THỊ TRƯỜNG ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="423de4df-523b-4a96-a22c-7961363b6b66" x="412" y="285" width="136" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(đánh dấu X vào ô trống):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="90dbf638-d76c-4cf6-936f-cdda1816e56e" x="10" y="307" width="10" height="10"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7b4512b5-0e22-4ca7-8ec9-cce2f6d7307a" x="20" y="303" width="561" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Vay đồng ý về việc Bên Cho Vay và các thành viên trong tập đoàn Prudential, các công ty liên ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3d03d320-4cb5-456c-a926-a187a0da3d48" x="10" y="321" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[kết và công ty trực thuộc của Bên Cho Vay được thu thập, cung cấp và sử dụng những thông tin (bao ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c078c260-60ab-49b8-9d46-135aa5184173" x="10" y="339" width="434" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[gồm thông tin cá nhân(3) và thông tin không phải là thông tin cá nhân, gọi chung là “]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a6c0f5bf-358a-4c1b-917a-3232254fee5d" x="444" y="339" width="57" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thông tin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0231c3df-c643-477c-9174-09de86b6e058" x="501" y="339" width="55" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[”) mà Bên ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ddbb26f4-ffe9-408a-9184-8bf081fda6ad" x="10" y="357" width="571" height="32"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vay cung cấp cho Bên Cho Vay cho mục đích tiếp thị và nghiên cứu thị trường mà không cần thêm bất kỳ chấp thuận nào khác của Bên Vay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="34414d63-d08b-4ed0-bba5-6177be8bb66a" x="10" y="403" width="10" height="10"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="43f4671f-c74c-467a-9dfe-31b2a5f1dfc0" x="20" y="399" width="561" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Vay không đồng ý về việc Bên Cho Vay và các thành viên trong tập đoàn Prudential, các công ty liên ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="15f73774-fa2a-432c-98ee-1cfe56445385" x="10" y="417" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[kết và công ty trực thuộc của Bên Cho Vay được thu thập, cung cấp và sử dụng những thông tin (bao ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0b68f067-7358-40ca-80f1-00c106598c4b" x="10" y="435" width="434" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[gồm thông tin cá nhân (4)và thông tin không phải là thông tin cá nhân, gọi chung là “]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="12f4a500-3631-4633-898f-0d91f203bf7b" x="444" y="435" width="57" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thông tin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="32be2b77-931a-4af5-9997-4a337e5299d2" x="501" y="435" width="55" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[”) mà Bên ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e477dcdf-9564-42d9-acfb-92b27c086993" x="10" y="453" width="571" height="32"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Vay cung cấp cho Bên Cho Vay cho mục đích tiếp thị và nghiên cứu thị trường mà không cần thêm bất kỳ chấp thuận nào khác của Bên Vay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb057e9f-c32e-48f1-af3b-0ba339ee7848" x="10" y="511" width="403" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 17. BIỆN PHÁP BẢO ĐẢM
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1e06298a-d832-4de6-aae5-99183d81d31b" x="10" y="605" width="403" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 18. HIỆU LỰC
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="96a7f6ab-6aef-4142-bcef-3de11028f673" x="10" y="698" width="403" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 19. SỬA ĐỔI, BỔ SUNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a527f1cc-9ce0-46c1-8108-b629d7f98224" x="10" y="529" width="571" height="49"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Để bảo đảm thực hiện các nghĩa vụ của Bên vay (bao gồm nhưng không giới hạn bởi nợ gốc, tiền lãi, lãi quá hạn, các chi phí và phí tổn khác phải thanh toán cho Bên cho vay), Bên vay theo đây đồng ý thế chấp Tài sản theo một hợp đồng thế chấp có hình thức và nội dung được Bên cho vay chấp thuận (“Hợp đồng Thế chấp”)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0330a435-2f2a-4d8e-a73a-8e9b47fb4a89" x="10" y="623" width="571" height="49"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hợp đồng Tín dụng có hiệu lực kể từ ngày ghi trên trang đầu tiên của Hợp đồng Tín dụng Cá nhân cho đến khi Bên Vay hoàn tất việc thực hiện tất cả các nghĩa vụ, bao gồm nhưng không giới hạn nghĩa vụ thanh toán Khoản Vay như quy định trong Hợp đồng Tín dụng và các Phụ lục đính kèm, nếu có.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="244b6445-6068-4f0f-a3f4-f8fb57918530" x="10" y="747" width="571" height="40"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3:  Thông tin cá nhân bao gồm những thông tin mà dựa vào đó có thể nhận biết hoặc định danh hay nhận dạng một con người cụ thể.
+
+4:  Thông tin cá nhân bao gồm những thông tin mà dựa vào đó có thể nhận biết hoặc định danh hay nhận dạng một con người cụ thể.
+]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8d1d067c-f73f-45bf-8415-6d3fca27529c" x="10" y="786" width="344" height="1"/>
+			</line>
+		</band>
+	</title>
+</jasperReport>

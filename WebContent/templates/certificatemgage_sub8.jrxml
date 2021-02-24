@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub8" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="927143ef-ea0e-4d9a-861a-d1fb753a8681">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="774" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="36e0e87f-8341-4e78-8052-a2d78ae50115" x="10" y="13" width="571" height="60"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trong vòng 03 (ba) ngày làm việc kể từ ngày được Bên Cho Vay yêu cầu, Bên Vay phải bồi hoàn cho Bên Cho Vay một khoản bồi thường thiệt hại  cho các chi phí hoặc tổn thất mà Bên Cho Vay phải gánh chịu do hậu quả của việc Bên Vay vi phạm bất cứ nghĩa vụ nào quy định tại Hợp đồng Tín dụng. Việc xác định thiệt hại theo quy định của pháp luật hiện hành.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2adf0c54-3529-4508-861c-597183f0b1d7" x="10" y="84" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 6. CÁC CAM ĐOAN VÀ BẢO ĐẢM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f953b06b-4f09-4974-a2d2-4ff19006c1c9" x="10" y="113" width="571" height="331"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6.1 Bên Vay cam đoan và bảo đảm với Bên Cho Vay rằng:
+                     (a) các thông tin được ghi trong Phiếu đề nghị vay, Hợp đồng Tín dụng và bất cứ thông tin nào khác mà Bên Vay được yêu cầu cung cấp cho Bên Cho Vay là đầy đủ, đúng và chính xác;
+
+                     (b) kể từ ngày nộp Phiếu đề nghị vay cho Bên Cho Vay, Bên Vay cam kết thông báo cho Bên Cho Vay ngay lập tức về bất cứ thay đổi bất lợi đáng kể nào mà có khả năng ảnh hưởng đến khả năng thanh toán khoản vay, tình trạng tài sản thế chấp hoặc tình trạng tài chính của Bên Vay;
+
+                     (c) Bên Vay có năng lực hành vi dân sự đầy đủ để ký kết Phiếu đề nghị vay, Hợp đồng Tín dụng và tất cả các văn bản, giấy tờ khác có liên quan; và
+
+                     (d) Bên Vay cam kết thông báo cho Bên Cho Vay ngay lập tức về bất cứ  vụ kiện tụng nào đang chờ xử lý hoặc có thể xảy ra tại bất cứ tòa án hoặc cơ quan hành chính mà có khả năng hoặc sẽ ảnh hưởng bất lợi và nghiêm trọng đến tài sản thế chấp hoặc đến việc hoàn trả Khoản Vay của Bên Vay.
+
+                     (e) Bên Vay cam kết rằng không có bất kỳ tranh chấp nào về Tài sản thế chấp, kể cả nhưng không giới hạn các tranh chấp liên quan đến quyền sở hữu/sử dụng Tài sản, chất lượng Tài sản sẽ không ảnh hưởng đến các điều khoản và điều kiện của Hợp đồng này;
+
+6.2 Bên Vay cam đoan và bảo đảm với Bên Cho Vay rằng kể từ ngày ký Phiếu đề nghị vay và Hợp đồng tín dụng cho đến ngày Bên Vay thực hiện đầy đủ tất cả các khoản phải thanh toán, mỗi cam đoan và bảo đảm quy định tại Điều 6.1 ở trên là đúng và chính xác trên mọi phương diện.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7f806c88-7995-4540-b9ee-282cb03a10d8" x="10" y="455" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 7. NGHĨA VỤ CỦA BÊN VAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5037e483-115e-4052-8699-70a9678441eb" x="10" y="485" width="571" height="289"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.1 Bên Vay có các nghĩa vụ như sau:
+Bên Vay cam kết với Bên Cho Vay như sau:
+(a) Bên Vay sử dụng Khoản Vay theo đúng mục đích được quy định tại Hợp đồng Tín dụng và không sử dụng cho bất kỳ mục đích nào khác; Bên Vay sẽ hoàn toàn chịu trách nhiệm pháp lý nếu Bên Vay sử dụng Khoản Vay không đúng mục đích đã cam kết.
+
+(b) Bên Vay thông báo ngay cho Bên Cho Vay bất cứ thay đổi hoặc chấm dứt nào về địa chỉ cư trú, số điện thoại, cơ quan, công việc kinh doanh hoặc nghề nghiệp của mình trong vòng 07 (bảy) ngày dương lịch kể từ ngày có những thay đổi hoặc chấm dứt đó;
+
+(c) Bên Vay gửi thông báo bằng email/văn bản cho Bên Cho Vay về bất cứ sự kiện quan trọng nào có thể ảnh hưởng đến khả năng hoàn trả Khoản Vay của Bên Vay hoặc bất cứ khoản tiền nào đến hạn phải trả cho Bên Cho Vay trong vòng 10 (mười) ngày lịch kể từ ngày sự kiện đó xảy ra;
+
+(d) Bên Vay cung cấp bản gốc của bất cứ/tất cả các bản sao các tài liệu đã nộp cho Bên Cho Vay nhằm mục đích đối chiếu và xác minh, ngay khi được Bên Cho Vay yêu cầu;
+
+(e) Bên Vay cam kết chấp hành sự kiểm tra, giám sát (nếu có) của Bên Cho Vay trong quá trình vay vốn, sử dụng vốn vay và trả nợ;
+]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

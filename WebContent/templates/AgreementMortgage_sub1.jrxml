@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AgreementMortgage_sub1" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.1000000000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="3"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="certificate" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="646" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="0" y="0" width="555" height="72"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="false" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+Độc lập – Tự do – Hạnh phúc
+--------oOo-------
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="0" y="72" width="555" height="25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HỢP ĐỒNG THẾ CHẤP QUYỀN SỬ DỤNG ĐẤT VÀ TÀI SẢN GẮN LIỀN VỚI ĐẤT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="185" y="103" width="33" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="218" y="103" width="337" height="25" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificate} == null ? "" : $P{certificate}.MORTGAGE_AGREEMENT_NO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="133" width="513" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hợp Đồng Thế Chấp Quyền Sử Dụng Đất, và Tài Sản Gắn Liền Với Đất (“Hợp đồng”)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="42" y="153" width="513" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["này được lập vào "+($P{certificate} == null ? "" : $P{certificate}.FINISH_DATE_MORTGAGE)+"bởi và giữa các bên dưới đây:"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="185" width="176" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(1)     BÊN THẾ CHẤP]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="212" width="430" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Họ và tên: " + ($P{certificate} == null ? "" : $P{certificate}.APPLICANT_NAME_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="272" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số Thẻ căn cước (nếu có):"+($P{certificate} == null ? "" : $P{certificate}.CITIZEN_ID_1)+" Ngày cấp: "  +($P{certificate} == null ? "" : $P{certificate}.VALID_CITIZEN_ID_DATE_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="232" width="430" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày tháng năm sinh: " + ($P{certificate} == null ? "" : $P{certificate}.DOB_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="252" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số Chứng minh Nhân dân/Hộ chiếu: " + ($P{certificate} == null ? "" : $P{certificate}.VALID_ID_NO_1) + "Ngày cấp: " +($P{certificate} == null ? "" : $P{certificate}.VALID_ID_DATE_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="292" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Địa chỉ: "+($P{certificate} == null ? "" : $P{certificate}.CURRENT_RESIDENCE_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="312" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số điện thoại: "+($P{certificate} == null ? "" : $P{certificate}.MOBILE_PHONE_1)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="356" width="430" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Họ và tên: " + ($P{certificate} == null ? "" : $P{certificate}.APPLICANT_NAME_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="416" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số Thẻ căn cước (nếu có):"+($P{certificate} == null ? "" : $P{certificate}.CITIZEN_ID_2)+" Ngày cấp: "  +($P{certificate} == null ? "" : $P{certificate}.VALID_CITIZEN_ID_DATE_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="376" width="430" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Ngày tháng năm sinh: " + ($P{certificate} == null ? "" : $P{certificate}.DOB_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="396" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số Chứng minh Nhân dân/Hộ chiếu: " + ($P{certificate} == null ? "" : $P{certificate}.VALID_ID_NO_2) + "Ngày cấp: " +($P{certificate} == null ? "" : $P{certificate}.VALID_ID_DATE_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="436" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Địa chỉ: "+($P{certificate} == null ? "" : $P{certificate}.CURRENT_RESIDENCE_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="456" width="483" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Số điện thoại: "+($P{certificate} == null ? "" : $P{certificate}.MOBILE_PHONE_2)]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="72" y="333" width="430" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["và"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="42" y="500" width="176" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(2)     BÊN NHẬN THẾ CHẤP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="537" width="483" height="27"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÔNG TY TNHH MỘT THÀNH VIÊN TÀI CHÍNH PRUDENTIAL VIỆT NAM
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="72" y="564" width="483" height="36"/>
+				<textElement verticalAlignment="Top" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Giấy phép thành lập và hoạt động:    số 10/GP-NHNN do Ngân hàng Nhà nước cấp
+                                                                 ngày 10/10/2006]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

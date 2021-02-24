@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 31, 2011 2:37:36 PM by Hibernate Tools 3.2.4.CR1 -->
+<hibernate-mapping>
+    <class name="com.pruvn.tools.common.hibernate.finnone.cas.NBFC_PRODUCT_M" table="NBFC_PRODUCT_M" schema="CAS">
+     <cache usage="nonstrict-read-write"/>
+        <id name="CODE" type="string">
+            <column name="CODE" length="8" />
+            <generator class="assigned" />
+        </id>
+        <property name="DESCRIPTION" type="string">
+            <column name="DESCRIPTION" length="35" />
+        </property>
+        <property name="GRACE_AMT" type="big_decimal">
+            <column name="GRACE_AMT" precision="18" scale="4" />
+        </property>
+        <property name="GRACE_DAYS" type="java.lang.Byte">
+            <column name="GRACE_DAYS" precision="2" scale="0" />
+        </property>
+        <property name="MC_STATUS" type="string">
+            <column name="MC_STATUS" length="1" />
+        </property>
+        <property name="MAKERID" type="string">
+            <column name="MAKERID" length="8" />
+        </property>
+        <property name="MAKERDATE" type="date">
+            <column name="MAKERDATE" length="7" />
+        </property>
+        <property name="AUTHID" type="string">
+            <column name="AUTHID" length="8" />
+        </property>
+        <property name="AUTHDATE" type="date">
+            <column name="AUTHDATE" length="7" />
+        </property>
+        <property name="DATELASTUPDT" type="date">
+            <column name="DATELASTUPDT" length="7" />
+        </property>
+        <property name="IIR" type="big_decimal">
+            <column name="IIR" precision="5" />
+        </property>
+        <property name="RETAIL_CORP" type="string">
+            <column name="RETAIL_CORP" length="1" />
+        </property>
+        <property name="LOANTYPE" type="string">
+            <column name="LOANTYPE" length="1" />
+        </property>
+        <property name="LOAN_NORMS" type="string">
+            <column name="LOAN_NORMS" length="1" />
+        </property>
+        <property name="COLLATERALS" type="string">
+            <column name="COLLATERALS" length="1" />
+        </property>
+        <property name="EXPOSURE_TRACK_CUST" type="string">
+            <column name="EXPOSURE_TRACK_CUST" length="1" />
+        </property>
+        <property name="EXPOSURE_TRACK_DSA" type="string">
+            <column name="EXPOSURE_TRACK_DSA" length="1" />
+        </property>
+        <property name="ASSET_BASED" type="string">
+            <column name="ASSET_BASED" length="1" not-null="true" />
+        </property>
+        <property name="GROUP_LEVEL" type="string">
+            <column name="GROUP_LEVEL" length="1" />
+        </property>
+        <property name="BRANCH_LEVEL" type="string">
+            <column name="BRANCH_LEVEL" length="1" />
+        </property>
+        <property name="EXPOSURE_LIMIT" type="big_decimal">
+            <column name="EXPOSURE_LIMIT" precision="18" scale="4" />
+        </property>
+        <property name="CURRENT_EXPOSURE" type="big_decimal">
+            <column name="CURRENT_EXPOSURE" precision="18" scale="4" />
+        </property>
+        <property name="PRODUCTTYPE" type="string">
+            <column name="PRODUCTTYPE" length="1" />
+        </property>
+        <property name="BALANCE_TRANSFER" type="string">
+            <column name="BALANCE_TRANSFER" length="1" />
+        </property>
+        <property name="CO_APPL_REQ" type="string">
+            <column name="CO_APPL_REQ" length="1" />
+        </property>
+        <property name="GUARANTOR_REQ" type="string">
+            <column name="GUARANTOR_REQ" length="1" />
+        </property>
+        <property name="SEC_DEPOSIT_REQ" type="string">
+            <column name="SEC_DEPOSIT_REQ" length="1" />
+        </property>
+        <property name="FORECLOSE_ALLOWED" type="string">
+            <column name="FORECLOSE_ALLOWED" length="1" />
+        </property>
+        <property name="FORECLOSE_LOCK_PERIOD" type="java.lang.Short">
+            <column name="FORECLOSE_LOCK_PERIOD" precision="3" scale="0" />
+        </property>
+        <property name="RELATIONSHIP_DISC" type="string">
+            <column name="RELATIONSHIP_DISC" length="1" />
+        </property>
+        <property name="PROFESSIONAL_DISC" type="string">
+            <column name="PROFESSIONAL_DISC" length="1" />
+        </property>
+        <property name="PREPAY_ALLOWED" type="string">
+            <column name="PREPAY_ALLOWED" length="1" />
+        </property>
+        <property name="PREPAY_PENALTY" type="string">
+            <column name="PREPAY_PENALTY" length="1" />
+        </property>
+        <property name="PREPAY_LOCK_PERIOD" type="java.lang.Short">
+            <column name="PREPAY_LOCK_PERIOD" precision="3" scale="0" />
+        </property>
+        <property name="FORECLOSURE_PENALTY" type="string">
+            <column name="FORECLOSURE_PENALTY" length="1" />
+        </property>
+        <property name="INSURANCE_FLAG" type="string">
+            <column name="INSURANCE_FLAG" length="1" />
+        </property>
+        <property name="RESET" type="java.lang.Character">
+            <column name="RESET" length="1" />
+        </property>
+        <property name="START_DT" type="date">
+            <column name="START_DT" length="7" />
+        </property>
+        <property name="END_DT" type="date">
+            <column name="END_DT" length="7" />
+        </property>
+        <property name="ENABLED_FLAG" type="string">
+            <column name="ENABLED_FLAG" length="1" />
+        </property>
+        <property name="PRODUCT_TYPE_CD" type="string">
+            <column name="PRODUCT_TYPE_CD" length="5" />
+        </property>
+        <property name="COLLATERAL_CD" type="string">
+            <column name="COLLATERAL_CD" length="5" />
+        </property>
+        <property name="NO_OF_EMI" type="java.lang.Short">
+            <column name="NO_OF_EMI" precision="3" scale="0" />
+        </property>
+        <property name="COMMON_COA" type="string">
+            <column name="COMMON_COA" length="8" />
+        </property>
+        <property name="NPM_LPP_PRODCAT_C" type="string">
+            <column name="NPM_LPP_PRODCAT_C" length="20" />
+        </property>
+        <property name="NPM_LWW_WORKFLOW_ID_C" type="string">
+            <column name="NPM_LWW_WORKFLOW_ID_C" length="20" />
+        </property>
+        <property name="NPM_LFFM_FORM_ID_C" type="string">
+            <column name="NPM_LFFM_FORM_ID_C" length="20" />
+        </property>
+        <property name="NPM_POLICY_FLAG_C" type="string">
+            <column name="NPM_POLICY_FLAG_C" length="1" />
+        </property>
+        <property name="ELIGIBILITY_FLAG_C" type="string">
+            <column name="ELIGIBILITY_FLAG_C" length="1" />
+        </property>
+        <property name="EQUIVALENT_CODE" type="string">
+            <column name="EQUIVALENT_CODE" length="100" />
+        </property>
+        <property name="RC_COLLECTION_FLAG" type="string">
+            <column name="RC_COLLECTION_FLAG" length="1" />
+        </property>
+        <property name="LOGO" type="string">
+            <column name="LOGO" length="3" />
+        </property>
+        <property name="LOB_CODE" type="string">
+            <column name="LOB_CODE" length="5" />
+        </property>
+        <set name="LOS_APP_APPLICATIONSs" inverse="true">
+            <key>
+                <column name="LAA_PRODUCT_ID_C" length="8" />
+            </key>
+            <one-to-many class="com.pruvn.tools.common.hibernate.finnone.cas.LOS_APP_APPLICATIONS" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pruvn.tools.common.hibernate.finnone.fa">
+  <class name="LOS_APP_APPLICATIONS_FA" table="CAS.LOS_APP_APPLICATIONS">
+   <cache usage="nonstrict-read-write"/>
+  		<id name="app_id_c" column="APP_ID_C"></id>
+  		<property name="laa_app_formno" column="LAA_APP_FORMNO"></property>
+  		<property name="laa_app_loandtl_term_n" column="LAA_APP_LOANDTL_TERM_N"></property>
+  		<many-to-one name="nbfc_product_m" column="LAA_PRODUCT_ID_C"></many-to-one>
+  		<many-to-one name="nbfc_customer_m" column="CUST_ID_N"></many-to-one>
+  </class>
+</hibernate-mapping>

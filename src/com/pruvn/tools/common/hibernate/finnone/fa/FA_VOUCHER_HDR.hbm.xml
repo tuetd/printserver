@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pruvn.tools.common.hibernate.finnone.fa">
+  <class name="FA_VOUCHER_HDR" table="FA.FA_VOUCHER_HDR">
+   <cache usage="nonstrict-read-write"/>
+  	<composite-id>
+		<key-property name="voucherid" column="VOUCHERID"></key-property>
+		<key-property name="branchid" column="BRANCHID"></key-property>			
+	</composite-id>  	
+  	<property name="narration" column="NARRATION"></property>
+  	<property name="moduleid" column="MODULEID"></property>
+  	<property name="status" column="STATUS"></property>
+  </class>
+</hibernate-mapping>

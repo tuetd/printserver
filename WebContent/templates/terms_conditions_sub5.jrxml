@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="terms_conditions_subreport5" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7b2f4758-31fe-4baf-ad9e-e645096824f6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="214"/>
+	<title>
+		<band height="842" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2a2480c2-46cb-458d-bdc3-7c2686088da5" x="14" y="56" width="278" height="451"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[11.1 Nhằm mục đích tìm hiểu, thẩm định, kiểm tra, báo cáo và phục vụ yêu cầu quản lý tùy từng thời điểm, Bên Vay theo đây đồng ý cho Bên Cho Vay:
+(i) thu thập thông tin về Bên Vay từ bất cứ người tham chiếu, người thân, hàng xóm, bạn bè/đồng nghiệp của Bên Vay;
+(ii) sử dụng và khi thấy cần thiết, có quyền tiết lộ bất kỳ thông tin nào liên quan đến Bên Vay và tình hình thanh toán của Bên Vay cho:
+- Người được Bên Vay ủy quyền để thanh toán hộ khoản vay thay cho Bên Vay và được Bên Cho Vay đồng ý; và/hoặc
+- Các đơn vị báo cáo tín dụng, các cơ quan/tổ chức thông tin tín dụng, cơ quan/tổ chức thu hộ/thu hồi nợ, cơ quan chức năng có thẩm quyền; và/hoặc
+- Bất cứ người nhận chuyển nhượng, người được chuyển giao hoặc cho công ty bảo hiểm có liên quan tới khoản vay, tư vấn giải quyết tranh chấp hoặc kiểm toán của Bên Cho Vay.
+11.2 Bên Vay xác nhận và đồng ý rằng trong trường hợp Bên Vay cung cấp thông tin liên hệ của bất cứ người tham chiếu nào cho Bên Cho Vay, Bên Vay cam kết đã nhận được sự đồng ý của người tham chiếu và chịu trách nhiệm bồi thường cho Bên Cho Vay các thiệt hại thực tế mà Bên Cho Vay phải gánh chịu nếu Bên Vay vi phạm cam kết này.
+11.3 Bên Cho Vay chịu trách nhiệm thu thập, lưu trữ, quản lý và sử dụng thông tin mà Bên Vay và các bên liên quan của Bên Vay đã cung cấp phù hợp quy định pháp luật.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05677a67-2e12-47f2-bb10-5f13851009be" x="14" y="507" width="278" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 12. THÔNG BÁO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6c002693-9b97-4b11-9cdb-d6cbb937af11" x="14" y="522" width="278" height="307"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[12.1 Bên Vay đồng ý với phương thức liên lạc của Bên Cho Vay qua thư tín, tin nhắn, fax, thư điện tử, điện thoại hoặc các phương tiện điện tử khác. Các thông báo hoặc trao đổi liên lạc từ phía Bên Cho Vay gửi đến Bên Vay bằng thư tín, tin nhắn, fax, email, hoặc các phương tiện điện tử khác dựa theo các thông tin liên lạc do Bên Vay cung cấp, sẽ được xem như Bên Vay đã nhận được sau năm (05) ngày làm việc kể từ ngày Bên Cho Vay gửi hợp lệ các thông báo đó. Bên Vay cũng đồng ý rằng phương thức liên lạc của Bên Vay bằng văn bản, thư điện tử, điện thoại như thông tin đã cung cấp trong Phiếu đề nghị vay tiêu dùng và Hợp đồng tín dụng là phương thức liên lạc chính thức.
+12.2 Bên Vay đồng ý rằng mọi chỉ thị, thông báo, chấp nhận hoặc trao đổi liên lạc phù hợp với quy định của
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1173e279-b59a-4566-9197-b7fe0381d2f3" x="306" y="56" width="278" height="246"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hợp đồng Tín dụng do Bên Vay gửi đến Bên Cho Vay sẽ ràng buộc Bên Vay.
+12.3 Các Bên thống nhất rằng địa chỉ để các Bên liên hệ và gửi các văn bản giao dịch liên quan đến Hợp đồng Tín dụng này là địa chỉ của các Bên được quy định tại hồ sơ vay. Sau khi Bên Cho Vay gửi văn bản thông báo, yêu cầu hoặc bất kỳ tài liệu nào khác cho Bên Vay theo địa chỉ ghi tại Phiếu đề nghị vay tiêu dùng/Hợp đồng tín dụng cá nhân, thì xem như Bên Vay đã nhận được văn bản đó, kể cả trong trường hợp Bên Vay không ký nhận.
+12.4 Trường hợp Bên Vay có sự thay đổi địa chỉ giao dịch quy định tại Phiếu đề nghị vay tiêu dùng /Hợp đồng tín dụng cá nhân thì phải thông báo ngay cho Bên Cho Vay bằng văn bản trong vòng 05 ngày làm việc kể từ ngày phát sinh việc thay đổi đó.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0ed1e274-40df-4f9b-ab55-08b376d37959" x="306" y="302" width="278" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 13. BẢO MẬT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5443512b-243d-4e6b-ae47-d7567348d012" x="306" y="317" width="278" height="76"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Cho Vay bảo đảm về sự an toàn, chính xác, đầy đủ và giữ bí mật nội dung của Hợp đồng và Thông tin của Bên Vay, trừ trường hợp Bên Vay đồng ý khác và/hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="62f08758-e3c6-4e6d-972a-1d6764398b22" x="306" y="393" width="278" height="31"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 14. CHUYỂN NHƯỢNG VÀ CHỈ ĐỊNH
+ĐẠI DIỆN CUNG CẤP DỊCH VỤ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="65424dc8-0daa-4019-b18d-6ec68add1f73" x="306" y="424" width="278" height="405"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[14.1 Bên Vay không được chuyển nhượng nghĩa vụ theo quy định tại Hợp đồng Tín dụng cho bên thứ ba mà không được Bên Cho Vay chấp thuận trước bằng văn bản. Bên Cho Vay có quyền chuyển nhượng toàn bộ hoặc bất cứ quyền và nghĩa vụ nào của mình theo Hợp đồng Tín dụng Cá nhân cho bất cứ bên thứ ba nào trong trường hợp mua bán nợ theo quy định của Ngân hàng Nhà nước và chỉ cần gửi văn bản thông báo trước 07 (bảy) ngày cho Bên Vay.
+14.2 Bên Vay đồng ý rằng Bên Cho Vay có thể, tùy từng thời điểm, chỉ định các cá nhân hoặc tổ chức thứ ba (“Đại diện Cung cấp Dịch vụ”) làm đại diện được ủy quyền của mình và chịu trách nhiệm theo quy định của pháp luật để thực thi tất cả các quyền và quyền lợi của Bên Cho Vay theo Hợp đồng tín dụng cá nhân thay mặt Bên Cho Vay và vì lợi ích của Bên Cho Vay để thu hồi hoặc nhận lại bất cứ khoản tiền nào mà Bên Vay còn nợ Bên Cho Vay hoặc xử lý tài sản bảo đảm (nếu có).Vì mục đích của điều này, Bên Cho Vay sẽ gửi thông báo cho Bên Vay về việc chỉ định Đại diện Cung cấp Dịch vụ của mình khi cần thiết. Bên Cho Vay cam kết chịu trách nhiệm về hành động của Đại diện Cung cấp Dịch vụ theo quy định của pháp luật.
+]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

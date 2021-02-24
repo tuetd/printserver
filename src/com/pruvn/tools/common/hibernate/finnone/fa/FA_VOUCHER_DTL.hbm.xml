@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pruvn.tools.common.hibernate.finnone.fa">
+  <class name="FA_VOUCHER_DTL" table="FA.FA_VOUCHER_DTL">
+   <cache usage="nonstrict-read-write"/>
+  	<composite-id>
+		<key-property name="voucherid" column="VOUCHERID"></key-property>
+		<key-property name="branchid" column="BRANCHID"></key-property>			
+		<key-property name="sequencenum" column="SEQUENCENUM"></key-property>
+	</composite-id>  	
+	<property name="dramt" column="DRAMT"></property>
+	<property name="cramt" column="CRAMT"></property>
+  	<property name="moduleid" column="MODULEID"></property>
+  	<property name="chequeid" column="CHEQUEID"></property>
+  	<property name="voucherdate" column="VOUCHERDATE"></property>
+  </class>
+</hibernate-mapping>

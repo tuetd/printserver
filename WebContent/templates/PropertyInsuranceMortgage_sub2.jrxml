@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PropertyInsuranceMortgage_sub2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="insurance" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="393" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="35" y="42" width="520" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Số điện thoại:  84-8-39 113 666]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="35" y="67" width="520" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Số Fax: 84-8-39 101 642]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="35" y="92" width="520" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Gửi cho : Ông/Bà __________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="35" y="117" width="520" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Chức vụ:  ________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="187" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cám ơn vì sự hợp tác của Quý Công ty.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="212" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trân trọng,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="237" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty TNHH Một Thành viên Tài chính Prudential Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="318" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[_________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="343" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tên: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="368" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Chức vụ: _______________________]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

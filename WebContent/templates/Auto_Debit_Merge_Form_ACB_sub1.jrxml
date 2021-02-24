@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Auto_Debit_Merge_Form_ACB_sub1" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7c84e81c-ebc8-48a9-a476-c934c0730120">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<parameter name="autodebitform" class="java.lang.Object"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ed1e4b27-ea73-45b0-a333-6414c4e8cfaa" x="33" y="12" width="534" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="21b1b0c6-a7e9-4bee-8e95-7731ca419b19" x="33" y="32" width="534" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Độc lập – Tự do – Hạnh phúc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3f31b79-5cff-4f56-9e0a-ed48b2d89b57" x="33" y="52" width="534" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[---oOo---]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="59d47342-9d19-4788-a28b-19ef4fa6d16d" x="33" y="72" width="534" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[..............,ngày......tháng........năm.............]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1a823f73-2822-47c8-9c22-cd83c4d304bf" x="33" y="92" width="534" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GIẤY ĐỀ NGHỊ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a7127be3-3201-4375-8252-2d619656e128" x="33" y="112" width="534" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số: (số thứ tự trong ngày/ngàythángnăm).(Mã chi nhánh)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cdcc0a44-d759-41a5-9667-4ec9acbd7a2e" x="33" y="132" width="233" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kính gửi: Ngân hàng TMCP Á Châu (ACB) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cfe0a9c8-ffb4-4498-bb4e-27a2e34947e0" x="266" y="132" width="90" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[– [SGD/CN/PGD] ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="14ff27b9-7ed4-4f94-9b8c-cc4e83f1fb7a" x="356" y="132" width="211" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PGD TRẦN KHẮC CHÂN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb35b978-52ba-4706-97d5-dea966f0f610" x="33" y="152" width="534" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[V/v tự động trích tài khoản để thanh toán : Thanh toán tiền vay hàng tháng ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="209b4ce4-7c96-414c-892f-dc5c740ed0ea" x="33" y="183" width="123" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cá nhân/Đơn vị đề nghị: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="87373c41-c3a0-4f62-af26-1f5201ea8027" x="156" y="183" width="141" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.CUSTOMER_NAME]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="def7b28b-94d7-476c-a11b-ade3e3a8896c" x="297" y="183" width="59" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Điện thoại:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9faa01ec-b2bf-4534-a2b5-c8465b3e52c7" x="356" y="183" width="135" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.MOBIPHONE_NUMBER]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e9a83c0b-9256-4bab-aa75-09b5c1c365d4" x="33" y="203" width="158" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CMND/Hộ chiếu/GCN ĐKKD: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="bc8332f3-e95a-48e1-8304-2db914bc1f0b" x="191" y="203" width="74" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.NATIONAL_ID]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="930dfd1e-9239-4aa7-90e1-a6d78c6ae0db" x="266" y="203" width="59" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="758de305-e64a-43b9-97d4-6088c351f97c" x="326" y="203" width="60" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.ISSUED_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8d804817-ff93-4804-8259-899c4ff5ac0e" x="386" y="203" width="46" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nơi cấp:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="f2f63837-2406-4c6c-963a-08dc71ef0fd9" x="432" y="203" width="152" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.ISSUED_PLACE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="07fcc307-9e16-43fc-8797-6426d84f86b5" x="33" y="223" width="190" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Đại diện theo pháp luật/Chủ tài khoản: ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1479a1a6-8a0c-4e04-b5f2-86ee0b99892c" x="223" y="223" width="344" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.CUSTOMER_NAME]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d3a85b2e-1406-48bf-8a73-6f3af1a39e9f" x="33" y="242" width="80" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Địa chỉ liên lạc:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="1e9c10b9-3eb0-4d80-bda6-434b72c39bb8" x="112" y="242" width="455" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.MAILING_ADDRESS]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="03e01263-f339-422b-b495-3b193dedf4d7" x="33" y="262" width="418" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Đề nghị ACB: Tự động trích tiền từ số dư khả dụng trên tài khoản của tôi/chúng tôi số]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="c182841e-78bc-4fdc-85e1-c3f0fc4a2151" x="451" y="262" width="116" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.ACCOUNT_NO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="15a0656e-c679-4bf8-85ac-2b115c3d9087" x="33" y="282" width="105" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ tại ACB - Chi nhánh ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="6af0bd69-d157-429d-b4f5-36b6120e6820" x="138" y="282" width="429" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.BRANCH_NAME]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cbcfa507-c09c-4cbc-be5b-449b5b9920d9" x="33" y="302" width="76" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[để thanh toán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7c1d9c30-6265-4156-a652-a58ec5cf9755" x="109" y="302" width="460" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[[ghi nội dung giao dịch cần thanh toán, ví dụ: điện, nước, điện thoại, phí bảo hiểm, chuyển tiền]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb9da85c-163c-49c1-8143-8b372464e2c7" x="32" y="322" width="159" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[cho người thân theo định kỳ…]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="69504321-22f3-4b6f-8469-d43b04127ea0" x="191" y="322" width="100" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[tiền vay hàng tháng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="77d86368-dc93-4b38-a338-8980da40b789" x="297" y="322" width="59" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[phát sinh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c842547d-0515-47fe-a933-1eb9275d2307" x="351" y="322" width="44" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[từ [ghi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2820e3e6-de36-4a3d-96c3-be706a851009" x="386" y="322" width="65" height="16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[số hợp đồng] ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="10825165-6e85-4884-b4ba-bbc4ecb05bb0" x="451" y="322" width="116" height="16"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.LOAN_NO]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cb18a991-1096-4aa3-9f5b-3331a2eebff5" x="33" y="338" width="373" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[giữa tôi, chúng tôi với  Công ty TNHH MTV Tài chính Prudential Việt Nam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3a19cd8e-53f2-43f0-bd09-5581de10430b" x="406" y="338" width="114" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[[tên đơn vị thụ hưởng],]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029253a4-eca0-4920-b28d-37ef23cf488e" x="32" y="358" width="93" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[chi tiết như sau:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9ee63b1c-af33-4cc5-9ed4-8966dba3db6f" x="33" y="378" width="135" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Tên tài khoản thụ hưởng: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="864ef915-c6b2-4f32-9456-c5192f6ad2a2" x="167" y="378" width="400" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty TNHH MTV Tài chính Prudential Việt Nam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8202e233-05f5-40c1-ab41-859a60b55c9b" x="32" y="398" width="135" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Số tài khoản/ CMND số:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a7c30075-bb9b-4ad9-ba36-7a742a12052c" x="166" y="398" width="57" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[92248559	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ce3169f5-bb82-4586-b745-4e092dd3269c" x="351" y="398" width="216" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tại Ngân hàng ACB PGD Trần Khắc Chân]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8a0d9a8-2477-4109-9232-467eb8e92cd1" x="33" y="418" width="92" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Số tiền chuyển :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ce4809b6-64ee-4dc8-bcb2-e238c5a816ad" x="64" y="439" width="146" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Cố định hàng tháng (bằng số): ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4388fa7c-24dd-4964-bbfb-f9713ebc3cb0" x="212" y="439" width="357" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8eed104f-fbf2-46d2-86fe-25682b577bc1" x="64" y="458" width="505" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bằng chữ :...................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9cbc035-7735-413f-90a1-68374d819983" x="64" y="485" width="505" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Theo thông báo của [đơn vị thụ hưởng] Công ty TNHH MTV Tài chính Prudential Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c50105b6-05e6-47e8-a545-3c40b39857ea" x="64" y="504" width="227" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Hạn mức tối đa cho một kỳ hóa đơn (nếu có):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="02dbd443-bccd-42e2-aa0d-b96102ebaec0" x="33" y="527" width="233" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Thời điểm thực hiện thanh toán/chuyển tiền:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d0941af1-09c7-4bf2-b285-d34a9d859f91" x="64" y="567" width="505" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Khi nhận được yêu cầu từ [đơn vị thụ hưởng] Công ty TNHH MTV Tài chính Prudential Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3c5fed58-3de0-4d7c-a7c5-009653bdee50" x="64" y="547" width="505" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày …….……hàng tháng;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c8c50673-4276-4101-84d1-bcc0724a8f37" x="33" y="597" width="233" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Việc trích tài khoản để thanh toán các khoản trên có hiệu lực:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0b7ddf02-598f-4009-9aab-17adc8838bde" x="64" y="636" width="48" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Từ ngày ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2622cd4-ad9d-41a4-b0bf-f74519f23fe6" x="64" y="617" width="505" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Từ ngày…………………đến ngày…………………………………]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0dc949c1-cce8-48da-b12c-99475808428a" x="241" y="636" width="326" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[cho đến khi có văn bản khác thay thế được ACB xác nhận.;]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ea306472-5b83-43e9-8c92-be222fbff630" x="112" y="636" width="129" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.FIRST_DUE_DATE]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5e30d79d-b664-445a-b42f-b9f40b40124f" x="32" y="667" width="233" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tôi/Chúng tôi đồng ý và cam kết:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e04b343b-2261-4681-88b3-a61d49dacd92" x="33" y="687" width="534" height="99"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   Hoàn toàn chịu trách nhiệm về nội dung đề nghị nêu trên;
+­   Nếu tại thời điểm trích, tài khoản của Tôi/Chúng tôi không có số dư hoặc có số dư nhỏ hơn số tiền cần trích (kể cả trường hợp tài khoản có đủ số tiền cần chuyển nhưng không đủ số dư để thanh toán các khoản phí theo quy định của ACB), ACB có quyền không trích tiền mà không cần phải thông báo với tôi/chúng tôi. Tôi/Chúng tôi sẽ hoàn toàn chịu trách nhiệm về các khoản phí, lãi và các thiệt hại (nếu có) phát sinh từ việc không chuyển được số tiền nêu trên và không khiếu nại ACB về sau.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a64bf7e-5bbd-468d-8fed-66753a1e24a5" x="45" y="445" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42eec10e-6ccc-4757-b991-75a36dee90f0" x="45" y="492" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3c00fd2b-1b58-4fd7-8d29-12e8c209166a" x="45" y="555" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="370802b1-f310-4741-8c5b-3a8762b34e4a" x="45" y="574" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d42d5c1e-b79d-4c79-a05d-2ba8aa314595" x="45" y="622" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dc5ffcad-72e7-44f9-b845-e085fbeeb68b" x="45" y="642" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="79e33df3-4c92-4fb8-9f68-89ce335e271e" x="291" y="504" width="276" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{autodebitform}.SECOND_EMI_AMOUNT + " đồng"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="feeschedule" language="groovy" pageWidth="595" pageHeight="700" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="574" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b08a4b80-e195-4f91-9700-add35deb8d2e" x="0" y="25" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BIỂU PHÍ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="65d64015-c050-470b-af4e-116cdccd9dd0" x="0" y="65" width="137" height="34"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐỀ MỤC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="65d64015-c050-470b-af4e-116cdccd9dd0" x="137" y="65" width="418" height="34"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIỄN GIẢI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="65d64015-c050-470b-af4e-116cdccd9dd0" x="137" y="99" width="418" height="103"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[- Phát hành thư xác nhận khoản vay: 110.000 đồng/thư
+- Cung cấp bảng chi tiết giao dịch thanh toán : 55.000 đồng/bản
+- Cung cấp bản sao Giấy chứng nhận bảo hiểm : 110.000 đồng/bản
+- Cung cấp bản sao Hợp đồng tín dụng : 110.000 đồng / bộ
+- Dịch vụ giao nhận tài liệu theo yêu cầu qua đường bưu điện tại địa chỉ đăng ký:  55.000 đồng/lần
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="65d64015-c050-470b-af4e-116cdccd9dd0" x="0" y="99" width="137" height="103"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Phí cung cấp dịch vụ
+liên quan đến hồ sơ
+tín  dụng  theo  yêu
+cầu của khách hàng
+(đã  bao  gồm  thuế)
+]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

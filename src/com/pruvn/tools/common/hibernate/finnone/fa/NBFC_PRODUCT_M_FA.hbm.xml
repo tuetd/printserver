@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pruvn.tools.common.hibernate.finnone.fa">
+  <class name="NBFC_PRODUCT_M_FA" table="CAS.NBFC_PRODUCT_M">
+   <cache usage="nonstrict-read-write"/>
+  	<id column="CODE" name="code"></id>
+  	<property name="description" column="DESCRIPTION"></property>
+  	<property name="npm_lpp_prodcat_c" column="NPM_LPP_PRODCAT_C"></property>
+  </class>
+</hibernate-mapping>

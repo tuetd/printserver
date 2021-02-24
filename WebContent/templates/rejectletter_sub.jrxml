@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="deviation" language="groovy" pageWidth="595" pageHeight="700" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="71"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="CUSTOMERNAME" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="APPLID" class="java.lang.String"/>
+	<parameter name="DAY" class="java.lang.String"/>
+	<parameter name="MONTH" class="java.lang.String"/>
+	<parameter name="YEAR" class="java.lang.String"/>
+	<parameter name="LAA_APP_FORMNO" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="ADDRESSID" class="java.lang.String"/>
+	<parameter name="ADDR1" class="java.lang.String"/>
+	<parameter name="ADDR2" class="java.lang.String"/>
+	<parameter name="STATEDESC" class="java.lang.String"/>
+	<parameter name="signform" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="574" splitType="Stretch">
+			<image>
+				<reportElement uuid="29808678-1b24-4084-a31f-023466409f4a" x="18" y="470" width="143" height="53"/>
+				<imageExpression><![CDATA[$P{signature}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="204" width="157" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Phiếu đề nghị vay số	:	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="331" width="524" height="42"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Dựa trên kết quả thẩm định, chúng tôi rất tiếc chưa thể thực hiện đề nghị cấp tín dụng của Quý khách vì điều kiện hiện nay của Quý khách chưa phù hợp với chính sách tín dụng hiện áp dụng của Công ty.]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="146" y="119" width="380" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" ngày " + $P{DAY} + " tháng " +$P{MONTH}+" năm "+ $P{YEAR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="435" width="143" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Trân trọng,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="184" width="157" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Trích yếu về việc	:	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="373" width="524" height="29"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Chúng tôi hy vọng sẽ có cơ hội được phục vụ Quý khách trong tương lai.]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="0abd6807-48a5-4e00-b9cf-d636e62d1cf6" x="18" y="256" width="537" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="155" width="537" height="29"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THƯ BÁO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="302" width="524" height="29"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Chúng tôi xin chân thành cảm ơn Quý khách đã tín nhiệm và chọn Prudential phục vụ về nhu cầu tín dụng.]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="18" y="0" width="316" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Kính gửi:  Quý khách  "+($P{CUSTOMERNAME}==null?"":$P{CUSTOMERNAME})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="74" y="40" width="260" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ADDR2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="119" width="128" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Thành phố Hồ Chí Minh,]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="74" y="60" width="260" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{STATEDESC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="175" y="224" width="380" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CUSTOMERNAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="270" width="157" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kính thưa Quý khách, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="74" y="20" width="260" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ADDR1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="74" y="80" width="170" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{APPLID} + " || " + $P{LAA_APP_FORMNO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3c0ee779-7191-4d44-aa41-780d67237919" x="175" y="204" width="380" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LAA_APP_FORMNO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="224" width="157" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Người đề nghị vay	:	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="175" y="184" width="380" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TỪ CHỐI ĐỀ NGHỊ VAY TÍN DỤNG]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="18" y="523" width="279" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signform}.fullname]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="18" y="543" width="279" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{signform}.title]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

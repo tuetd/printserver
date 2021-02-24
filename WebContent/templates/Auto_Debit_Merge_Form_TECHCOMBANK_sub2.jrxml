@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Auto_Debit_Merge_Form_TCB_sub2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="dc4f9658-e6e6-48c2-ae1e-31fa6796c201">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<title>
+		<band height="842" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ed13dc3a-3700-4771-acb6-411f1852d1c8" x="181" y="23" width="331" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÁC ĐIỀU KIỆN VÀ ĐIỀU KHOẢN SỬ DỤNG DỊCH VỤ THANH TOÁN TỰ ĐỘNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2a6bbe0f-b856-4ab8-9357-da01b3759e57" x="6" y="38" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 1:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e787cf54-eb71-4c3b-a0b4-1dee6628fa2d" x="42" y="38" width="543" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Giải thích thuật ngữ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c8e43948-5c2d-4417-b864-6dfc10335c50" x="6" y="50" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0088427-70f7-4681-ab8c-52e7a1603007" x="32" y="50" width="148" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Dịch vụ/Dịch vụ Thanh toán tự động:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="94839d1d-06f1-4d28-8660-fa64d73f59d7" x="180" y="50" width="330" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[việc ngân hàng tự động trích tiền từ tài khoản của khách hàng để thanh toán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8cf11e6-f01a-4e50-818d-3dc0a3042876" x="32" y="93" width="32" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[KH:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="06f37c3e-6c1c-43aa-8cd9-a77120a200bf" x="64" y="93" width="446" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[các cá nhân, tổ chức được NH cung cấp Dịch vụ thanh toán tự động.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d5905e29-1eab-4356-be52-d3b15eec9a05" x="6" y="105" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="43529cf2-6038-4ec2-b06a-6c441e12f56b" x="32" y="105" width="71" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Đơn vị nhận tiền:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5f27e2ea-fdc0-40cc-a92d-e9bacf1f9476" x="103" y="105" width="482" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[là cá nhân hoặc tổ chức nhận được khoản tiền thanh toán phí định kỳ của khách hàng thông qua Dịch vụ thanh toán tự động của Techcombank]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="985cc867-83ce-449b-af88-ce8b12d63697" x="32" y="117" width="53" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tài khoản:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0b4c749d-510b-4f04-b04e-a32fe4cde2c5" x="6" y="117" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f6e83477-bce3-4515-a422-82dbd8e70868" x="85" y="117" width="425" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[là tài khoản tiền gửi của khách hàng mở tại NH để thực hiện Dịch vụ và các giao dịch thanh toán  được phép khác.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="64ace21c-3cbd-40ac-b9b8-0c3c6323e90f" x="6" y="129" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="de0e0d3c-e1d5-48db-bcc2-a601608fd259" x="32" y="129" width="128" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ngày đăng ký sử dụng Dịch vụ:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5a5961fc-2bb3-47a6-a44c-3bf3476f0b90" x="3" y="141" width="112" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ toán tự động của khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="498b91c5-daa8-488c-bf61-2cc8351e81d2" x="160" y="129" width="425" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[: là ngày khách hàng làm thủ tục đăng ký sử dụng Dịch vụ tại NH, tức là ngày ghi trên Đơn đăng ký sử dụng Dịch vụ thanh]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7fab37ce-4205-483e-8911-50b18a3ea7f1" x="32" y="153" width="106" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Thời hạn sử dụng Dịch vụ: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="609dfd52-1a5b-4c89-978c-d5d8f1a48d20" x="6" y="153" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="70aa5741-5497-41f2-915f-e29447d3173f" x="6" y="165" width="579" height="20"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ thời hạn này, NH sẽ ngừng cung cấp Dịch vụ đối với yêu cầu thanh toán đó mà không cần thông báo với khách hàng. Thời hạn sử dụng Dịch vụ được tính từ ngày đăng ký sử dụng Dịch vụ của khách hàng và tối đa là 24 tháng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b91520ef-0ff4-49a8-93ff-6eb9b5fb7afe" x="138" y="153" width="447" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[là thời hạn do khách hàng đăng ký để NH thực hiện các giao dịch thanh toán tự động đối với mỗi yêu cầu thanh toán. Khi hết]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8b9979c4-d574-4339-bc88-0c3210271b90" x="42" y="185" width="543" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Quyền và trách nhiệm của khách hàng khi sử dụng Dịch vụ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="44781f4a-ae84-4e7e-9bf4-75186040b713" x="6" y="185" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 2:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="347e706d-b94e-4fd2-bff2-8dd7fae086e3" x="6" y="197" width="579" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1. Quyền của khách hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c5b44be2-0c3f-413c-8999-51bb96e02383" x="6" y="209" width="579" height="39"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Được NH thay mặt chi trả các khoản phí cho đơn vị nhận tiền vào ngày thanh toán định kỳ.
+-  Được sử dụng Dịch vụ trên tài khoản VND.
+-  Tra soát các giao dịch liên quan đến Dịch vụ và nhận sao kê giao dịch cho các khoản thanh toán tự động hàng kỳ.
+-  Được gia hạn sử dụng Dịch vụ.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3b64a4bc-4edd-4930-bf2f-f8484dda9bc6" x="6" y="62" width="579" height="19"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[một khoản tiền sử dụng dịch vụ nhất định theo yêu cầu của khách hàng tại văn bản đề nghị này.  Đơn đăng ký sử dụng Dịch vụ thanh toán tự động của khách hàng được coi là văn bản uỷ quyền của khách hàng cho ngân hàng tự động trích trả khoản tiền dịch vụ cho đơn vị nhận tiền, .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b7d8c071-04a4-4c42-87a1-3c99568f5f69" x="6" y="81" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b5836e37-7550-4ecd-b3ad-19c909eb3be2" x="32" y="81" width="32" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[NH:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="32328ebe-3d94-48a8-80a7-0cc190dd8e12" x="64" y="81" width="446" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[là Ngân hàng Kỹ Thương Việt Nam (Techcombank), thực hiện Dịch vụ thanh toán tự động theo yêu cầu của khách hàng.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="348a5e43-7749-47a4-96ae-da59e24614f7" x="6" y="93" width="26" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="132e3706-6b09-4da3-bf35-149af528fd88" x="6" y="248" width="579" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2. Trách nhiệm của khách hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="769ccbe5-b826-4123-8394-f223db7e0eba" x="6" y="260" width="546" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Cung cấp đầy đủ và chính xác thông tin của đơn vị nhận tiền
+-  Hoàn toàn chịu trách nhiệm về tính chính xác của các thông tin đã cung cấp
+-  Đảm bảo số dư  có thể sử dụng trên tài khoản tiền gửi bằng hoặc lớn hơn số tiền cần thanh toán cho đơn vị nhận tiền cộng các khoản phí và thuế liên quan
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="293a394e-97c5-4169-b919-82823fe637f3" x="6" y="290" width="179" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trước 01 ngày so với ngày thanh toán định kỳ.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3c1a4737-8719-40da-b99b-e13f12a793f4" x="7" y="302" width="464" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Trong trường hợp muốn chấm dứt việc thanh toán tự động với đơn vị nhận tiền, khách hàng phải thông báo bằng văn bản cho NH ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ae332e09-7321-4585-854c-2d22e2847226" x="7" y="314" width="173" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[kế tiếp gần nhất ít nhất 03 ngày làm việc .]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6e212255-eb69-4df0-b5b0-50126c3c5790" x="192" y="336" width="269" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ít nhất 03 ngày làm việc trước khi hết thời hạn sử dụng Dịch vụ. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="729203db-126a-4f11-a679-134effa87b4c" x="8" y="326" width="532" height="11"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Trong trường hợp khách hàng muốn gia hạn thời hạn sử dụng Dịch vụ sau khi hết hạn sử dụng Dịch vụ, khách hàng phải có Đơn đề nghị gia hạn sử dụng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0ad26ab0-9a6a-464c-b076-33d937226b47" x="8" y="337" width="184" height="11"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[dụng Dịch vụ thanh toán tự động đã đăng ký với NH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dbec51df-084f-4d9d-bba7-d35c611231ac" x="8" y="348" width="237" height="11"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Thực hiện việc tra soát khiếu nại về giao dịch thanh toán tự động ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f8f67c43-96df-41b6-856a-bceec1cb0fb0" x="245" y="347" width="269" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trong thời hạn không quá 30 ngày kể từ ngày NH thực hiện giao dịch ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="555ef4b1-201a-49c5-8492-5152509ae697" x="8" y="359" width="195" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[thanh toán tự động phát sinh tra soát khiếu nại.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="126bc498-8401-469e-82a5-5bc43edd6ca6" x="8" y="371" width="502" height="37"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Chịu trách nhiệm về những sai sót hay hành vi lợi dụng, lừa đảo khi sử dụng Dịch vụ do lỗi của mình.
+-  Chịu trách nhiệm giải quyết các tranh chấp với đơn vị nhận tiền về các vấn đề liên quan đến hợp đồng Dịch vụ giữa khách hàng với đơn vị nhận tiền và các tranh chấp liên quan đến việc cung cấp thông tin không chính xác của Đơn vị nhận tiền cho Ngân hàng.
+-  Uỷ quyền cho Techcombank thực hiện các lệnh thanh toán tự động đã đăng ký và chịu trách nhiệm thực hiện đúng các nội dung đã uỷ quyền.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="38f5fd74-0312-4738-bca0-42d1d34a201a" x="7" y="408" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 3:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fbd41f6d-75cf-4380-a4a7-7644442eab5c" x="42" y="408" width="468" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Quyền và trách nhiệm của NH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9dc6ff5e-f8b6-45a8-be26-55057261d9a4" x="8" y="420" width="504" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[1. Quyền của NH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6e2d9809-db0d-4b86-a2aa-ac16eaf46e04" x="8" y="432" width="564" height="76"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Tự động ghi Nợ tài khoản của khách hàng để thanh toán cho đơn vị nhận tiền theo yêu cầu của khách hàng và thu các khoản phí liên quan đến việc sử dụng Dịch vụ.
+-  Giữ bí mật thông tin tài khoản của khách hàng và các giao dịch liên quan đến tài khoản theo quy định của pháp luật và chỉ cung cấp cho các cơ quan có thẩm quyền thông tin về khách hàng, đơn vị nhận tiền, tài khoản và các giao dịch trên tài khoản theo đúng quy định của pháp luật.
+-  Chấm dứt việc sử dụng Dịch vụ của khách hàng trong các trường hợp quy định tại Điều 5 của văn bản này.
+-  Trong trường hợp vào ngày thanh toán, tài khoản của khách hàng không có đủ số dư cần thiết để thanh toán cho đơn vị nhận tiền và chi trả các khoản phí, NH sẽ không thực hiện việc thanh toán tự động trong kỳ đó và không cần thông báo với khách hàng, đồng thời NH được miễn trách đối với các tổn thất xảy ra cho khách hàng phát sinh từ việc không thực hiện thanh toán đúng hạn với đơn vị nhận tiền. NH sẽ tiếp tục thực hiện Dịch vụ vào kỳ tiếp theo khi tài khoản của khách hàng có đủ số dư cần thiết.
+-  Được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin bị trục trặc ngoài khả năng kiểm soát của NH.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d26b5c40-4adc-4e67-a914-b7fc4bd61398" x="471" y="302" width="124" height="12"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trước ngày thanh toán định kỳ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="16591e31-4fb2-4131-8985-ad9047f4ac4b" x="7" y="508" width="579" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[2. Trách nhiệm của NH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9868b62e-ec80-4f43-a8bb-b0dd330126c4" x="8" y="520" width="564" height="39"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Thực hiện Dịch vụ vào cuối ngày thanh toán định kỳ theo đúng đăng ký của khách hàng và quy định của pháp luật.
+-  Bảo mật các thông tin liên quan đến khách hàng, tài khoản, giao dịch trên tài khoản theo đúng quy định của pháp luật.
+-  Chịu trách nhiệm ngừng Dịch vụ khi nhận được yêu cầu bằng văn bản của khách hàng theo đúng quy định tại Điều 5 của văn bản này.
+-  Chịu trách nhiệm giải quyết các yêu cầu tra soát và khiếu nại của khách hàng liên quan đến Dịch vụ.
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0ef8878c-e50c-423c-9359-b61439f486ba" x="43" y="559" width="468" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Gia hạn sử dụng Dịch vụ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a23573e1-def1-4ebb-b9c8-52bd08b1cf34" x="8" y="559" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 4:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="54803c0c-85b2-4108-ad65-23691823b494" x="8" y="571" width="518" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Khách hàng có thể gia hạn thời hạn sử dụng Dịch vụ bằng cách đăng ký vào Đề nghị gia hạn sử dụng Dịch vụ thanh toán tự động theo mẫu của NH
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="69caae6f-5765-42df-abca-61290865cf9b" x="9" y="583" width="577" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trước khi hết thời hạn theo đăng ký cũ ít nhất 03 ngày làm việc. Thời gian gia hạn tối đa bằng thời hạn sử dụng Dịch vụ đăng ký ban đầu.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="605461c3-b85f-4ad9-a8a4-4c5ec4d3ecd2" x="8" y="595" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 5:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b3e6b6fe-9c46-4755-9449-a04c74663bb2" x="44" y="595" width="468" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Chấm dứt việc sử dụng Dịch vụ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bccc6827-12a4-4c31-b1e4-be02af4b16cd" x="9" y="607" width="518" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Việc sử dụng Dịch vụ châm dứt và Ngân hàng sẽ ngừng cung cấp dịch vụ  khi:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="03b672da-a213-4a80-8b5a-3aa13b68923c" x="9" y="619" width="577" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Khách hàng đề nghị chấm dứt việc sử dụng Dịch vụ. Trong trường hợp muốn chấm dứt việc sử dụng dịch vụ trước hạn, khách hàng phải thông báo bằng văn bản ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb13bf7c-087e-4a31-91fb-e17059f2b072" x="9" y="631" width="106" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[bản  (theo mẫu của NH) cho NH ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4eb1b194-d9ac-4a0f-9c49-6850b2a10b65" x="127" y="631" width="290" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[trước ngày thanh toán định kỳ kế tiếp gần nhất tối thiểu 03 ngày làm việc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9671a5a6-e10c-40ea-9139-a4c80217b387" x="417" y="631" width="168" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[. NH sẽ không chịu trách nhiệm về việc đã trích ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a865332e-6cb7-4638-9c6d-125619522844" x="9" y="643" width="563" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[tiền trong tài khoản của khách hàng để thanh toán cho đơn vị nhận tiền trong trường hợp khách hàng không thực hiện đúng thời hạn thông báo chấm dứt việc sử dụng Dịch vụ
+-  Hết thời hạn sử dụng Dịch vụ và khách hàng không đăng ký gia hạn sử dụng Dịch vụ.
+-  Khách hàng vi phạm “Các điều kiện và điều khoản sử dụng Dịch vụ thanh toán tự động”.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d0be1347-2390-4e7f-bca9-91e4ad651dd7" x="45" y="672" width="468" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Sửa đổi nội dung điều khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="424cf492-29e6-41fc-8460-0a45258122d2" x="9" y="672" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 6:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="432e58c3-3580-4ec5-b6a5-f44d2694505a" x="9" y="684" width="564" height="39"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Trong trường hợp cần thiết, NH được phép sửa đổi nội dung “Các điều kiện và điều khoản sử dụng Dịch vụ thanh toán tự động” phù hợp với quy định của pháp luật và phải thông báo bằng văn bản cho khách hàng hoặc trên các phương tiện thông tin đại chúng hoặc trên trang web của Techcombank hoặc tại quầy giao dịch của Techcombank.
+-  Việc khách hàng tiếp tục sử dụng Dịch vụ sau khi NH đã thông báo sửa đổi nội dung “Các điều kiện và điều khoản sử dụng Dịch vụ thanh toán tự động” có nghĩa là khách hàng chấp nhận hoàn toàn các sửa đổi đó.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2e81d144-c2ae-4d94-8bdb-c8f8e25b2708" x="45" y="723" width="468" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Điều khoản thi hành]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46ebdd54-a652-497e-ac09-49f24cf5be58" x="9" y="723" width="36" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Điều 7:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1807d07e-2e93-465f-a640-4d527837abde" x="9" y="735" width="577" height="13"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-  Khách hàng xác nhận đã đọc, hiểu rõ và đồng ý với các điều kiện và điều khoản trên đây, cam kết thực hiện đúng các quy định này cũng như pháp luật Việt Nam hiện hành.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb93f3cb-e001-4024-bf05-2b578b057bbe" x="9" y="748" width="151" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Biểu phí Dịch vụ thanh toán tự động:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cea224e9-c40d-42a1-8e5f-b4dd463e54ad" x="160" y="747" width="204" height="13"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[quy định của Techcombank.]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="dbc03ba5-f1e5-4357-b8dc-669d06016475" x="9" y="760" width="586" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="967aa3a3-8ef0-479c-8be4-50216ceffea6" x="9" y="761" width="586" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PHẦN DÀNH CHO NGÂN HÀNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d442666a-1200-4b68-954e-1c37174375b1" x="9" y="776" width="586" height="12"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Techcombank chấp nhận cung cấp Dịch vụ thanh toán tự động theo đúng yêu cầu của khách hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c4ea9080-36cb-4a6d-98a4-6ac0b9bc1193" x="9" y="798" width="94" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Giao dịch viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7dadc742-b362-4255-b25a-ea50855f7245" x="491" y="798" width="94" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Giám đốc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3ba5b6a9-7c04-4be0-a8b8-491fc9bf2067" x="241" y="798" width="94" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="8" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Kiểm soát]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="f66614cd-f755-4031-9542-c4827dba55fe" x="9" y="0" width="181" height="23"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>

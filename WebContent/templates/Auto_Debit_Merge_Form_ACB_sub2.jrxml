@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Auto_Debit_Merge_Form_ACB_sub2" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ed1e1d55-4b4d-4ef8-8af3-1dad92ebbd2b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="44b39889-450d-49bf-9047-bc17d5764c49" x="31" y="15" width="534" height="80"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[­   ACB được quyền tự động trích tiền từ tài khoản của Tôi/Chúng tôi để thanh toán cho các khoản phí chuyển tiền và phí liên quan (nếu có) theo Biểu phí hiện hành của ACB; các khoản phí này sẽ không được hoàn trả trong mọi trường hợp.
+­   Chịu trách nhiệm về mọi tranh chấp, thiệt hại (nếu có) phát sinh đối với bên thụ hưởng hoặc bất kỳ bên thứ 3 nào khác, không liên quan đến ACB.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1ea13a5a-017d-495c-b151-03aa0f42d990" x="31" y="95" width="60" height="14"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trân trọng,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6a7d1015-63cb-451b-a269-c6eafaf69b41" x="426" y="121" width="139" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Người đề nghị]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c73ee885-4474-418e-baa5-7e19a57a7329" x="426" y="135" width="139" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Ký và ghi rõ họ tên)]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="25290a51-4c32-4bc5-8f23-09dce6b8d36e" x="31" y="213" width="534" height="2"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="ce35bcb9-e901-4b7e-8513-16bc7e464ea9" x="31" y="228" width="534" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[XÁC NHẬN CỦA NGÂN HÀNG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="87f79dbb-b4d7-4113-abee-61d317ba1878" x="70" y="307" width="495" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thời gian áp dụng: từ ngày ……/……/…….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="244b618d-5f68-44d2-b5ac-a498b9bb09f1" x="70" y="287" width="495" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Đồng ý thực hiện theo đề nghị của chủ tài khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="be4f4e39-a717-414f-a979-ab7fa0e2d037" x="31" y="267" width="243" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngân hàng TMCP Á Châu – [/CN/PGD]……………………………:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e5ef143f-0bf4-441d-bf9a-fb252e89fdda" x="70" y="361" width="495" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Lý do: …………………………………………………………….]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1c8e2770-4587-4ad8-a177-0252c97ae04d" x="70" y="342" width="495" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Không đồng ý thực hiện theo đề nghị của chủ tài khoản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="db1ad0db-f07b-47cc-a627-1e20bfef5d9e" x="70" y="413" width="495" height="20"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[……………………, ngày …….thàng …… năm 20…..]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d98cb209-3272-45e2-945b-c15cb8e9ba77" x="70" y="432" width="139" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nhân viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9f15ba3-53eb-45c5-89a2-77a9f712131c" x="426" y="432" width="139" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kiểm soát viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="670c9e33-b4d6-41f0-80b5-5d920519719f" x="31" y="732" width="534" height="54"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Trong trường hợp có bên nước ngoài tham gia, các bên có thể thỏa thuận sử dụng tiếng nước ngoài thông dụng kèm theo bản tiếng Việt. Trong trường hợp có mâu thuẫn về nội dung giữa bản tiếng Việt và bản tiếng nước ngoài thì bản tiếng Việt có giá trị sử dụng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="eabeb679-025a-44d6-b401-ef4f194b571d" x="52" y="295" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9523e8a5-6514-46a3-8259-69df258e6847" x="52" y="350" width="8" height="8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

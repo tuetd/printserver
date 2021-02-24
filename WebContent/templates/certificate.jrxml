@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificate" language="groovy" pageWidth="595" pageHeight="900" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="certificate" class="java.lang.Object"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA["C:\\DATA D\\NGUYENTHACH\\PROJECTJAVA\\PrintserverCore\\WebContent\\templates\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="signform" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="189">
+			<subreport>
+				<reportElement uuid="03e1f85a-3b39-4186-9559-afd755f6f857" x="0" y="158" width="595" height="31"/>
+				<subreportParameter name="certificate">
+					<subreportParameterExpression><![CDATA[$P{certificate}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificate_sub5.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="891bc58d-7b4a-4be3-a7fc-7704eb218e7a" x="0" y="107" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="03e1f85a-3b39-4186-9559-afd755f6f857" x="0" y="118" width="595" height="39"/>
+				<subreportParameter name="certificate">
+					<subreportParameterExpression><![CDATA[$P{certificate}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificate_sub4.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="891bc58d-7b4a-4be3-a7fc-7704eb218e7a" x="0" y="157" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="03e1f85a-3b39-4186-9559-afd755f6f857" x="0" y="75" width="595" height="32"/>
+				<subreportParameter name="certificate">
+					<subreportParameterExpression><![CDATA[$P{certificate}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{certificate}.listpaymet)]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificate_sub3.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="891bc58d-7b4a-4be3-a7fc-7704eb218e7a" x="0" y="74" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="514375a5-6b81-4dab-b6f2-8980855e03e3" x="0" y="39" width="595" height="35"/>
+				<subreportParameter name="certificate">
+					<subreportParameterExpression><![CDATA[$P{certificate}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="signform">
+					<subreportParameterExpression><![CDATA[$P{signform}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="signature">
+					<subreportParameterExpression><![CDATA[$P{signature}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificate_sub2.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="225e8818-ba68-4d96-9bad-2d16bf277828" x="0" y="38" width="595" height="1"/>
+			</break>
+			<subreport>
+				<reportElement uuid="70a79beb-559c-49b1-b343-04212d95b840" x="0" y="0" width="595" height="39"/>
+				<subreportParameter name="certificate">
+					<subreportParameterExpression><![CDATA[$P{certificate}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="signform">
+					<subreportParameterExpression><![CDATA[$P{signform}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "certificate_sub1.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement uuid="ddd4799f-d661-4d3c-945a-d14a0fcb3962" x="0" y="117" width="595" height="1"/>
+			</break>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="15" splitType="Stretch">
+			<textField>
+				<reportElement uuid="73454993-aee6-45cb-b550-9588678f4912" x="431" y="0" width="117" height="15"/>
+				<textElement textAlignment="Right">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+"/"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="55057f22-ea0a-4405-9488-e1995d2e640f" x="548" y="0" width="14" height="15"/>
+				<textElement textAlignment="Left">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="73454993-aee6-45cb-b550-9588678f4912" x="12" y="0" width="419" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{certificate}.RO_NAME==null?"":$P{certificate}.RO_NAME)+"-"+
+($P{certificate}.LOANNO==null?"":$P{certificate}.LOANNO)+"-"+
+($P{certificate}.APP_ID_C==null?"":$P{certificate}.APP_ID_C)+"-"+
+($P{certificate}.PRODUCT==null?"":$P{certificate}.PRODUCT)+"-"+
+($P{certificate}.PRINTDATE==null?"":$P{certificate}.PRINTDATE)]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

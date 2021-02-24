@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub6" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5778e590-b527-4049-a398-8cbf23979ca7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="192"/>
+	<parameter name="certificatemgage" class="java.lang.Object"/>
+	<title>
+		<band height="809" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="dcd6420b-885e-4c9f-a1d0-c499ca652096" x="10" y="13" width="571" height="293"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b) Trong trường hợp Bên Cho Vay nhận được một khoản tiền do Bên Vay hoặc Bên thứ ba chuyển khoản/nộp tiền mặt vào tài khoản của Bên Cho Vay để thanh toán khoản vay của Bên Vay theo Hợp đồng Tín dụng mà: (i) số tiền này lớn hơn Khoản Thanh Toán Hàng Tháng và (ii) Bên Vay và/hoặc Bên thứ ba nộp/chuyển tiền không có bất cứ yêu cầu Tất Toán Khoản Vay Trước Hạn hoặc yêu cầu khác bằng văn bản hợp lệ gửi đến Bên Cho Vay vào trước ngày thực hiện giao dịch chuyển/nộp tiền vào tài khoản của Bên Cho Vay thì:
+
+                          (i) Bên Vay theo đây đồng ý để Bên Cho Vay khấu trừ số tiền chênh lệch so với Khoản Thanh Toán Hàng Tháng vào các khoản nợ quá hạn (nếu có) và/hoặc các kỳ thanh toán tiếp theo (nếu có) và/hoặc các khoản tiền phải trả khác theo Bộ Hợp đồng Tín dụng này hoặc theo các văn bản khác cho đến khi số tiền chênh lệch này được khấu trừ hết; và
+
+                          (ii) Bên Vay cam kết thanh toán đầy đủ các khoản phải trả theo Bộ Hợp đồng Tín dụng này cho Bên Cho Vay trong trường hợp số tiền chênh lệch không đủ để thanh toán cho các khoản nợ quá hạn (nếu có) và các Khoản Thanh Toán Hàng Tháng tiếp theo; và
+
+                          (iii) Bên Vay xác nhận và đồng ý rằng Bên Vay sẽ chịu trách nhiệm bồi thường cho Bên Cho Vay tất cả những chi phí và/hoặc thiệt hại phát sinh trực tiếp hoặc gián tiếp từ bất kỳ khiếu nại nào có liên quan đến việc khấu trừ theo Mục (i) Điểm b Điều này (nếu có).
+
+4.2 Tất Toán Từng Phần Khoản Vay Trước Hạn và  Tất Toán Toàn Bộ Khoản Vay Trước Hạn
+
+(a) Bên Vay chỉ được phép thanh toán trước hạn từng phần hoặc toàn bộ nợ gốc còn lại của Khoản Vay ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0ca72891-9de9-4f43-8455-b60bce7dca84" x="10" y="306" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(“Tất Toán Từng Phần Khoản Vay Trước Hạn và Tất Toán Toàn Bộ Khoản Vay Trước Hạn”) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="20ff1132-62ea-491d-a3a4-d028c438368f" x="10" y="324" width="571" height="289"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[khi đáp ứng đầy đủ các điều kiện như sau:
+
+(i)   Bên Vay và/hoặc Người đề nghị  có yêu cầu Tất Toán Từng Phần Khoản Vay Trước Hạn hoặc Tất Toán Toàn Bộ Khoản Vay Trước Hạn bằng văn bản hợp lệ theo mẫu của Bên Cho Vay cung cấp, và
+
+(ii)  Bên Vay và/hoặc Người đề nghị gửi yêu cầu Tất Toán Từng Phần Khoản Vay Trước Hạn hoặc Tất Toán Toàn Bộ Khoản Vay Trước Hạn theo mẫu bằng văn bản đến Bên Cho Vay trước ngày Bên Vay và/hoặc Người đề nghị thực hiện bất kỳ giao dịch nộp tiền nào để Tất Toán Từng Phần Khoản Vay Trước Hạn hoặc Tất Toán Toàn Bộ Khoản Vay Trước Hạn.
+
+(iii) Bên Vay có thể tất toán Từng Phần Khoản Vay Trước Hạn nhưng không vượt quá 03 lần/năm và tổng số tiền của các lần Tất Toán Từng Phần Trước Hạn trong 01 năm không được vượt quá  15% của Khoản Vay. Bên Vay sẽ không phải chịu Phí Tất Toán Khoản Vay Trước Hạn nếu tuân thủ quy định  này.
+
+(b) Trong suốt sáu (06) tháng đầu tiên kể từ Ngày Giải ngân, Bên Vay không được phép Tất Toán Toàn Bộ Khoản Vay Trước Hạn. Việc Tất Toán Toàn Bộ Khoản Vay Trước Hạn chỉ được công nhận là hoàn thành khi và chỉ khi Bên Vay thanh toán đầy đủ cho Bên Cho Vay: (i) toàn bộ nợ gốc còn lại của Khoản Vay; (ii) tiền lãi tính trên số ngày vay thực tế trong tháng phát sinh việc Tất Toán Khoản Vay Trước Hạn;  (iii) các khoản tiền Phạt chậm trả nợ (nếu có) và; (iv) một khoản Phí Tất Toán Khoản Vay ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fcdb6ecc-efd1-4153-807f-84609eddebaf" x="10" y="613" width="142" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Trước Hạn được tính bằng ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="ab5eb243-7002-49d0-86ed-afb8b31beb17" x="152" y="613" width="112" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{certificatemgage}.PENALTY_RATE_1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="01cbbc83-ff6a-4d5a-919d-5a773eec4c37" x="263" y="612" width="318" height="19"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[của: (1) tổng dư nợ còn lại tính đến thời điểm tất toán và ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5b98b3d4-2832-494a-b8bc-fd12a4875676" x="10" y="630" width="571" height="18"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(2) tổng số tiền mà Bên Vay đã Tất Toán Từng Phần Trước Hạn trong năm (nếu có).Tổng cộng số tiền ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8f55eb65-a477-416e-a8a1-99822542e11f" x="10" y="784" width="571" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Người đề nghị: là người được ủy quyền hợp lệ của Bên Vay hoặc là người có quan hệ huyết thống với Bên Vay (cha, mẹ, vơ, chồng, con, anh chị em ruột)]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e25b0f9f-fde7-4b36-97e7-18efdffc8b4e" x="10" y="783" width="201" height="1"/>
+			</line>
+		</band>
+	</title>
+</jasperReport>

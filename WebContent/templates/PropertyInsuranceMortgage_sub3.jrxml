@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PropertyInsuranceMortgage_sub3" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="191"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="insurance" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="field" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="701" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="0" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PHỤ LỤC II ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="25" width="555" height="25"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[XÁC NHẬN CỦA CÔNG TY BẢO HIỂM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="60" width="520" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ngày: ______________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="85" width="83" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kính gửi: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="168" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Thưa Quý công ty,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="28" y="246" width="527" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.   Bằng văn bản này, chúng tôi xác nhận rằng chúng tôi chưa nhận được thông báo nào về ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="83" y="85" width="472" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Công ty TNHH Một Thành viên Tài chính Prudential Việt Nam (“Ngân hàng”)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="83" y="110" width="472" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tầng 23, Trung tâm Thương mại Sài Gòn, 37 Tôn Đức Thắng, Quận 1, Thành phố Hồ Chí Minh]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="df00de28-62c7-4304-8b26-d166774259af" mode="Transparent" x="0" y="147" width="555" height="21" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Đồng kính gửi: "+
+($P{insurance}!=null?$P{insurance}.APPLICANT_NAME_1:"")
++" <b>(“Bên Thế chấp”)</b>"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="df00de28-62c7-4304-8b26-d166774259af" mode="Transparent" x="0" y="193" width="555" height="21" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<b>Về việc: Hợp đồng Bảo hiểm số </b>"+
+($P{insurance}!=null?$P{insurance}.INSURANCE_POLICY_NO:"") +
+"<b> ngày </b>"+
+($P{insurance}!=null?$P{insurance}.INSURANCE_POLICY_DATE:"") +
+" (“<b>Hợp đồng Bảo hiểm</b>”)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="df00de28-62c7-4304-8b26-d166774259af" mode="Transparent" x="0" y="214" width="555" height="21" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Chúng tôi xác nhận đã nhận được một thông báo về việc thế chấp Hợp đồng Bảo hiểm  ngày [] (“<b>Thông báo Thế chấp</b>”)."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="44" y="271" width="511" height="30"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[bất cứ sự chuyển nhượng hay việc tạo lập bất cứ hình thức bảo đảm nào đối với các tài sản theo Hợp đồng Bảo hiểm.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="28" y="315" width="527" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[2.   Chúng tôi theo đây đồng ý không hủy ngang rằng:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="44" y="340" width="511" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(a)        chúng tôi chấp thuận và tuân thủ theo các điều khoản của Thông báo Thế chấp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="44" y="375" width="511" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(b)      chúng tôi đồng ý thanh toán tiền bồi thường bảo hiểm theo Hợp đồng Bảo hiểm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="75" y="400" width="480" height="33"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[vào tài khoản dưới đây của Bên Nhận Thế chấp (hoặc một tài khoản khác do Bên Nhận Thế chấp chỉ thị vào từng thời điểm):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="75" y="433" width="480" height="33"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NH TMCP Ngoại Thương Việt Nam (VCB) - Số tài khoản: 0071004468898 - VCB chi nhánh HCM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="28" y="492" width="527" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.    Chúng tôi sẽ gửi thông báo bằng văn bản cho Bên Nhận Thế chấp ít nhất là ba mươi (30) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="44" y="517" width="511" height="47"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ngày trước khi thực hiện bất cứ sửa đổi, bổ sung, thay thế, chấm dứt hoặc hủy bỏ Hợp đồng Bảo hiểm và cho phép Bên Nhận Thế chấp thực hiện những biện pháp cần thiết nhằm duy trì đầy đủ hiệu lực đối với Hợp đồng Bảo hiểm.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="576" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kính thư,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="601" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[[tên của Công ty Bảo hiểm]]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="626" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[______________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="651" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ký bởi: ________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c02889f5-0772-41d7-be96-2a37a1f1ef61" x="0" y="676" width="555" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chức vụ: _______________]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payment_guide_sub2" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="409"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="generatepassword" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="533" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="1" width="451" height="25"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Phần 1: Dành cho Khách hàng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="26" width="115" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Kính chào Quý khách]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="40" width="451" height="30"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Công ty Tài chính Prudential Việt Nam trân trọng chào đón Quý khách đến với trang thông tin điện tử của chúng tôi tại địa chỉ www.prudentialfinance.com.vn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="70" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Để truy cập vào tài khoản cá nhân, Quý khách vui lòng sử dụng các thông tin sau:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ab5076d6-c430-4a87-897d-a63ba931ea03" x="153" y="84" width="65" height="14"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mã truy cập: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="72fd07b5-fcab-4caf-a297-21983fef7c19" x="153" y="98" width="96" height="14"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mật khẩu ban đầu: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5a5ae266-3060-4b1b-b6ce-e1fe70a3a8b7" x="153" y="112" width="52" height="14"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Ngày cấp: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="126" width="451" height="45"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mã truy cập được cấp tự động và không thay đổi. Mật khẩu của Quý khách có thể thay đổi. Quý khách được yêu cầu phải thay đổi mật khẩu trong lần truy cập đầu tiên. Vì sự bảo mật thông tin của Quý khách, vui lòng không viết hoặc tiết lộ mã truy cập và mật khẩu cho người khác.  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="171" width="451" height="14"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mọi thắc mắc xin vui lòng liên hệ số điện thoại đường dây nóng (08) 38 111 333 hoặc 1900 5454 49 nhấn số 0.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="185" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cảm ơn Quý khách đã sử dụng dịch vụ của Công ty Tài chính Prudential Việt Nam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="199" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Kính chúc Quý khách một ngày làm việc vui vẻ và hiệu quả.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="213" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-------------------------------------------------------------------------------------------------------------------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" mode="Transparent" x="153" y="263" width="451" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false" isUnderline="true" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Phần 2: Dành cho Công ty Tài chính Prudential Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="306" width="451" height="28"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Công ty Tài chính Prudential Việt Nam trân trọng chào đón Quý khách đến với trang thông tin điện tử của chúng tôi tại địa chỉ www.prudentialfinance.com.vn]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="3de35e16-0f6d-4b21-bfeb-dd658affcc9a" x="346" y="348" width="78" height="14"/>
+				<textElement textAlignment="Justified" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.PRINTDATE!=null?$P{generatepassword}.PRINTDATE:"")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="408" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Cảm ơn Quý khách đã sử dụng dịch vụ của Công ty Tài chính Prudential Việt Nam.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="422" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Xác nhận của Khách hàng]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="c06a7fd5-9fc4-499b-94a0-7cfb47fd0cbb" x="153" y="436" width="451" height="44"/>
+				<textElement textAlignment="Justified" markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tôi, Bên vay của Hợp đồng tín dụng số " + ($P{generatepassword}!=null && $P{generatepassword}.AGREEMENTNO!=null?$P{generatepassword}.AGREEMENTNO:"") + ", ký tên dưới đây xác nhận đã nhận từ Công ty Tài chính Prudential Việt Nam thông tin Mã truy cập và Mật khẩu ban đầu trong tình trạng không bị tẩy xóa. Tôi cam kết chịu trách nhiệm về tính bảo mật của những thông tin này."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="519" width="555" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(Ký và ghi rõ họ tên) ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="46cd699a-9d30-408c-b95b-d6c6a802f67b" x="268" y="26" width="142" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.CUSTOMERNAME!=null?$P{generatepassword}.CUSTOMERNAME:"")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="410" y="26" width="113" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[- Hợp đồng tín dụng số]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="26bb71e7-bb96-4588-ab14-4dc7eb90a192" x="523" y="26" width="81" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.AGREEMENTNO!=null?$P{generatepassword}.AGREEMENTNO:"")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="7cc5c31b-fb8b-4947-8310-66f718beca91" x="218" y="84" width="386" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.PAN_NO!=null?$P{generatepassword}.PAN_NO:"")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="fb05b4a6-ef69-4e5e-bc39-44f3db61ff40" x="249" y="98" width="355" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.INITIAL_PASSWORD!=null?$P{generatepassword}.INITIAL_PASSWORD:"")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="17f245de-4329-482e-b960-c358a792d150" x="205" y="112" width="399" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.PRINTDATE!=null?$P{generatepassword}.PRINTDATE:"")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="410" y="292" width="113" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[- Hợp đồng tín dụng số]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="26bb71e7-bb96-4588-ab14-4dc7eb90a192" x="523" y="292" width="81" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.AGREEMENTNO!=null?$P{generatepassword}.AGREEMENTNO:"")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="46cd699a-9d30-408c-b95b-d6c6a802f67b" x="218" y="292" width="192" height="14" forecolor="#000000"/>
+				<textElement markup="none">
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{generatepassword}!=null && $P{generatepassword}.CUSTOMERNAME!=null?$P{generatepassword}.CUSTOMERNAME:"")]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="292" width="115" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Khách hàng ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="334" width="451" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Để truy cập vào tài khoản cá nhân, Quý khách vui lòng sử dụng các thông tin Mã truy cập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="348" width="193" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[và Mật khẩu ban đầu đã được cấp ngày ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="424" y="348" width="180" height="14"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[.Mã truy cập được cấp tự động và]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c6aef991-9400-4260-bbfa-5f8ff2671849" x="153" y="362" width="451" height="42"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[không thay đổi. Mật khẩu của Quý khách có thể thay đổi. Quý khách được yêu cầu phải thay đổi mật khẩu trong lần truy cập đầu tiên. Vì sự bảo mật thông tin của Quý khách, vui lòng không viết hoặc tiết lộ Mã truy cập và Mật khẩu cho người khác.  ]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

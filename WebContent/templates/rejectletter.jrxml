@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letterreject" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c1c72006-a564-4b3f-8da0-9cbc58ab27f1">
+	<property name="ireport.zoom" value="1.5000000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.jasperserver.reportUnit" value="/reports/SimpleSOA"/>
+	<property name="ireport.jasperserver.url" value="http://10.148.133.28:8080/jasperserver/services/repository"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[".\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="signature" class="java.lang.String"/>
+	<parameter name="signform" class="java.lang.Object"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="CUSTOMERNAME" class="java.lang.String"/>
+	<field name="APPLID" class="java.lang.String"/>
+	<field name="DAY" class="java.lang.String"/>
+	<field name="MONTH" class="java.lang.String"/>
+	<field name="YEAR" class="java.lang.String"/>
+	<field name="LAA_APP_FORMNO" class="java.lang.String"/>
+	<field name="ADDRESSID" class="java.lang.String"/>
+	<field name="ADDR1" class="java.lang.String"/>
+	<field name="ADDR2" class="java.lang.String"/>
+	<field name="STATEDESC" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="b2824505-a4b8-4c3d-bd84-ac4c6d4e5ccb" x="0" y="0" width="555" height="28"/>
+				<subreportParameter name="YEAR">
+					<subreportParameterExpression><![CDATA[$F{YEAR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="CUSTOMERNAME">
+					<subreportParameterExpression><![CDATA[$F{CUSTOMERNAME}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ADDR2">
+					<subreportParameterExpression><![CDATA[$F{ADDR2}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ADDR1">
+					<subreportParameterExpression><![CDATA[$F{ADDR1}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="ADDRESSID">
+					<subreportParameterExpression><![CDATA[$F{ADDRESSID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="DAY">
+					<subreportParameterExpression><![CDATA[$F{DAY}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="signform">
+					<subreportParameterExpression><![CDATA[$P{signform}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="LAA_APP_FORMNO">
+					<subreportParameterExpression><![CDATA[$F{LAA_APP_FORMNO}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="MONTH">
+					<subreportParameterExpression><![CDATA[$F{MONTH}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="APPLID">
+					<subreportParameterExpression><![CDATA[$F{APPLID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="signature">
+					<subreportParameterExpression><![CDATA[$P{signature}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="STATEDESC">
+					<subreportParameterExpression><![CDATA[$F{STATEDESC}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"rejectletter_sub.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

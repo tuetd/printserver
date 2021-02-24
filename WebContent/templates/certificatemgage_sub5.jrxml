@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="certificatemgage_sub5" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="902771ad-d568-4486-8393-e3b1c3bd6403">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="725" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ba5aec3e-1045-41bf-9a46-73b1e82f8fad" x="10" y="86" width="570" height="31"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1.8   Ngôn ngữ: Hợp Đồng Tín Dụng và Điều Khoản Cơ Bản được lập thành 02 (hai) bản gốc bằng tiếng Việt, mỗi Bên Vay và Bên Cho Vay có trách nhiệm lưu giữ 01(một) bản gốc để thực hiện.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9c421e55-4940-4356-9d08-1813b451a7ed" x="10" y="127" width="210" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 2. ĐIỀU KIỆN TIÊN QUYẾT ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27bce4b9-a69e-469a-bd60-825d20e60498" x="10" y="152" width="570" height="240"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Bên Cho Vay sẽ giải ngân Khoản Vay cho Bên Vay chỉ khi tất cả các điều kiện sau được thỏa mãn:
+2.1   Vào hoặc trước Ngày Giải Ngân, Bên Cho Vay nhận được tất cả các tài liệu sau:
+(a)    Cam Kết Nhận Nợ và Yêu Cầu Giải Ngân được Bên Vay ký hợp lệ đính kèm Hợp đồng Tín dụng Cá nhân;
+(b)    bản gốc Hợp đồng Thế chấp được ký kết hợp lệ giữa Bên vay và Bên cho vay;
+(c)    bản gốc các giấy chứng nhận đăng ký giao dịch bảo đảm đối với biện pháp bảo đảm được tạo lập theo Hợp đồng Thế chấp do cơ quan Nhà nước có thẩm quyền cấp;
+(d)    bản gốc hợp đồng bảo hiểm cho Tài sản đối với mọi rủi ro liên quan, bao gồm nhưng không giới hạn các tổn thất hoặc thiệt hại do hỏa hoạn, cháy nổ hoặc bất kỳ thiệt hại nào khác theo yêu cầu của Bên cho vay trong suốt thời hạn của Thỏa thuận này; và
+(e)    Các tài liệu cần thiết khác được quy định tại Mục Hồ sơ đính kèm của Phiếu đề nghị vay nhằm mục đích cung cấp Khoản Vay.
+2.2   Vào Ngày Giải Ngân, không có bất kỳ Sự Kiện Vi Phạm nào đang diễn ra hoặc có thể phát sinh từ Khoản Vay dự kiến; và
+2.3   Vào Ngày Giải Ngân, tất cả các cam đoan và bảo đảm theo Điều 6 của Điều Khoản Cơ Bản này là đúng trên mọi phương diện quan trọng.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e7159681-37ac-4ea2-8373-1e8135167dc6" x="10" y="415" width="210" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 3. GIẢI NGÂN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fb1111e4-cb6c-47b5-873b-db16372dcf7d" x="10" y="440" width="570" height="137"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[3.1 Sau khi đã đáp ứng đủ các điều kiện quy định tại Điều 2 của Điều Khoản Cơ Bản này, Bên Cho Vay đồng ý sẽ cấp Khoản Vay cho Bên Vay bằng cách chuyển khoản trực tiếp vào tài khoản của Bên Vay.
+3.2 Bên Vay công nhận và đồng ý rằng Bên Vay được cho là đã nhận được đầy đủ Khoản Vay vào thời điểm việc giải ngân được xem là hoàn thành và Số tiền vay thể hiện trong Yêu cầu Giải ngân  được chuyển khoản thành công đến tài khoản của Bên Vay như được nêu tại Điều 3.1 trên đây.
+3.3 Bên Vay cũng công nhận rằng Khoản Vay là khoản nợ của mình theo Hợp đồng Tín dụng và đồng ý thanh toán vốn gốc và lãi phát sinh trên Khoản Vay và các khoản phải trả khác theo Hợp đồng Tín dụng. Cho mục đích của điều khoản này, Bên Vay sẽ ký và giao cho Bên Cho Vay một Cam Kết Nhận Nợ đính kèm Hợp đồng Tín dụng.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="98fef53b-b4ab-4d34-8457-ec04478400a0" x="10" y="605" width="210" height="15"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ĐIỀU 4. THANH TOÁN KHOẢN VAY - TẤT TOÁN KHOẢN VAY TRƯỚC HẠN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1dd42015-3ec8-46fc-86bc-0d893c9baffa" x="10" y="632" width="570" height="93"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[4.1 Thanh toán Khoản Vay
+(a) Khoản Thanh Toán Đầu Tiên được thực hiện vào Ngày Thanh Toán Đầu Tiên và các Khoản Thanh Toán Hàng Tháng sẽ được thực hiện trên vào Ngày Thanh Toán Hàng Tháng được quy định tại Hợp Đồng hoặc vào ngày làm việc kế tiếp nếu trùng vào các ngày thứ Bảy, Chủ nhật hoặc ngày nghỉ /ngày Lễ theo thông báo của Bên Cho Vay tùy từng thời điểm hoặc nếu tháng đó không có ngày tương ứng cho đến khi tất cả các khoản phải thanh toán được thực hiện đầy đủ.
+]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>

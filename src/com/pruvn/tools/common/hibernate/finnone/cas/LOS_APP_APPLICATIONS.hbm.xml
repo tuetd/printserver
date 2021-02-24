@@ -1,0 +1,949 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 31, 2011 2:37:36 PM by Hibernate Tools 3.2.4.CR1 -->
+<hibernate-mapping>
+    <class name="com.pruvn.tools.common.hibernate.finnone.cas.LOS_APP_APPLICATIONS" table="LOS_APP_APPLICATIONS" schema="CAS">
+     <cache usage="nonstrict-read-write"/>
+        <id name="APP_ID_C" type="string">
+            <column name="APP_ID_C" length="20" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="NBFC_PRODUCT_M" class="com.pruvn.tools.common.hibernate.finnone.cas.NBFC_PRODUCT_M" fetch="select">
+            <column name="LAA_PRODUCT_ID_C" length="8" />
+        </many-to-one>
+        <many-to-one name="NBFC_STATE_M" class="com.pruvn.tools.common.hibernate.finnone.cas.NBFC_STATE_M" fetch="select">
+            <column name="LAA_SOURCE_STATE_N" precision="8" scale="0" />
+        </many-to-one>
+        <property name="LAA_APP_TITLE_C" type="string">
+            <column name="LAA_APP_TITLE_C" length="30" />
+        </property>
+        <property name="LAA_APP_STATUS_C" type="string">
+            <column name="LAA_APP_STATUS_C" length="2" />
+        </property>
+        <property name="LAA_APP_SUBSTATUS" type="string">
+            <column name="LAA_APP_SUBSTATUS" length="2" />
+        </property>
+        <property name="LAA_APP_ACCOUNTNO_C" type="string">
+            <column name="LAA_APP_ACCOUNTNO_C" length="20" />
+        </property>
+        <property name="LAA_APP_SIGNED_DATE_D" type="date">
+            <column name="LAA_APP_SIGNED_DATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_REQ_AMTFIN_N" type="big_decimal">
+            <column name="LAA_APP_REQ_AMTFIN_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_REQ_MARGINMONEY_N" type="big_decimal">
+            <column name="LAA_APP_REQ_MARGINMONEY_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_REQ_MARGINRATE_N" type="big_decimal">
+            <column name="LAA_APP_REQ_MARGINRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_REQ_INTTYPE_C" type="string">
+            <column name="LAA_APP_REQ_INTTYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_REQ_INTRATE_N" type="big_decimal">
+            <column name="LAA_APP_REQ_INTRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_REQ_MARKUP_N" type="big_decimal">
+            <column name="LAA_APP_REQ_MARKUP_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_REQ_TERM_N" type="big_decimal">
+            <column name="LAA_APP_REQ_TERM_N" precision="5" />
+        </property>
+        <property name="LAA_APP_REQ_PMNTTYPE_C" type="string">
+            <column name="LAA_APP_REQ_PMNTTYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_APPRAMT_BASE_N" type="big_decimal">
+            <column name="LAA_APP_APPRAMT_BASE_N" precision="22" scale="0" />
+        </property>
+        <property name="LAA_APP_CONRATE_N" type="big_decimal">
+            <column name="LAA_APP_CONRATE_N" precision="22" scale="0" />
+        </property>
+        <property name="LAA_CURRENCYID" type="string">
+            <column name="LAA_CURRENCYID" length="3" />
+        </property>
+        <property name="LAA_APP_APPR_AMTFIN_N" type="big_decimal">
+            <column name="LAA_APP_APPR_AMTFIN_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_APPR_MARGINMONEY_N" type="big_decimal">
+            <column name="LAA_APP_APPR_MARGINMONEY_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_APPR_MARGINRATE_N" type="big_decimal">
+            <column name="LAA_APP_APPR_MARGINRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_APPR_INTTYPE_C" type="string">
+            <column name="LAA_APP_APPR_INTTYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_APPR_INTRATE_N" type="big_decimal">
+            <column name="LAA_APP_APPR_INTRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_APPR_MARKUP_N" type="big_decimal">
+            <column name="LAA_APP_APPR_MARKUP_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_APPR_IRR_N" type="big_decimal">
+            <column name="LAA_APP_APPR_IRR_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_APPR_TERM_N" type="java.lang.Short">
+            <column name="LAA_APP_APPR_TERM_N" precision="3" scale="0" />
+        </property>
+        <property name="LAA_APP_APPR_FREQ_C" type="string">
+            <column name="LAA_APP_APPR_FREQ_C" length="15" />
+        </property>
+        <property name="LAA_APP_APPR_PMNTTYPE_C" type="string">
+            <column name="LAA_APP_APPR_PMNTTYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_PMNTMODE_C" type="string">
+            <column name="LAA_APP_PMNTMODE_C" length="15" />
+        </property>
+        <property name="LAA_APP_FINANCECHARGE_N" type="big_decimal">
+            <column name="LAA_APP_FINANCECHARGE_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_CONTRACTDATE_D" type="date">
+            <column name="LAA_APP_CONTRACTDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_DISBURSALDATE_D" type="date">
+            <column name="LAA_APP_DISBURSALDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_FIRSTPAYDATE_D" type="date">
+            <column name="LAA_APP_FIRSTPAYDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_MATURITYDATE_D" type="date">
+            <column name="LAA_APP_MATURITYDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_CONTRACT_RECDDATE_D" type="date">
+            <column name="LAA_APP_CONTRACT_RECDDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_CONTRACT_VERIFYDATE_D" type="date">
+            <column name="LAA_APP_CONTRACT_VERIFYDATE_D" length="7" />
+        </property>
+        <property name="LAA_APP_CONTRACT_VERIFYBY_C" type="string">
+            <column name="LAA_APP_CONTRACT_VERIFYBY_C" length="15" />
+        </property>
+        <property name="LAA_APP_DUEDAY_C" type="string">
+            <column name="LAA_APP_DUEDAY_C" length="2" />
+        </property>
+        <property name="LAA_APP_PREPAYPENALTY_N" type="big_decimal">
+            <column name="LAA_APP_PREPAYPENALTY_N" precision="5" />
+        </property>
+        <property name="LSM_SCHEMEID" type="java.lang.Integer">
+            <column name="LSM_SCHEMEID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_APP_INIT_SOURCETYPE_C" type="string">
+            <column name="LAA_APP_INIT_SOURCETYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_INIT_SOURCE_ID_C" type="string">
+            <column name="LAA_APP_INIT_SOURCE_ID_C" length="20" />
+        </property>
+        <property name="LAA_APP_FINAL_SOURCETYPE_C" type="string">
+            <column name="LAA_APP_FINAL_SOURCETYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_FINAL_SOURCE_ID_C" type="string">
+            <column name="LAA_APP_FINAL_SOURCE_ID_C" length="20" />
+        </property>
+        <property name="LAA_APP_GRACEPERIOD_N" type="java.lang.Integer">
+            <column name="LAA_APP_GRACEPERIOD_N" precision="6" scale="0" />
+        </property>
+        <property name="LAA_APP_CRSCORE_N" type="java.lang.Integer">
+            <column name="LAA_APP_CRSCORE_N" precision="6" scale="0" />
+        </property>
+        <property name="LAA_APP_POL_APPL_STRING_C" type="string">
+            <column name="LAA_APP_POL_APPL_STRING_C" length="500" />
+        </property>
+        <property name="LAA_APP_POL_MATCH_STRING_C" type="string">
+            <column name="LAA_APP_POL_MATCH_STRING_C" length="500" />
+        </property>
+        <property name="LAA_APP_POLICY_TABLE_C" type="string">
+            <column name="LAA_APP_POLICY_TABLE_C" length="20" />
+        </property>
+        <property name="LAA_APP_LOANAMT_PAYTO_C" type="string">
+            <column name="LAA_APP_LOANAMT_PAYTO_C" length="20" />
+        </property>
+        <property name="LAA_PROMOTIONSCHEME" type="string">
+            <column name="LAA_PROMOTIONSCHEME" length="8" />
+        </property>
+        <property name="LAA_MKTGID" type="java.lang.Integer">
+            <column name="LAA_MKTGID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_BRANCHID" type="java.lang.Integer">
+            <column name="LAA_BRANCHID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_SUPPLIERID" type="java.lang.Integer">
+            <column name="LAA_SUPPLIERID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_EMP_FLAG" type="string">
+            <column name="LAA_EMP_FLAG" length="1" />
+        </property>
+        <property name="LAA_PLRTYPE" type="string">
+            <column name="LAA_PLRTYPE" length="8" />
+        </property>
+        <property name="LAA_PLRRATE" type="big_decimal">
+            <column name="LAA_PLRRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_DISBURSALTO" type="string">
+            <column name="LAA_DISBURSALTO" length="2" />
+        </property>
+        <property name="LAA_DISB_TYPE" type="string">
+            <column name="LAA_DISB_TYPE" length="30" />
+        </property>
+        <property name="LAA_NO_DISBURSAL" type="java.lang.Short">
+            <column name="LAA_NO_DISBURSAL" precision="3" scale="0" />
+        </property>
+        <property name="LAA_DISBURSEDAMOUNT" type="big_decimal">
+            <column name="LAA_DISBURSEDAMOUNT" precision="18" scale="4" />
+        </property>
+        <property name="LAA_DISB_STATUS" type="string">
+            <column name="LAA_DISB_STATUS" length="2" />
+        </property>
+        <property name="LAA_PEMI_RATE" type="big_decimal">
+            <column name="LAA_PEMI_RATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_ADVDISBINTRATE" type="big_decimal">
+            <column name="LAA_ADVDISBINTRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_EMPLOYERID" type="java.lang.Integer">
+            <column name="LAA_EMPLOYERID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_REPAYMENT_EFFECTIVE_DATE" type="date">
+            <column name="LAA_REPAYMENT_EFFECTIVE_DATE" length="7" />
+        </property>
+        <property name="LAA_PREPAY_ALLOWED" type="string">
+            <column name="LAA_PREPAY_ALLOWED" length="1" />
+        </property>
+        <property name="LAA_PREPAY_PENALTY" type="string">
+            <column name="LAA_PREPAY_PENALTY" length="1" />
+        </property>
+        <property name="LAA_PREPAY_LOCK_PERIOD" type="java.lang.Short">
+            <column name="LAA_PREPAY_LOCK_PERIOD" precision="3" scale="0" />
+        </property>
+        <property name="LAA_FORECLOSURE_PENALTY" type="string">
+            <column name="LAA_FORECLOSURE_PENALTY" length="1" />
+        </property>
+        <property name="LAA_FORECLOSE_ALLOWED" type="string">
+            <column name="LAA_FORECLOSE_ALLOWED" length="1" />
+        </property>
+        <property name="LAA_FORECLOSE_PENALTY" type="big_decimal">
+            <column name="LAA_FORECLOSE_PENALTY" precision="5" />
+        </property>
+        <property name="LAA_FORECLOSE_LOCK_PERIOD" type="java.lang.Short">
+            <column name="LAA_FORECLOSE_LOCK_PERIOD" precision="3" scale="0" />
+        </property>
+        <property name="LAA_FLOATINGFLG" type="string">
+            <column name="LAA_FLOATINGFLG" length="1" />
+        </property>
+        <property name="LAA_FLOATING_FREQUENCY" type="java.lang.Short">
+            <column name="LAA_FLOATING_FREQUENCY" precision="3" scale="0" />
+        </property>
+        <property name="LAA_LAST_FLOAT_SPREAD_DATE" type="date">
+            <column name="LAA_LAST_FLOAT_SPREAD_DATE" length="7" />
+        </property>
+        <property name="LAA_PDCFLAG" type="string">
+            <column name="LAA_PDCFLAG" length="1" />
+        </property>
+        <property name="LAA_INTTAXRATE" type="big_decimal">
+            <column name="LAA_INTTAXRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_TDSRATE" type="big_decimal">
+            <column name="LAA_TDSRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_LPIRATE" type="big_decimal">
+            <column name="LAA_LPIRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_TAXAPPLICABLE" type="string">
+            <column name="LAA_TAXAPPLICABLE" length="1" />
+        </property>
+        <property name="LAA_BALANCE_TRANSFER" type="string">
+            <column name="LAA_BALANCE_TRANSFER" length="1" />
+        </property>
+        <property name="LAA_RELATIONAL_DISCOUNT" type="big_decimal">
+            <column name="LAA_RELATIONAL_DISCOUNT" precision="18" scale="4" />
+        </property>
+        <property name="LAA_OTHER_DISCOUNT" type="big_decimal">
+            <column name="LAA_OTHER_DISCOUNT" precision="18" scale="4" />
+        </property>
+        <property name="LAA_CO_APPL_REQ" type="string">
+            <column name="LAA_CO_APPL_REQ" length="1" />
+        </property>
+        <property name="LAA_GUARANTOR_REQ" type="string">
+            <column name="LAA_GUARANTOR_REQ" length="1" />
+        </property>
+        <property name="LAA_SEC_DEPOSIT_REQ" type="string">
+            <column name="LAA_SEC_DEPOSIT_REQ" length="1" />
+        </property>
+        <property name="LAA_FEERATE" type="big_decimal">
+            <column name="LAA_FEERATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_PRETAXROI" type="big_decimal">
+            <column name="LAA_PRETAXROI" precision="10" scale="7" />
+        </property>
+        <property name="LAA_ROI" type="big_decimal">
+            <column name="LAA_ROI" precision="10" scale="7" />
+        </property>
+        <property name="LAA_TAX" type="big_decimal">
+            <column name="LAA_TAX" precision="10" scale="7" />
+        </property>
+        <property name="LAA_TAX_PERCENTAGE" type="big_decimal">
+            <column name="LAA_TAX_PERCENTAGE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_SECURITYCOVER" type="big_decimal">
+            <column name="LAA_SECURITYCOVER" precision="18" scale="4" />
+        </property>
+        <property name="LAA_SECURITYTAKEN" type="big_decimal">
+            <column name="LAA_SECURITYTAKEN" precision="18" scale="4" />
+        </property>
+        <property name="LAA_CROSS_COLLATERAL" type="string">
+            <column name="LAA_CROSS_COLLATERAL" length="1" />
+        </property>
+        <property name="LAA_BILLNO" type="java.lang.Integer">
+            <column name="LAA_BILLNO" precision="8" scale="0" />
+        </property>
+        <property name="LAA_RELATIONSHIP_DISC" type="string">
+            <column name="LAA_RELATIONSHIP_DISC" length="1" />
+        </property>
+        <property name="LAA_PROFESSIONAL_DISC" type="string">
+            <column name="LAA_PROFESSIONAL_DISC" length="1" />
+        </property>
+        <property name="LAA_DSSNO" type="java.lang.Integer">
+            <column name="LAA_DSSNO" precision="8" scale="0" />
+        </property>
+        <property name="LAA_LPITYPE" type="string">
+            <column name="LAA_LPITYPE" length="1" />
+        </property>
+        <property name="LAA_MIN_PENALAMOUNT" type="big_decimal">
+            <column name="LAA_MIN_PENALAMOUNT" precision="18" scale="4" />
+        </property>
+        <property name="LAA_INSURCOID" type="java.lang.Integer">
+            <column name="LAA_INSURCOID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_INSUR_PRODUCTID" type="java.lang.Integer">
+            <column name="LAA_INSUR_PRODUCTID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_INSURANCE_FLAG" type="string">
+            <column name="LAA_INSURANCE_FLAG" length="1" />
+        </property>
+        <property name="LAA_INSURED_TILL" type="date">
+            <column name="LAA_INSURED_TILL" length="7" />
+        </property>
+        <property name="LAA_DEPOSIT_ACCOUNT" type="string">
+            <column name="LAA_DEPOSIT_ACCOUNT" length="10" />
+        </property>
+        <property name="LAA_SPREAD2" type="big_decimal">
+            <column name="LAA_SPREAD2" precision="10" scale="7" />
+        </property>
+        <property name="LAA_LTV_MULTIPLIER" type="big_decimal">
+            <column name="LAA_LTV_MULTIPLIER" precision="10" scale="7" />
+        </property>
+        <property name="LAA_DISBURSEMENT_DIRECT_CREDIT" type="string">
+            <column name="LAA_DISBURSEMENT_DIRECT_CREDIT" length="1" />
+        </property>
+        <property name="LAA_PRIN_BASE_UNIT" type="java.lang.Short">
+            <column name="LAA_PRIN_BASE_UNIT" precision="3" scale="0" />
+        </property>
+        <property name="LAA_FIXED_TERM" type="java.lang.Integer">
+            <column name="LAA_FIXED_TERM" precision="8" scale="0" />
+        </property>
+        <property name="LAA_STEP_RATE" type="big_decimal">
+            <column name="LAA_STEP_RATE" precision="5" />
+        </property>
+        <property name="LAA_INVOICE_FLAG" type="string">
+            <column name="LAA_INVOICE_FLAG" length="1" />
+        </property>
+        <property name="LAA_RC_FLAG" type="string">
+            <column name="LAA_RC_FLAG" length="1" />
+        </property>
+        <property name="LAA_SERVICETAXRATE" type="big_decimal">
+            <column name="LAA_SERVICETAXRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_DME_ID" type="java.lang.Integer">
+            <column name="LAA_DME_ID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_FILENO" type="string">
+            <column name="LAA_FILENO" length="20" />
+        </property>
+        <property name="LAA_APP_FORMNO" type="string">
+            <column name="LAA_APP_FORMNO" length="20" />
+        </property>
+        <property name="LAA_HFI_FLAG" type="string">
+            <column name="LAA_HFI_FLAG" length="1" />
+        </property>
+        <property name="LAA_HFI" type="string">
+            <column name="LAA_HFI" length="50" />
+        </property>
+        <property name="LAA_EMPLOYER_ADDRESSID" type="java.lang.Integer">
+            <column name="LAA_EMPLOYER_ADDRESSID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_EMPCODE" type="string">
+            <column name="LAA_EMPCODE" length="11" />
+        </property>
+        <property name="LAA_SPREADID" type="java.lang.Integer">
+            <column name="LAA_SPREADID" precision="8" scale="0" />
+        </property>
+        <property name="LAA_INITIAL_EFFRATE" type="big_decimal">
+            <column name="LAA_INITIAL_EFFRATE" precision="10" scale="7" />
+        </property>
+        <property name="LAA_INTSTART_DATE_REGULAR" type="date">
+            <column name="LAA_INTSTART_DATE_REGULAR" length="7" />
+        </property>
+        <property name="LAA_TRANCHING_FLAG" type="string">
+            <column name="LAA_TRANCHING_FLAG" length="1" />
+        </property>
+        <property name="LAA_TRANCHING_TYPE" type="string">
+            <column name="LAA_TRANCHING_TYPE" length="1" />
+        </property>
+        <property name="LAA_COMPOUND_FREQ" type="string">
+            <column name="LAA_COMPOUND_FREQ" length="1" />
+        </property>
+        <property name="LAA_INT_REBATE_FLAG" type="string">
+            <column name="LAA_INT_REBATE_FLAG" length="1" />
+        </property>
+        <property name="LAA_ACTUALIRR" type="big_decimal">
+            <column name="LAA_ACTUALIRR" precision="8" scale="5" />
+        </property>
+        <property name="LAA_GROSS_LTV" type="big_decimal">
+            <column name="LAA_GROSS_LTV" precision="10" scale="7" />
+        </property>
+        <property name="LAA_NET_LTV" type="big_decimal">
+            <column name="LAA_NET_LTV" precision="24" scale="7" />
+        </property>
+        <property name="CREATED_BY" type="string">
+            <column name="CREATED_BY" length="20" />
+        </property>
+        <property name="CREATED_ON" type="date">
+            <column name="CREATED_ON" length="7" />
+        </property>
+        <property name="MODIFIED_BY" type="string">
+            <column name="MODIFIED_BY" length="20" />
+        </property>
+        <property name="MODIFIED_ON" type="date">
+            <column name="MODIFIED_ON" length="7" />
+        </property>
+        <property name="LAA_APP_REQ_IRR_N" type="big_decimal">
+            <column name="LAA_APP_REQ_IRR_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_REQ_EFFRATE_N" type="big_decimal">
+            <column name="LAA_APP_REQ_EFFRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APP_APPR_EFFRATE_N" type="big_decimal">
+            <column name="LAA_APP_APPR_EFFRATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_SOURCE_ASSET_MODELID_N" type="java.lang.Integer">
+            <column name="LAA_SOURCE_ASSET_MODELID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_SOURCE_ASSET_MAKE_C" type="string">
+            <column name="LAA_SOURCE_ASSET_MAKE_C" length="30" />
+        </property>
+        <property name="LAA_SOURCE_CHANNEL_PARTNER_C" type="string">
+            <column name="LAA_SOURCE_CHANNEL_PARTNER_C" length="8" />
+        </property>
+        <property name="LAA_APP_FIRST_SOURCETYPE_C" type="string">
+            <column name="LAA_APP_FIRST_SOURCETYPE_C" length="15" />
+        </property>
+        <property name="LAA_APP_FIRST_SOURCE_ID_C" type="string">
+            <column name="LAA_APP_FIRST_SOURCE_ID_C" length="20" />
+        </property>
+        <property name="LAA_SOURCE_ASSET_AGE_N" type="java.lang.Short">
+            <column name="LAA_SOURCE_ASSET_AGE_N" precision="3" scale="0" />
+        </property>
+        <property name="LAA_SOURCE_MARKETINGID_N" type="java.lang.Integer">
+            <column name="LAA_SOURCE_MARKETINGID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_SOURCE_BROKERID_N" type="java.lang.Integer">
+            <column name="LAA_SOURCE_BROKERID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_SOURCE_INSPECTORID_N" type="java.lang.Integer">
+            <column name="LAA_SOURCE_INSPECTORID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_EXISTING_CUSTOMER_C" type="string">
+            <column name="LAA_EXISTING_CUSTOMER_C" length="1" />
+        </property>
+        <property name="LAA_ADVANCEINSTL_N" type="java.lang.Short">
+            <column name="LAA_ADVANCEINSTL_N" precision="3" scale="0" />
+        </property>
+        <property name="LAA_APP_NUMINSTL_N" type="java.lang.Long">
+            <column name="LAA_APP_NUMINSTL_N" precision="10" scale="0" />
+        </property>
+        <property name="LAA_APP_REQ_FREQ_C" type="string">
+            <column name="LAA_APP_REQ_FREQ_C" length="15" />
+        </property>
+        <property name="LAA_APP_TYPE_C" type="string">
+            <column name="LAA_APP_TYPE_C" length="15" />
+        </property>
+        <property name="LAA_LOAN_PURPOSE_C" type="string">
+            <column name="LAA_LOAN_PURPOSE_C" length="8" />
+        </property>
+        <property name="LAA_LOAN_PURPOSE_DTL_C" type="string">
+            <column name="LAA_LOAN_PURPOSE_DTL_C" length="8" />
+        </property>
+        <property name="LAA_LOAN_PURPOSE_DESC_C" type="string">
+            <column name="LAA_LOAN_PURPOSE_DESC_C" length="100" />
+        </property>
+        <property name="LAA_LCM_CATGID_N" type="java.lang.Integer">
+            <column name="LAA_LCM_CATGID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_FOIR_N" type="big_decimal">
+            <column name="LAA_FOIR_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_EXPOSURE_CAP_N" type="big_decimal">
+            <column name="LAA_EXPOSURE_CAP_N" precision="6" />
+        </property>
+        <property name="LAA_AVG_BAL_N" type="big_decimal">
+            <column name="LAA_AVG_BAL_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPR_FOIR_N" type="big_decimal">
+            <column name="LAA_APPR_FOIR_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPR_INSR_N" type="big_decimal">
+            <column name="LAA_APPR_INSR_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPR_LTV_N" type="big_decimal">
+            <column name="LAA_APPR_LTV_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPR_IIR_N" type="big_decimal">
+            <column name="LAA_APPR_IIR_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_BENEFIT_AMOUNT_N" type="big_decimal">
+            <column name="LAA_BENEFIT_AMOUNT_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APP_SIGN_TYPE_C" type="string">
+            <column name="LAA_APP_SIGN_TYPE_C" length="2" />
+        </property>
+        <property name="LAA_GRACE_INTEREST_CHARGE_C" type="string">
+            <column name="LAA_GRACE_INTEREST_CHARGE_C" length="1" />
+        </property>
+        <property name="LAA_GRACE_ADJUST_SCHEDULE_C" type="string">
+            <column name="LAA_GRACE_ADJUST_SCHEDULE_C" length="1" />
+        </property>
+        <property name="LAA_VAT_PRIN_RATE_N" type="big_decimal">
+            <column name="LAA_VAT_PRIN_RATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_VAT_INT_RATE_N" type="big_decimal">
+            <column name="LAA_VAT_INT_RATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_VAT_INSTL_RATE_N" type="big_decimal">
+            <column name="LAA_VAT_INSTL_RATE_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_INT_ROUNDOFF_PARA_C" type="string">
+            <column name="LAA_INT_ROUNDOFF_PARA_C" length="2" />
+        </property>
+        <property name="LAA_INT_ROUNDTILL_N" type="java.lang.Integer">
+            <column name="LAA_INT_ROUNDTILL_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_INSTLAMT_ROUNDTILL_N" type="java.lang.Integer">
+            <column name="LAA_INSTLAMT_ROUNDTILL_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_INSTLAMT_ROUNDOFF_PARA_C" type="string">
+            <column name="LAA_INSTLAMT_ROUNDOFF_PARA_C" length="2" />
+        </property>
+        <property name="LAA_APP_SOURCE_TYPE_C" type="string">
+            <column name="LAA_APP_SOURCE_TYPE_C" length="1" />
+        </property>
+        <property name="LAA_EMI_N" type="big_decimal">
+            <column name="LAA_EMI_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_RATE_EMI_FLAG_C" type="string">
+            <column name="LAA_RATE_EMI_FLAG_C" length="1" />
+        </property>
+        <property name="LAA_LPP_PRODCAT_C" type="string">
+            <column name="LAA_LPP_PRODCAT_C" length="20" />
+        </property>
+        <property name="LAA_DECIMALS_N" type="java.lang.Boolean">
+            <column name="LAA_DECIMALS_N" precision="1" scale="0" />
+        </property>
+        <property name="LAA_DPERYR_N" type="java.lang.Short">
+            <column name="LAA_DPERYR_N" precision="3" scale="0" />
+        </property>
+        <property name="LAA_FORECLOSELOCKLN_N" type="java.lang.Byte">
+            <column name="LAA_FORECLOSELOCKLN_N" precision="2" scale="0" />
+        </property>
+        <property name="LAA_AGREEMENTTYPE_C" type="string">
+            <column name="LAA_AGREEMENTTYPE_C" length="2" />
+        </property>
+        <property name="LAA_LSM_SCHEMEGROUP_N" type="java.lang.Integer">
+            <column name="LAA_LSM_SCHEMEGROUP_N" precision="8" scale="0" />
+        </property>
+        <property name="CUST_ID_N" type="java.lang.Integer">
+            <column name="CUST_ID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_DEANNUALIZE_C" type="string">
+            <column name="LAA_DEANNUALIZE_C" length="1" />
+        </property>
+        <property name="LAA_AMTOTHERS_N" type="big_decimal">
+            <column name="LAA_AMTOTHERS_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_TAXRATE_N" type="big_decimal">
+            <column name="LAA_TAXRATE_N" precision="5" />
+        </property>
+        <property name="COMMENCEDATE" type="date">
+            <column name="COMMENCEDATE" length="7" />
+        </property>
+        <property name="LAA_PRIN_BASE_UNIT_N" type="java.lang.Short">
+            <column name="LAA_PRIN_BASE_UNIT_N" precision="3" scale="0" />
+        </property>
+        <property name="INTSTART_DATE_REGULAR" type="date">
+            <column name="INTSTART_DATE_REGULAR" length="7" />
+        </property>
+        <property name="LAA_REQ_IIR_N" type="big_decimal">
+            <column name="LAA_REQ_IIR_N" precision="5" />
+        </property>
+        <property name="LAA_APP_ASSETCOST_N" type="big_decimal">
+            <column name="LAA_APP_ASSETCOST_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPRAISED_INC_N" type="big_decimal">
+            <column name="LAA_APPRAISED_INC_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPRAISED_OBL_N" type="big_decimal">
+            <column name="LAA_APPRAISED_OBL_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPLICABLE_FOIR_N" type="big_decimal">
+            <column name="LAA_APPLICABLE_FOIR_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_APPLICABLE_LTV_N" type="big_decimal">
+            <column name="LAA_APPLICABLE_LTV_N" precision="10" scale="7" />
+        </property>
+        <property name="LAA_EMI_FACTOR_N" type="big_decimal">
+            <column name="LAA_EMI_FACTOR_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_TOTAL_ELIGIBILITY_N" type="big_decimal">
+            <column name="LAA_TOTAL_ELIGIBILITY_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_RISK_C" type="string">
+            <column name="LAA_RISK_C" length="500" />
+        </property>
+        <property name="LAA_STRENGTH_C" type="string">
+            <column name="LAA_STRENGTH_C" length="500" />
+        </property>
+        <property name="LAA_CPAID_N" type="java.lang.Integer">
+            <column name="LAA_CPAID_N" precision="8" scale="0" />
+        </property>
+        <property name="LAA_APPROVAL_DATE_D" type="date">
+            <column name="LAA_APPROVAL_DATE_D" length="7" />
+        </property>
+        <property name="LAA_VATINPUT_N" type="big_decimal">
+            <column name="LAA_VATINPUT_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_CUST_PROFILE_TYPE_C" type="string">
+            <column name="LAA_CUST_PROFILE_TYPE_C" length="1" />
+        </property>
+        <property name="LAA_CUST_PROFILE_C" type="string">
+            <column name="LAA_CUST_PROFILE_C" length="20" />
+        </property>
+        <property name="LAA_OFFLINE_APP_ID_N" type="big_decimal">
+            <column name="LAA_OFFLINE_APP_ID_N" precision="20" scale="0" />
+        </property>
+        <property name="LAA_RCU_FLAG_C" type="string">
+            <column name="LAA_RCU_FLAG_C" length="1" />
+        </property>
+        <property name="LOS_APP_POLICY_RESULT" type="string">
+            <column name="LOS_APP_POLICY_RESULT" length="1" />
+        </property>
+        <property name="LOS_APP_SCORING_RESULT" type="string">
+            <column name="LOS_APP_SCORING_RESULT" length="1" />
+        </property>
+        <property name="LOS_APP_FUZZY_MATCH" type="string">
+            <column name="LOS_APP_FUZZY_MATCH" length="1" />
+        </property>
+        <property name="LOS_APP_POS_DEDUPE_COUNT" type="java.lang.Integer">
+            <column name="LOS_APP_POS_DEDUPE_COUNT" precision="5" scale="0" />
+        </property>
+        <property name="LOS_APP_NEG_DEDUPE_COUNT" type="java.lang.Integer">
+            <column name="LOS_APP_NEG_DEDUPE_COUNT" precision="5" scale="0" />
+        </property>
+        <property name="LAA_FII_STATUS" type="string">
+            <column name="LAA_FII_STATUS" length="1" />
+        </property>
+        <property name="LAA_APP_CHARGES_FLAG" type="java.lang.Character">
+            <column name="LAA_APP_CHARGES_FLAG" length="1" />
+        </property>
+        <property name="LAA_APP_CALCULATION1" type="big_decimal">
+            <column name="LAA_APP_CALCULATION1" precision="24" scale="0" />
+        </property>
+        <property name="LAA_APP_CALCULATION2" type="big_decimal">
+            <column name="LAA_APP_CALCULATION2" precision="24" scale="0" />
+        </property>
+        <property name="LAA_APP_CALCULATION3" type="big_decimal">
+            <column name="LAA_APP_CALCULATION3" precision="24" scale="0" />
+        </property>
+        <property name="LAA_APP_REQ_PTPM_N" type="big_decimal">
+            <column name="LAA_APP_REQ_PTPM_N" precision="24" scale="5" />
+        </property>
+        <property name="CRS_APP_ID_C" type="string">
+            <column name="CRS_APP_ID_C" length="20" />
+        </property>
+        <property name="PRN_ON" type="date">
+            <column name="PRN_ON" length="7" />
+        </property>
+        <property name="LAA_LMS_STATUS" type="string">
+            <column name="LAA_LMS_STATUS" length="1" />
+        </property>
+        <property name="LAA_LMS_DISB_STATUS" type="string">
+            <column name="LAA_LMS_DISB_STATUS" length="2" />
+        </property>
+        <property name="CREATION_DATE" type="date">
+            <column name="CREATION_DATE" length="7" />
+        </property>
+        <property name="LAA_FIELD_1" type="string">
+            <column name="LAA_FIELD_1" length="200" />
+        </property>
+        <property name="LAA_FIELD_2" type="string">
+            <column name="LAA_FIELD_2" length="50" />
+        </property>
+        <property name="RCU_INITIATION_DATE_D" type="date">
+            <column name="RCU_INITIATION_DATE_D" length="7" />
+        </property>
+        <property name="RCU_COMPLETION_DATE_D" type="date">
+            <column name="RCU_COMPLETION_DATE_D" length="7" />
+        </property>
+        <property name="NEGBASE_DEDUPE_INITIATED_C" type="string">
+            <column name="NEGBASE_DEDUPE_INITIATED_C" length="1" />
+        </property>
+        <property name="CPV_INITIATED_C" type="string">
+            <column name="CPV_INITIATED_C" length="1" />
+        </property>
+        <property name="DEVIATION_INITIATED_C" type="string">
+            <column name="DEVIATION_INITIATED_C" length="1" />
+        </property>
+        <property name="CUSTOMER_EXPOSURE_N" type="big_decimal">
+            <column name="CUSTOMER_EXPOSURE_N" precision="18" scale="4" />
+        </property>
+        <property name="TOTAL_CUST_EXPOSURE_N" type="big_decimal">
+            <column name="TOTAL_CUST_EXPOSURE_N" precision="18" scale="4" />
+        </property>
+        <property name="SPECIAL_CONDITION_FOR_C" type="string">
+            <column name="SPECIAL_CONDITION_FOR_C" length="8" />
+        </property>
+        <property name="SUB_CATEGORY" type="string">
+            <column name="SUB_CATEGORY" length="20" />
+        </property>
+        <property name="LAA_FIELD_3" type="string">
+            <column name="LAA_FIELD_3" length="1" />
+        </property>
+        <property name="LAA_FIELD_4" type="string">
+            <column name="LAA_FIELD_4" length="300" />
+        </property>
+        <property name="LAA_FIELD_5" type="string">
+            <column name="LAA_FIELD_5" length="300" />
+        </property>
+        <property name="LAA_FIELD_6" type="string">
+            <column name="LAA_FIELD_6" length="50" />
+        </property>
+        <property name="LAA_FIELD_7" type="string">
+            <column name="LAA_FIELD_7" length="100" />
+        </property>
+        <property name="LAA_FIELD_8" type="string">
+            <column name="LAA_FIELD_8" length="100" />
+        </property>
+        <property name="LAA_FIELD_9" type="string">
+            <column name="LAA_FIELD_9" length="100" />
+        </property>
+        <property name="LAA_FIELD_10" type="string">
+            <column name="LAA_FIELD_10" length="100" />
+        </property>
+        <property name="LAA_FIELD_11" type="string">
+            <column name="LAA_FIELD_11" length="20" />
+        </property>
+        <property name="LAA_FIELD_12" type="string">
+            <column name="LAA_FIELD_12" length="20" />
+        </property>
+        <property name="LAA_FIELD_13" type="string">
+            <column name="LAA_FIELD_13" length="1" />
+        </property>
+        <property name="LAA_FIELD_14" type="string">
+            <column name="LAA_FIELD_14" length="100" />
+        </property>
+        <property name="LAA_DEALER_FUNDING" type="string">
+            <column name="LAA_DEALER_FUNDING" length="1" />
+        </property>
+        <property name="RMS_FLAG_C" type="string">
+            <column name="RMS_FLAG_C" length="1" />
+        </property>
+        <property name="RMS_STATUS_C" type="string">
+            <column name="RMS_STATUS_C" length="1" />
+        </property>
+        <property name="RMS_FORWARD_C" type="string">
+            <column name="RMS_FORWARD_C" length="20" />
+        </property>
+        <property name="REJECT_REVIEW__STATUS_C" type="string">
+            <column name="REJECT_REVIEW__STATUS_C" length="1" />
+        </property>
+        <property name="REJECT_REVIEW__DATE_D" type="date">
+            <column name="REJECT_REVIEW__DATE_D" length="7" />
+        </property>
+        <property name="LOS_APP_POS_MINI_COUNT" type="java.lang.Integer">
+            <column name="LOS_APP_POS_MINI_COUNT" precision="8" scale="0" />
+        </property>
+        <property name="LAA_APP_CALPRINCIPAL_C" type="java.lang.Character">
+            <column name="LAA_APP_CALPRINCIPAL_C" length="1" />
+        </property>
+        <property name="INTERESTINADVANCE" type="string">
+            <column name="INTERESTINADVANCE" length="1" />
+        </property>
+        <property name="C_UNDESIRABLE_LOC_FLAG" type="string">
+            <column name="C_UNDESIRABLE_LOC_FLAG" length="1" />
+        </property>
+        <property name="C_PCT_TABLE_NO" type="java.lang.Short">
+            <column name="C_PCT_TABLE_NO" precision="4" scale="0" />
+        </property>
+        <property name="VC_SOURCE_CD" type="string">
+            <column name="VC_SOURCE_CD" length="10" />
+        </property>
+        <property name="VC_REFINANCED_FROM" type="string">
+            <column name="VC_REFINANCED_FROM" length="30" />
+        </property>
+        <property name="VC_REFERRAL_GRP" type="string">
+            <column name="VC_REFERRAL_GRP" length="30" />
+        </property>
+        <property name="VC_REFERRAL_CD" type="string">
+            <column name="VC_REFERRAL_CD" length="12" />
+        </property>
+        <property name="VC_REFERRAL_NAME" type="string">
+            <column name="VC_REFERRAL_NAME" length="30" />
+        </property>
+        <property name="VC_BRANCH_NAME" type="string">
+            <column name="VC_BRANCH_NAME" length="30" />
+        </property>
+        <property name="VC_ACCOUNT_OFF_CD" type="string">
+            <column name="VC_ACCOUNT_OFF_CD" length="3" />
+        </property>
+        <property name="VC_ACCTOUNT_OFF_CD" type="string">
+            <column name="VC_ACCTOUNT_OFF_CD" length="8" />
+        </property>
+        <property name="VC_ACCOUNT_OFFICER" type="string">
+            <column name="VC_ACCOUNT_OFFICER" length="30" />
+        </property>
+        <property name="VC_REQ_FREQUENCY" type="string">
+            <column name="VC_REQ_FREQUENCY" length="20" />
+        </property>
+        <property name="VC_POLICY_TYPE" type="string">
+            <column name="VC_POLICY_TYPE" length="20" />
+        </property>
+        <property name="VC_LOANTYPE" type="string">
+            <column name="VC_LOANTYPE" length="2" />
+        </property>
+        <property name="N_ADD_RATE" type="big_decimal">
+            <column name="N_ADD_RATE" precision="4" />
+        </property>
+        <property name="N_EFFECTIVE_YIELD" type="big_decimal">
+            <column name="N_EFFECTIVE_YIELD" precision="4" />
+        </property>
+        <property name="N_NET_EFFECTIVE" type="big_decimal">
+            <column name="N_NET_EFFECTIVE" precision="4" />
+        </property>
+        <property name="VC_BRANCH" type="string">
+            <column name="VC_BRANCH" length="30" />
+        </property>
+        <property name="N_BILLING_CYCLE_ID" type="string">
+            <column name="N_BILLING_CYCLE_ID" length="10" />
+        </property>
+        <property name="LAA_CALCULATED_INCOME" type="big_decimal">
+            <column name="LAA_CALCULATED_INCOME" precision="18" scale="4" />
+        </property>
+        <property name="LAA_DBR" type="big_decimal">
+            <column name="LAA_DBR" precision="18" scale="4" />
+        </property>
+        <property name="LAA_APPRAISED_NET_LTV" type="big_decimal">
+            <column name="LAA_APPRAISED_NET_LTV" precision="13" />
+        </property>
+        <property name="NCM_DRAFTSAVE" type="string">
+            <column name="NCM_DRAFTSAVE" length="3" />
+        </property>
+        <property name="VC_PRE_COMPANY" type="string">
+            <column name="VC_PRE_COMPANY" length="30" />
+        </property>
+        <property name="VC_PLAN_TYPE" type="string">
+            <column name="VC_PLAN_TYPE" length="20" />
+        </property>
+        <property name="VC_PLAN_CLASS" type="string">
+            <column name="VC_PLAN_CLASS" length="20" />
+        </property>
+        <property name="VC_POL_NO" type="string">
+            <column name="VC_POL_NO" length="30" />
+        </property>
+        <property name="N_PRE_PRICE" type="big_decimal">
+            <column name="N_PRE_PRICE" precision="10" />
+        </property>
+        <property name="D_POLICYISSUEDATE" type="date">
+            <column name="D_POLICYISSUEDATE" length="7" />
+        </property>
+        <property name="DATED_POLICYMATURITY" type="date">
+            <column name="DATED_POLICYMATURITY" length="7" />
+        </property>
+        <property name="VC_RELATION_AIF" type="string">
+            <column name="VC_RELATION_AIF" length="30" />
+        </property>
+        <property name="N_CONSTRUCTION_COST" type="big_decimal">
+            <column name="N_CONSTRUCTION_COST" precision="13" />
+        </property>
+        <property name="VC_RATE_FIXING" type="string">
+            <column name="VC_RATE_FIXING" length="2" />
+        </property>
+        <property name="VC_REPRICING_FORMULA" type="string">
+            <column name="VC_REPRICING_FORMULA" length="2" />
+        </property>
+        <property name="N_INTEREST_RATE" type="java.lang.Short">
+            <column name="N_INTEREST_RATE" precision="4" scale="0" />
+        </property>
+        <property name="N_EQUITY_PERCNT" type="java.lang.Short">
+            <column name="N_EQUITY_PERCNT" precision="4" scale="0" />
+        </property>
+        <property name="VC_AIF" type="string">
+            <column name="VC_AIF" length="30" />
+        </property>
+        <property name="LAA_GROSS_MONTHLY_PAY" type="big_decimal">
+            <column name="LAA_GROSS_MONTHLY_PAY" precision="18" scale="4" />
+        </property>
+        <property name="LAA_CREDIT_LIMIT" type="big_decimal">
+            <column name="LAA_CREDIT_LIMIT" precision="18" scale="4" />
+        </property>
+        <property name="CPV_INITIATED_AGENCY_TYPE" type="string">
+            <column name="CPV_INITIATED_AGENCY_TYPE" length="2" />
+        </property>
+        <property name="DEALER_PARTIC_RATE" type="java.lang.Short">
+            <column name="DEALER_PARTIC_RATE" precision="3" scale="0" />
+        </property>
+        <property name="FINANCIAL_QUANTUM" type="big_decimal">
+            <column name="FINANCIAL_QUANTUM" precision="16" />
+        </property>
+        <property name="DUEMONTH_C" type="string">
+            <column name="DUEMONTH_C" length="3" />
+        </property>
+        <property name="LAA_RATE_N" type="big_decimal">
+            <column name="LAA_RATE_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_COST_OF_FUNDS_N" type="big_decimal">
+            <column name="LAA_COST_OF_FUNDS_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_LOSS_N" type="big_decimal">
+            <column name="LAA_LOSS_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_EXPENSES_N" type="big_decimal">
+            <column name="LAA_EXPENSES_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_CUSTOMER_YIELD_N" type="big_decimal">
+            <column name="LAA_CUSTOMER_YIELD_N" precision="18" scale="4" />
+        </property>
+        <property name="LAA_SALESPERSON_C" type="string">
+            <column name="LAA_SALESPERSON_C" length="20" />
+        </property>
+        <property name="DEALID_C" type="string">
+            <column name="DEALID_C" length="20" />
+        </property>
+        <property name="BD_TYPE_C" type="string">
+            <column name="BD_TYPE_C" length="8" />
+        </property>
+        <property name="LAA_APP_LOANDTL_TERM_N" type="java.lang.Short">
+            <column name="LAA_APP_LOANDTL_TERM_N" precision="3" scale="0" />
+        </property>
+        <property name="LAA_QUOTE_FLAG_C" type="string">
+            <column name="LAA_QUOTE_FLAG_C" length="1" />
+        </property>
+        <property name="LAA_TOPUP_FLAG" type="string">
+            <column name="LAA_TOPUP_FLAG" length="1" />
+        </property>
+        <set name="LOS_APP_STATUSs" inverse="true">
+            <key>
+                <column name="APP_ID_C" length="20" />
+            </key>
+            <one-to-many class="com.pruvn.tools.common.hibernate.finnone.cas.LOS_APP_STATUS" />
+        </set>
+    </class>
+</hibernate-mapping>
