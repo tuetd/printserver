@@ -94,7 +94,7 @@ public class UserMHibernateDAO extends
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<UserM> searchUserByUserName(final String username) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserM>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Criteria crit = session.createCriteria(getPersistentClass());
             	
@@ -108,7 +108,7 @@ public class UserMHibernateDAO extends
 	@Override
 	public List<UserM> findUserByDeptCodeAndLevelCode(final String deptCode,
 			final String levelCode) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserM>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Query query = session.createQuery("select a.user from UserDeptA a, UserLevelA b where a.user = b.user and a.user.isActived != 0 and a.dept.deptcode = :deptCode and b.level.levelcode = :levelCode");
             	query.setParameter("deptCode", deptCode);
@@ -121,7 +121,7 @@ public class UserMHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public List<String> findByFullName(final String username,final String groupcode) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<String>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	List<String> lstUser=new ArrayList<String>();
         		SQLQuery query = session.createSQLQuery("select users.* from user_m users,(SELECT u.* FROM user_group_a u,group_m role where role.groupid=u.groupid and role.groupcode= :groupcode) userrole where users.id=userrole.userid and users.full_name like :fullname");
@@ -142,7 +142,7 @@ public class UserMHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public List<UserM> findByRole(final String type) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserM>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Query query = session.createQuery("select a.user from UserGroupA a where a.group.groupcode =  :type");
             	query.setParameter("type", type);

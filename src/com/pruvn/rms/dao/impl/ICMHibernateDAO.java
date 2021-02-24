@@ -58,7 +58,7 @@ public class ICMHibernateDAO extends
 	@SuppressWarnings("unchecked")
 	@Override
 	public boolean deleteData() {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (boolean) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.DELETE_ICM_DOCUMENT);
         		SQLQuery query = session.createSQLQuery(

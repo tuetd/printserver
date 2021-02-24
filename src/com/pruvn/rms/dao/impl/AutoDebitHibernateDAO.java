@@ -29,7 +29,7 @@ public class AutoDebitHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<AutoDebit> findAll_AD(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<AutoDebit>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		String sqlQuery  = SqlConstant.SELECT_AUTO_DEBIT_LIST_AD;
         		sqlQuery = buildADFilterQuery(filters, sqlQuery);
@@ -46,7 +46,7 @@ public class AutoDebitHibernateDAO extends
 	// document maintenance
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<DocumentMaintenance> getAllDocument(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<DocumentMaintenance>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		String sqlQuery  = SqlConstant.SELECT_DOCUMENT_MAINTENANCE_LST;
         		//sqlQuery = buildADFilterQuery(filters, sqlQuery);
@@ -62,7 +62,7 @@ public class AutoDebitHibernateDAO extends
 	}	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public int countAll_AD(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (int) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		String sqlQuery  = SqlConstant.COUNT_AUTO_DEBIT_LIST_AD;
         		sqlQuery = buildADFilterQuery(filters, sqlQuery);
@@ -80,7 +80,7 @@ public class AutoDebitHibernateDAO extends
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public AutoDebit findByID(final Long id) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (AutoDebit) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	
                  StringBuffer sqlQuery  = new StringBuffer(SqlConstant.FIND_BY_ID);
@@ -98,7 +98,7 @@ public class AutoDebitHibernateDAO extends
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<AutoDebit> getlistBank() {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<AutoDebit>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	
                  StringBuffer sqlQuery  = new StringBuffer(SqlConstant.getListBank);
@@ -115,7 +115,7 @@ public class AutoDebitHibernateDAO extends
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<AutoDebit> getlistBranch() {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<AutoDebit>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	
                  StringBuffer sqlQuery  = new StringBuffer(SqlConstant.getListBranch);

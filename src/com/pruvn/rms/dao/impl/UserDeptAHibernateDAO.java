@@ -33,7 +33,7 @@ public class UserDeptAHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<UserDeptA> findByUser(final UserM user) {
 		//return findByCriteria(Restrictions.eq("user", user));
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserDeptA>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("from UserDeptA u join fetch u.dept Where u.user = :user");
         		query.setParameter("user", user);
@@ -48,7 +48,7 @@ public class UserDeptAHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<UserDeptA> findByDept(final DeptM dept) {
 		//return findByCriteria(Restrictions.eq("dept", dept));
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserDeptA>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		Query query  = session.createQuery("from UserDeptA u join fetch u.user Where u.dept = :dept");
         		query.setParameter("dept", dept);

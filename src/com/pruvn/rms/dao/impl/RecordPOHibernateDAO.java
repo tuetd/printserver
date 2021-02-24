@@ -29,7 +29,7 @@ public class RecordPOHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordPO> findAllRecordPOs_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordPO>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RMT_RECORD_POST_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);
@@ -49,7 +49,7 @@ public class RecordPOHibernateDAO extends
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public RecordPO getRecordPOByLoanIdAndName(final String loanId,final String customerName){
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (RecordPO) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD_PO po WHERE po.AGREEMENTNO like :loanId and upper(po.CUSTOMERNAME) = upper(:customerName)");
              	query.setParameter("loanId", "%" + loanId);
@@ -69,7 +69,7 @@ public class RecordPOHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public Record searchByAgreementNo(final String agreementNo) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (Record) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD po WHERE po.AGREEMENTNO  =:loanId");
              	query.setParameter("loanId", agreementNo);

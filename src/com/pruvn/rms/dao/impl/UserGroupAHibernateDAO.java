@@ -33,7 +33,7 @@ public class UserGroupAHibernateDAO extends
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public List<UserGroupA> findByUser(final UserM user) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserGroupA>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("from UserGroupA u join fetch u.group Where u.user = :user");
         		query.setParameter("user", user);
@@ -53,7 +53,7 @@ public class UserGroupAHibernateDAO extends
 			Hibernate.initialize(userGroupA.getUser());
 		}
 		return list;*/
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<UserGroupA>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("from UserGroupA u join fetch u.user Where u.group = :group");
         		query.setParameter("group", group);

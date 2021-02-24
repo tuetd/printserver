@@ -26,7 +26,7 @@ public class RecordWaitHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordWait> findAll_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordWait>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RMT_WAIT_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);
@@ -44,7 +44,7 @@ public class RecordWaitHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public RecordWait getRecordWaitByLoanId(final String loanId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (RecordWait) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD_WAIT po WHERE po.AGREEMENTNO = :loanId");
              	query.setParameter("loanId",loanId);

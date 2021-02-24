@@ -90,7 +90,7 @@ public class RecordHibernateDAO extends AbstractHibernateDAO<Record, Integer>
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Record getRecordRMTById(final Integer recordId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (Record) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	SQLQuery query = session.createSQLQuery(
         				SqlConstant.SELECT_RMT_BY_ID);
@@ -103,7 +103,7 @@ public class RecordHibernateDAO extends AbstractHibernateDAO<Record, Integer>
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Record getRecordRMTReturnById(final Integer recordId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (Record) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	SQLQuery query = session.createSQLQuery(
         				SqlConstant.SELECT_RMT_RETURN_BY_ID);
@@ -179,7 +179,7 @@ public class RecordHibernateDAO extends AbstractHibernateDAO<Record, Integer>
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<Record> getAllRecords(final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<Record>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RECORD_LIST_ACL);
         		buildFilterQuerySearch(filters, sqlQuery);
@@ -195,7 +195,7 @@ public class RecordHibernateDAO extends AbstractHibernateDAO<Record, Integer>
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<Record> getAllRecordsCreditShield(final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<Record>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RECORD_CREDIT_SHIELD);
         		buildFilterQueryCreditShield(filters, sqlQuery);
@@ -261,7 +261,7 @@ public class RecordHibernateDAO extends AbstractHibernateDAO<Record, Integer>
 	@SuppressWarnings("unchecked")
 	@Override
 	public String getRefNoSeq() {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (String) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer("select RMS_REF_NO_SEQ.nextval from dual");
         		SQLQuery query = session.createSQLQuery(

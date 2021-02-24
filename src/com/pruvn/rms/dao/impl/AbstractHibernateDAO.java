@@ -94,7 +94,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
      */
     @SuppressWarnings("unchecked")
     protected List<T> findByCriteria(final Criterion... criterion) {
-    	return getHibernateTemplate().execute(new HibernateCallback() {
+    	return (List<T>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Criteria crit = session.createCriteria(getPersistentClass());
             	for (Criterion c : criterion) {
@@ -110,7 +110,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<T> findByCriteria(final Map criterias) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<T>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Criteria criteria = session.createCriteria(getPersistentClass());
             	criteria.add(Restrictions.allEq(criterias));
@@ -124,7 +124,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected List<T> executeQuery(final String query, final String namedParams[],	final Object params[]) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<T>) getHibernateTemplate().execute(new HibernateCallback() {
             public List<T> doInHibernate(Session session) throws HibernateException, SQLException {
             	Query q = session.createQuery(query);
                 if (namedParams != null) {
@@ -139,7 +139,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected int executeUpdateQuery(final String query, final String namedParams[],	final Object params[]) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (int) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Query q = session.createQuery(query);
                 if (namedParams != null) {
@@ -161,7 +161,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	protected int executeNamedQuery(final String namedQuery, final String namedParams[],	final Object params[]) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (int) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Query q = session.getNamedQuery(namedQuery);
             	if (namedParams != null) {
@@ -180,7 +180,7 @@ public abstract class AbstractHibernateDAO<T, ID extends Serializable> extends H
 	
 	@SuppressWarnings("unchecked")
     public List<T> findByExample(final T exampleInstance, final String[] excludeProperty) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<T>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(Session session) throws HibernateException, SQLException {
             	Criteria crit = session.createCriteria(getPersistentClass());
             	Example example =  Example.create(exampleInstance).excludeZeroes().enableLike().ignoreCase();

@@ -27,7 +27,7 @@ public class RecordFL2HibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordFL2> findAllReceivedRMT_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordFL2>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RMT_REVEIVE_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);
@@ -46,7 +46,7 @@ public class RecordFL2HibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public RecordFL2 getRecordFL2ByLoanId(final String loanId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (RecordFL2) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD_FL2 po WHERE po.AGREEMENTNO = :loanId");
              	query.setParameter("loanId",loanId);

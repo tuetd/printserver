@@ -27,7 +27,7 @@ public class RecordRDHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordReady> findAllRecordRDs_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordReady>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RMT_RECORD_READY_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);
@@ -45,7 +45,7 @@ public class RecordRDHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public RecordReady getRecordRDByLoanId(final String loanId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (RecordReady) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD_READY po WHERE po.AGREEMENTNO = :loanId");
              	query.setParameter("loanId",loanId);
@@ -62,7 +62,7 @@ public class RecordRDHibernateDAO extends
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public RecordPending getRecordPendingByLoanId(final String loanId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (RecordPending) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		SQLQuery query =session.createSQLQuery("select po.* from RM_RECORD_PENDING po WHERE po.AGREEMENTNO = :loanId");
              	query.setParameter("loanId",loanId);

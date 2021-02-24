@@ -27,7 +27,7 @@ public class CSRecordRMTReceiveHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<CSRecordRMTReceive> findAll_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<CSRecordRMTReceive>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_CS_RECORD_RMT_REVEIVE_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);

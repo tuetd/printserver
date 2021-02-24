@@ -48,7 +48,7 @@ public class MRCHibernateDao extends AbstractHibernateDAO<MRC, Integer> implemen
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<MRC> getMRCList(final FilterMRCForm filterMRCForm){		
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<MRC>) getHibernateTemplate().execute(new HibernateCallback() {
 	        public Object doInHibernate(final Session session) throws HibernateException, SQLException {
 	        	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_MRC_LIST_ACL);
 	

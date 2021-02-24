@@ -26,7 +26,7 @@ public class RecordFLHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordFL> findAll_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordFL>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_FRESH_LOAN_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);

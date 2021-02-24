@@ -57,7 +57,7 @@ public class ScreenHibernateDao extends AbstractHibernateDAO<Screen, Integer> im
 		//Find Screen by stage
 		final List<Screen> list = this.findByStage(stage);
 		
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<Screen>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	if(list != null && list.size() > 0){
             		Screen screen = list.get(0);
@@ -80,7 +80,7 @@ public class ScreenHibernateDao extends AbstractHibernateDAO<Screen, Integer> im
 		//Find Screen by stage
 		final List<Screen> list = this.findByStage(stage2);
 		
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<Screen>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	if(list != null && list.size() > 0){
             		Screen screen = list.get(0);

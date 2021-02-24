@@ -26,7 +26,7 @@ public class CSRecordWaitingHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<CSRecordWaiting> findAll_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<CSRecordWaiting>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
         		StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_CS_RECORD_WAITING_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);
@@ -46,7 +46,7 @@ public class CSRecordWaitingHibernateDAO extends
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public CSRecordWaiting getCSRecordWaitingByIdAndCusName(final String loanID,
 			final String customerName){
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (CSRecordWaiting) getHibernateTemplate().execute(new HibernateCallback() {
 	        public Object doInHibernate(final Session session) throws HibernateException, SQLException {
 	    		SQLQuery query =session.createSQLQuery("select w.* from CS_RECORD_WAITING w WHERE w.AGREEMENTNO like :loanId " +
 	    				" AND REPLACE(upper(w.CUSTOMERNAME),' ','') = REPLACE(upper(:customerName),' ','') ");

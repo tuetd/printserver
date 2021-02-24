@@ -26,7 +26,7 @@ public class RecordScanCMCheckHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<RecordScanCMCheck> findAllRecordScanCMCheck_ACL(final String username, final String stage, final Map<String, Object> filters) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<RecordScanCMCheck>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_RMT_RECORD_SCAN_CM_CHECK_LIST_ACL);
         		buildFilterQuery(filters, sqlQuery);

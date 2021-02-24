@@ -24,7 +24,7 @@ public class LogTransactionHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<LogTransaction> getByRecordId(final Integer recordId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<LogTransaction>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("FROM LogTransaction WHERE recordId = :recordId");
         		query.setParameter("recordId", recordId);
@@ -35,7 +35,7 @@ public class LogTransactionHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<LogTransaction> getLogTransactions(final Integer recordId, final String logType){
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<LogTransaction>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("FROM LogTransaction WHERE recordId = :recordId AND (logType is null or logType =:logType)");
         		query.setParameter("recordId", recordId);

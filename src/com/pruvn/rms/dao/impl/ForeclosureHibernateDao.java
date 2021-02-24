@@ -48,7 +48,7 @@ public class ForeclosureHibernateDao extends AbstractHibernateDAO<Foreclosure, I
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<Foreclosure> getForeclosureList(final String stage,
 			final FilterMRCForm filterMRCForm) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<Foreclosure>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_FORECLOSURE_LIST_ACL);
             	if(!CommonUtils.isNullOrEmpty(stage)) {  

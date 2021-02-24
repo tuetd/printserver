@@ -36,7 +36,7 @@ public class UserLevelAHibernateDao extends AbstractHibernateDAO<UserLevelA,Inte
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public UserLevelA findByuserid(final UserM user) {
 		//List<UserLevelA> ret = findByCriteria(Restrictions.eq("user", userid));
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (UserLevelA) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("from UserLevelA u join fetch u.level Where u.user = :user");
         		query.setParameter("user", user);
@@ -57,7 +57,7 @@ public class UserLevelAHibernateDao extends AbstractHibernateDAO<UserLevelA,Inte
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public UserLevelA findBylevelid(final UserLevelM level) {
 		//List<UserLevelA> ret = findByCriteria(Restrictions.eq("level", levelid));
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (UserLevelA) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("from UserLevelA u join fetch u.user Where u.level = :level");
         		query.setParameter("level", level);

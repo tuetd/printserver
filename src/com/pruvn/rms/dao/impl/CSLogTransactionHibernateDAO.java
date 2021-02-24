@@ -24,7 +24,7 @@ public class CSLogTransactionHibernateDAO extends
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<CSLogTransaction> getByCSRecordId(final Integer recordId) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<CSLogTransaction>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	Query query  = session.createQuery("FROM CSLogTransaction WHERE recordId = :recordId");
         		query.setParameter("recordId", recordId);

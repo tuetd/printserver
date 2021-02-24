@@ -38,7 +38,7 @@ public class StoredLoanHibernateDao extends AbstractHibernateDAO<StoredLoan, Int
 	@Override
 	public List<StoredLoan> getForeclosureList(final FilterStoredLoanForm filterMRCForm) {
 		// TODO Auto-generated method stub
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<StoredLoan>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	if(StringUtils.isEmpty(filterMRCForm.getLoanNo()) && StringUtils.isEmpty(filterMRCForm.getBarCode())
             			&& StringUtils.isEmpty(filterMRCForm.getNameBox())) return new ArrayList<StoredLoan>();
@@ -74,7 +74,7 @@ public class StoredLoanHibernateDao extends AbstractHibernateDAO<StoredLoan, Int
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@Override
 	public int updateDestroyStoredLoan(final StoredLoan store,final String username) {
-		return  getHibernateTemplate().execute(new HibernateCallback() {
+		return  (int) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	String sql=null;
             	if(StringUtils.isNotEmpty(store.getDestroyDate()) && StringUtils.isNotEmpty(store.getRemark()) && StringUtils.isNotEmpty(store.getDateSent())){

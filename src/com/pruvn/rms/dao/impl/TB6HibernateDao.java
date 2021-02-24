@@ -50,7 +50,7 @@ public class TB6HibernateDao extends AbstractHibernateDAO<TB6, Integer> implemen
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List<TB6> getTB6List(final String stage,
 			final FilterMRCForm filterMRCForm) {
-		return getHibernateTemplate().execute(new HibernateCallback() {
+		return (List<TB6>) getHibernateTemplate().execute(new HibernateCallback() {
             public Object doInHibernate(final Session session) throws HibernateException, SQLException {
             	StringBuffer sqlQuery  = new StringBuffer(SqlConstant.SELECT_TB6_LIST_ACL);
             	if(!CommonUtils.isNullOrEmpty(stage)) {  
