@@ -5,7 +5,7 @@ import org.displaytag.decorator.TableDecorator;
 import com.pruvn.rms.domain.Record;
 import com.pruvn.rms.domain.RecordReady;
 import com.pruvn.rms.utils.Constant.STAGE;
-
+@SuppressWarnings("unchecked")
 public class RecordDecorator extends TableDecorator{
 	
 	public String addRowClass()
