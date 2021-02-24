@@ -1,0 +1,245 @@
+@CHARSET "UTF-8";
+
+<
+style type ="text/css"><!--div.scroll {
+	height: 500px;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid #666;
+}
+
+-->
+</
+style>body {
+	font: 12px verdana, arial, helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+
+table.wwFormTable {
+	font: 12px verdana, arial, helvetica, sans-serif;
+	border-width: 1px;
+	border-color: #030;
+	border-style: solid;
+	color: #242;
+	background-color: #ada;
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+
+table.wwFormTable th {
+	
+}
+
+table.wwFormTable tr td {
+	background-color: #dfd;
+	margin: 5px;
+	padding: 5px;
+}
+
+.tdLabel { /*
+border-width: 1px;
+border-color: #afa;
+border-style: solid;
+*/
+	font-weight: bold;
+	align: top;
+}
+
+.label {
+	
+}
+
+.errorMessage {
+	color: red;
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+.errorMessage li span {
+	color: red;
+	float: none;
+	text-align: center;
+}
+
+.errorMessage li {
+}
+
+#headerDiv {
+	border-style: solid;
+	border-width: 1px 1px 0px;
+	border-color: black;
+	padding: 5px;
+	background-color: #7a7;
+	/* height: 22px; */
+	height: 1.8em;
+	/* margin-bottom: 12px; */
+}
+
+#buttonBar {
+	border-width: 0px 1px 1px;
+	border-style: solid;
+	border-color: black;
+	color: white;
+	margin-bottom: 12px;
+	background-color: #7a7;
+	height: 1.6em;
+	padding: 5px;
+}
+
+#appName {
+	color: white;
+	font-size: 1.8em;
+}
+
+#pageTitle {
+	font-size: 1.4em;
+	color: #dfd;
+	clear: none;
+}
+
+#appName,#pageTitle {
+	float: right;
+}
+
+#menuContainer {
+	float: left;
+}
+
+#brandingContainer {
+	float: right : 
+ text-align :   right;
+}
+
+/* MENU */ /**************** menu coding *****************/
+#menu {
+	width: 12em;
+	background: #eee;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu a,#menu h2 {
+	font: bold 11px/ 16px arial, helvetica, sans-serif;
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #888 #555 #bbb;
+	margin: 0;
+	padding: 2px 3px;
+}
+
+#menu h2 {
+	color: #fff;
+	background: #000;
+	text-transform: uppercase;
+}
+
+#menu a {
+	color: #000;
+	background: #efefef;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #a00;
+	background: #fff;
+}
+
+#menu li {
+	position: relative;
+}
+
+#menu ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+div#menu ul ul ul,div#menu ul ul li:hover ul ul {
+	display: none;
+}
+
+div#menu ul ul li:hover ul,div#menu ul ul ul li:hover ul {
+	display: block;
+}
+
+/* END MENU */
+table.contacts {
+	width: 100%;
+	background-color: #fafafa;
+	border: 1px #000000 solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+table.contacts_1 {
+	width: 100%;
+	background-color: #fafafa;
+	border: 1px #000000 solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+td.contactDept {
+	background-color: #99CCCC;
+	border: 1px #000000 solid;
+	font-family: Verdana;
+	font-size: 12px;
+	text-align: center;
+}
+
+td.contact {
+	border-bottom: 1px #6699CC dotted;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+td.contact_1 {
+	border: dotted;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	text-align: center;
+}
+
+td.contact_num {
+	border-bottom: 1px #6699CC dotted;
+	text-align: left;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: normal;
+	font-size: 11px;
+	color: #404040;
+	background-color: #fafafa;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 0px;
+	text-align: right;
+	grouping-separator: ",";
+	decimal-separator: ".";
+}
+
+/* tr.even td {
+	background-color: #CCCCCC;
+}
+
+tr.odd td {
+	background-color: #eee;
+} */
+
+@
+decimal-format price {
+	grouping-separator: ",";
+	decimal-separator: "."
+}

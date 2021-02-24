@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Telosys Database Repository -->
+<root>
+<tableList generation="2013-08-09 11:43:42" name="Oracle -RMS UAT" type="Oracle">
+<table catalog="" javaBean="Usertest" javaBeanConv="" javaBeanDAO="" javaBeanList="" name="USERTEST" schema="UAT_RMS_OWNER">
+<column dbDefaultValue="" dbName="ID" dbNotNull="true" dbPosition="1" dbPrimaryKey="true" dbSize="22" dbTypeName="NUMBER" javaName="id" javaType="java.math.BigDecimal" jdbcTypeCode="3" notNull="true" selected="true"/>
+<column dbDefaultValue="" dbName="NAME" dbNotNull="false" dbPosition="2" dbSize="50" dbTypeName="VARCHAR2" javaName="name" javaType="java.lang.String" jdbcTypeCode="12" maxLength="50" notNull="false" selected="true"/>
+<column dbDefaultValue="" dbName="PHONE" dbNotNull="false" dbPosition="3" dbSize="20" dbTypeName="VARCHAR2" javaName="phone" javaType="java.lang.String" jdbcTypeCode="12" maxLength="20" notNull="false" selected="true"/>
+</table>
+</tableList>
+</root>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<bean id="groupMDAO" class="com.pruvn.rms.dao.impl.GroupMHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="userGroupADAO" class="com.pruvn.rms.dao.impl.UserGroupAHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="userMDAO" class="com.pruvn.rms.dao.impl.UserMHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="deptMDAO" class="com.pruvn.rms.dao.impl.DeptMHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<!-- <bean id="cm_doc_printed_trialDAO" class="com.pruvn.rms.dao.impl.Cm_doc_printed_trialHibernateDAO">
+		<property name="hibernateTemplate" ref="fbprintsrvDBHibernateTemplate" />
+	</bean> -->
+<bean id="cm_doc_printed_trialDAO" class="com.pruvn.rms.dao.impl.Cm_doc_printed_trialHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="userDeptADAO" class="com.pruvn.rms.dao.impl.UserDeptAHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="auditTrailDAO" class="com.pruvn.rms.dao.impl.AuditTrailHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="paramMDAO" class="com.pruvn.rms.dao.impl.ParamMHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="userLogDAO" class="com.pruvn.rms.dao.impl.UserLogHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="autoDebitDAO" class="com.pruvn.rms.dao.impl.AutoDebitHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="autoDebitHistoryDAO" class="com.pruvn.rms.dao.impl.AutoDebitHistoryHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="userLevelADao" class="com.pruvn.rms.dao.impl.UserLevelAHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="userLevelMDao" class="com.pruvn.rms.dao.impl.UserLevelMHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="auditLogDAO" class="com.pruvn.rms.dao.impl.AuditLogHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="passwordHistoryDAO" class="com.pruvn.rms.dao.impl.PasswordHistoryHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordDAO" class="com.pruvn.rms.dao.impl.RecordHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="recordFLDAO" class="com.pruvn.rms.dao.impl.RecordFLHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordFL1DAO" class="com.pruvn.rms.dao.impl.RecordFL1HibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordFL2DAO" class="com.pruvn.rms.dao.impl.RecordFL2HibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordFL3DAO" class="com.pruvn.rms.dao.impl.RecordFL3HibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordRRDAO" class="com.pruvn.rms.dao.impl.RecordRRHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordRDDAO" class="com.pruvn.rms.dao.impl.RecordRDHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordPODAO" class="com.pruvn.rms.dao.impl.RecordPOHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordPOReturnDAO" class="com.pruvn.rms.dao.impl.RecordPOReturnHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordBranchDAO" class="com.pruvn.rms.dao.impl.RecordBranchHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordBranchReceiveDAO" class="com.pruvn.rms.dao.impl.RecordBranchReceiveHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordBranchReturnDAO" class="com.pruvn.rms.dao.impl.RecordBranchReturnHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordBranchDeliverDAO" class="com.pruvn.rms.dao.impl.RecordBranchDeliverHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordScanCMDAO" class="com.pruvn.rms.dao.impl.RecordScanCMHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordScanCMCheckDAO" class="com.pruvn.rms.dao.impl.RecordScanCMCheckHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordInBoxDAO" class="com.pruvn.rms.dao.impl.RecordInBoxHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="logTransactionDAO" class="com.pruvn.rms.dao.impl.LogTransactionHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordWaitDAO" class="com.pruvn.rms.dao.impl.RecordWaitHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="followUpDAO" class="com.pruvn.rms.dao.impl.FollowUpHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="branchDao" class="com.pruvn.rms.dao.impl.BranchHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="productDao" class="com.pruvn.rms.dao.impl.ProductHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="screenDao" class="com.pruvn.rms.dao.impl.ScreenHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="recordVerifiedDAO" class="com.pruvn.rms.dao.impl.RecordVerifiedHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="recordNotSendDAO" class="com.pruvn.rms.dao.impl.RecordNotSendHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="recordPendingDAO" class="com.pruvn.rms.dao.impl.RecordPendingHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="uploadDataDao" class="com.pruvn.rms.dao.impl.UploadDataHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordSuspenseDAO" class="com.pruvn.rms.dao.impl.RecordSuspenseHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordCSWaitingDAO" class="com.pruvn.rms.dao.impl.RecordCSWaitingHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="recordCSCompletedDAO" class="com.pruvn.rms.dao.impl.RecordCSCompletedHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<!--  Credit Shield DAO -->
+	<bean id="csRecordDAO" class="com.pruvn.rms.dao.impl.CSRecordHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="csRecordFLDAO" class="com.pruvn.rms.dao.impl.CSRecordFLHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>	
+	
+	<bean id="csRecordRMTDAO" class="com.pruvn.rms.dao.impl.CSRecordRMTHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordRMTReceiveDAO" class="com.pruvn.rms.dao.impl.CSRecordRMTReceiveHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordWaitingDAO" class="com.pruvn.rms.dao.impl.CSRecordWaitingHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordPendingDAO" class="com.pruvn.rms.dao.impl.CSRecordPendingHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordFailedDAO" class="com.pruvn.rms.dao.impl.CSRecordFailedHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordCompletedDAO" class="com.pruvn.rms.dao.impl.CSRecordCompletedHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csRecordSentDAO" class="com.pruvn.rms.dao.impl.CSRecordSentHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="csLogTransactionDAO" class="com.pruvn.rms.dao.impl.CSLogTransactionHibernateDAO">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="csUploadDataDao" class="com.pruvn.rms.dao.impl.CSUploadDataHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="mrcDao" class="com.pruvn.rms.dao.impl.MRCHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="homeLoanDao" class="com.pruvn.rms.dao.impl.HomeLoanHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="tb6Dao" class="com.pruvn.rms.dao.impl.TB6HibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="foreclosureDao" class="com.pruvn.rms.dao.impl.ForeclosureHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	<bean id="storedLoanDao" class="com.pruvn.rms.dao.impl.StoredLoanHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="insuranceDao" class="com.pruvn.rms.dao.impl.InsuranceHibernateDao">
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+	
+	<bean id="icmDao" class="com.pruvn.rms.dao.impl.ICMHibernateDAO">
+		<property name="hibernateTemplate" ref="icmDBHibernateTemplate" />
+	</bean>
+</beans>

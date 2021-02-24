@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/tx 	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+
+
+	<!-- This tells Spring to activate annotation-driven transactions -->
+	<tx:annotation-driven />
+
+<!-- jndiName -->
+	<bean id="jndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:comp/env/jdbc/RMS"/>
+    </bean>
+	<!-- 	Authorization database -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		 <property name="dataSource">
+            <ref bean="jndiDataSource"/>
+        </property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.c3p0.min_size">5</prop>
+				<prop key="hibernate.c3p0.max_size">20</prop>
+				<prop key="hibernate.c3p0.timeout">1800</prop>
+				<prop key="hibernate.c3p0.max_statements">50</prop>
+				<prop key="hibernate.c3p0.automaticTestTable">c3p0Connectiontest</prop>
+				<prop key="hibernate.connection.CharSet">utf-8</prop>
+				<prop key="hibernate.connection.characterEncoding">utf-8</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop> 
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop>	
+			</props>
+		</property>
+	    <property name="annotatedClasses">
+			<list>
+				<value>com.pruvn.rms.domain.GroupM</value>
+				<value>com.pruvn.rms.domain.UserGroupA</value>
+				<value>com.pruvn.rms.domain.UserM</value>
+				<value>com.pruvn.rms.domain.DeptM</value>
+				<value>com.pruvn.rms.domain.UserDeptA</value>
+				<value>com.pruvn.rms.domain.AuditTrail</value>
+				<value>com.pruvn.rms.domain.AutoDebit</value>
+				<value>com.pruvn.rms.domain.AutoDebitHistory</value>
+				<value>com.pruvn.rms.domain.ParamM</value>
+				<value>com.pruvn.rms.domain.GroupM</value>
+				<value>com.pruvn.rms.domain.UserLog</value>
+				<value>com.pruvn.rms.domain.AuditLog</value>
+				<value>com.pruvn.rms.domain.UserLevelA</value>
+				<value>com.pruvn.rms.domain.UserLevelM</value>
+				<value>com.pruvn.rms.domain.PasswordHistory</value>
+				<value>com.pruvn.rms.domain.Record</value>
+				<value>com.pruvn.rms.domain.RecordFL</value>
+				<value>com.pruvn.rms.domain.RecordFL1</value>
+				<value>com.pruvn.rms.domain.RecordFL2</value>
+				<value>com.pruvn.rms.domain.RecordFL3</value>
+				<value>com.pruvn.rms.domain.RecordVerified</value>
+				<value>com.pruvn.rms.domain.RecordPrepared</value>
+				<value>com.pruvn.rms.domain.RecordReady</value>
+				<value>com.pruvn.rms.domain.RecordNotSend</value>
+				<value>com.pruvn.rms.domain.RecordPending</value>
+				<value>com.pruvn.rms.domain.RecordPO</value>
+				<value>com.pruvn.rms.domain.RecordPOReturn</value>
+				<value>com.pruvn.rms.domain.RecordBranch</value>
+				<value>com.pruvn.rms.domain.RecordBranchReceive</value>
+				<value>com.pruvn.rms.domain.RecordBranchReturn</value>
+				<value>com.pruvn.rms.domain.RecordBranchDeliver</value>	
+				<value>com.pruvn.rms.domain.RecordScanCM</value>
+				<value>com.pruvn.rms.domain.RecordScanCMCheck</value>	
+				<value>com.pruvn.rms.domain.RecordInBox</value>
+				<value>com.pruvn.rms.domain.RecordWait</value>	
+				<value>com.pruvn.rms.domain.LogTransaction</value>
+				<value>com.pruvn.rms.domain.FollowUp</value>
+				<value>com.pruvn.rms.domain.Branch</value>
+				<value>com.pruvn.rms.domain.Product</value>
+				<value>com.pruvn.rms.domain.Screen</value>
+				<value>com.pruvn.rms.domain.UploadData</value>
+				<value>com.pruvn.rms.domain.RecordSuspense</value>
+				<value>com.pruvn.rms.domain.RecordCSWaiting</value>
+				<value>com.pruvn.rms.domain.RecordCSCompleted</value>
+				
+				
+				<value>com.pruvn.rms.domain.CSUploadData</value>
+				<value>com.pruvn.rms.domain.CSRecord</value>
+				<value>com.pruvn.rms.domain.CSRecordFL</value>
+				<value>com.pruvn.rms.domain.CSRecordRMT</value>
+				<value>com.pruvn.rms.domain.CSRecordRMTReceive</value>
+				<value>com.pruvn.rms.domain.CSRecordWaiting</value>
+				<value>com.pruvn.rms.domain.CSRecordPending</value>
+				<value>com.pruvn.rms.domain.CSRecordFailed</value>
+				<value>com.pruvn.rms.domain.CSRecordCompleted</value>			
+				<value>com.pruvn.rms.domain.CSLogTransaction</value>
+				<value>com.pruvn.rms.domain.CSRecordSent</value>
+				<value>com.pruvn.rms.domain.MRC</value>
+				<value>com.pruvn.rms.domain.HomeLoan</value>
+				<value>com.pruvn.rms.domain.TB6</value>
+				<value>com.pruvn.rms.domain.Foreclosure</value>
+				<value>com.pruvn.rms.domain.StoredLoan</value>
+				<value>com.pruvn.rms.domain.Insurance</value>
+				<value>com.pruvn.rms.domain.DocumentMaintenance</value>
+				<value>com.pruvn.rms.domain.finnbank.Cm_doc_printed_trial</value>
+			</list>
+		</property>
+	</bean>
+<bean id="hibernateInterceptor" class="org.springframework.orm.hibernate3.HibernateInterceptor">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="entityInterceptor">
+			<ref bean="interceptor" />
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="entityInterceptor">
+			<ref bean="interceptor" />
+		</property>
+	</bean>
+<!-- 	Finnbank-Printserver user management database -->
+	 
+	<bean id="icmIndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:comp/env/jdbc/ICM"/>
+    </bean>
+	<!-- 	Authorization database -->
+	<bean id="icmDBSessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		 <property name="dataSource">
+            <ref bean="icmIndiDataSource"/>
+        </property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.c3p0.min_size">5</prop>
+				<prop key="hibernate.c3p0.max_size">20</prop>
+				<prop key="hibernate.c3p0.timeout">1800</prop>
+				<prop key="hibernate.c3p0.max_statements">50</prop>
+				<prop key="hibernate.c3p0.automaticTestTable">c3p0Connectiontest</prop>
+				<prop key="hibernate.connection.CharSet">utf-8</prop>
+				<prop key="hibernate.connection.characterEncoding">utf-8</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop> 
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.provider_class">net.sf.ehcache.hibernate.EhCacheProvider</prop>	
+			</props>
+		</property>
+	    <property name="annotatedClasses">
+			<list>
+			 <value>com.pruvn.rms.domain.Icm</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="icmDBHibernateInterceptor" class="org.springframework.orm.hibernate3.HibernateInterceptor">
+		<property name="sessionFactory">
+			<ref local="icmDBSessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="icmDBHibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	    <property name="sessionFactory">
+	        <ref bean="icmDBSessionFactory"/>
+	    </property>
+	</bean>
+	
+	<bean id="icmDBTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+	        <ref bean="icmDBSessionFactory"/>
+	    </property>
+	</bean>
+
+
+
+
+	
+
+	<bean id="interceptor" class="com.pruvn.rms.interceptor.AuditLogInterceptor"></bean>
+
+
+</beans>

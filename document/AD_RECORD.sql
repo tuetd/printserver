@@ -1,0 +1,45 @@
+--------------------------------------------------------
+--  File created - Wednesday-November-05-2014   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table AD_RECORD
+--------------------------------------------------------
+
+  CREATE TABLE "UAT_RMS_OWNER"."AD_RECORD" 
+   (	"ID" NUMBER, 
+	"DISBURSALDATE" DATE, 
+	"CUSTOMERNAME" NVARCHAR2(500), 
+	"STATUS" VARCHAR2(20 BYTE), 
+	"BANKNAME" NVARCHAR2(500), 
+	"TYPEAUTODEBIT" VARCHAR2(20 BYTE), 
+	"LOANNO" VARCHAR2(20 BYTE), 
+	"FIRSTDUEDATE" DATE, 
+	"AUTHORIZEDDATE" DATE, 
+	"RONAME" NVARCHAR2(500), 
+	"REASON" NVARCHAR2(200), 
+	"BANKCODE" VARCHAR2(200 BYTE), 
+	"CM" VARCHAR2(10 BYTE), 
+	"SENDDATE" DATE, 
+	"RECEIVEORRETURNDATE" DATE, 
+	"BRANCHDESC" VARCHAR2(22 BYTE)
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)
+  TABLESPACE "DATATBS1" ;
+--------------------------------------------------------
+--  Constraints for Table AD_RECORD
+--------------------------------------------------------
+
+  ALTER TABLE "UAT_RMS_OWNER"."AD_RECORD" MODIFY ("ID" NOT NULL ENABLE);
+--------------------------------------------------------
+--  DDL for Trigger AD_RECORD_TRG
+--------------------------------------------------------
+
+  CREATE OR REPLACE TRIGGER "UAT_RMS_OWNER"."AD_RECORD_TRG" BEFORE
+  INSERT ON AD_RECORD FOR EACH ROW BEGIN <<COLUMN_SEQUENCES>> BEGIN NULL;
+END COLUMN_SEQUENCES;
+END;
+/
+ALTER TRIGGER "UAT_RMS_OWNER"."AD_RECORD_TRG" ENABLE;
+
+CREATE SEQUENCE "UAT_RMS_OWNER"."AD_RECORD_SEQ" MINVALUE 1 MAXVALUE 999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER NOCYCLE ;

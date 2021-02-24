@@ -1,0 +1,406 @@
+@CHARSET "UTF-8";
+
+.textbox {
+	width:50%; 
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+color: #333333;
+}
+a:visited {
+color: #333333;
+}
+a:hover {
+color: #CCCCCC;
+background-color: #333333;
+text-decoration: none;
+}
+a:active {
+color: #333333;
+}
+
+.odd {
+	background-color: #eee;
+}
+
+.even {
+	background-color: #CCCCCC;
+}
+
+.header {
+	background-color: #CCCCCC;
+}
+
+table#data {
+	padding:1px;
+    color: #404040;
+    font-family: Verdana;
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+table#data tr.empty {
+	 text-align: center;
+	 height: 30px;
+}
+
+table#data thead tr {
+	background-color: #AAAAAA;
+	height: 35px;
+}
+
+.sortable {
+	background-color: #AAAAAA;
+}
+
+.active_input {
+	BACKGROUND: #C9C299
+}
+
+/**************DISPLAY TAG**************/
+/* .pagebanner { */
+/* 	float: left; */
+/* 	position: inherit; */
+/* 	padding-left: 10px; */
+/* } */
+span.pagebanner {
+    display: block;
+    /*margin: 10px 0;*/
+    padding: 5px 4px 2px 0;
+    font-size: 1.1em;
+    float:left;
+}
+
+/* .pagelinks { */
+/* 	float: right; */
+/* 	position: inherit; */
+/* 	padding-bottom: 10px; */
+/* 	padding-right: 20px; */
+/* } */
+span.pagelinks {
+    display: block;
+    font-size: 1.1em;
+    /*margin-bottom: 5px;
+    margin-top: -28px;*/
+    padding: 5px 4px 2px 0;
+    text-align: right;
+    float: right;
+}
+
+ul.app_list {
+	list-style-type: none;
+	padding-top: 15px;
+	margin: 0;
+}
+
+ul.app_list li {
+	background-image: url(db.jpeg);
+	background-repeat: no-repeat;
+	background-position: 0 .4em;
+	padding-left: .6em;
+	height: 3em;
+	margin: 0 3px;
+	padding: 3px 40px;
+	line-height: 2em;
+}
+
+ul.app_list li a {
+	vertical-align: middle;
+}
+
+#nav {
+    background-color: #2D5781;
+    font-size: 90%;
+    margin: 0;
+    padding: 2px 0;
+    text-align: left;
+}
+
+#nav li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+#nav a:link, #nav a:visited {
+    background-color: transparent;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#homefooter {
+    color: #6E6E6E;
+    margin: 0 auto 22px;
+    text-align: center;
+}
+
+#homefooter #links {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #C8BBBE;
+    border-style: solid;
+    border-width: 1px 0;
+    margin: 1.5em 0 2em;
+    padding: 0.5em 0;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.red {
+	color: red;
+}
+
+li.changepwd {
+	padding: 5px 0 0 0; 
+	width: 400px;
+}
+
+.left50 {
+	padding-left: 50px;
+}
+
+.width40 {
+	width: 40%;
+}
+
+.width60 {
+	width: 60%;
+}
+
+.width100 {
+	width: 100%;
+}
+
+.width90 {
+	width: 90%;
+}
+.width20 {
+	width: 20%;
+}
+
+.width30 {
+	width: 30%;
+}
+
+.bordered {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 1px #CCCCCC;
+}
+.bordered tr:hover {
+    -moz-transition: all 0.1s ease-in-out 0s;
+    background: none repeat scroll 0 0 #FBF8E9;
+}
+.bordered td, .bordered th {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    padding: 10px;
+    text-align: left;
+}
+.bordered th {
+    background-color: #DCE9F9;
+    background-image: -moz-linear-gradient(center top , #EBF3FC, #DCE9F9);
+    border-top: medium none;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.bordered td:first-child, .bordered th:first-child {
+    border-left: medium none;
+}
+.bordered th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.bordered th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.bordered th:only-child {
+    border-radius: 6px 6px 0 0;
+}
+.bordered tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.bordered tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+
+/* popup_box DIV-Styles*/
+/* #popup_box {
+    display:none; Hide the DIV
+    position:fixed;  
+    _position:absolute; hack for internet explorer 6  
+    height:90px;  
+    width:180px;  
+    background:#FFFFFF;  
+    left: 300px;
+    top: 150px;
+    z-index:100; Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself
+    margin-left: 15px;  
+   
+    additional features, can be omitted
+    border:2px solid #d2d2d2;;#ff0000;      
+    padding:15px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #d2d2d2;
+    -webkit-box-shadow: 0 0 5px #d2d2d2;
+    box-shadow: 0 0 5px #d2d2d2;
+   
+}
+
+This is for the positioning of the Close Link
+#popupBoxClose {
+    font-size:20px;  
+    line-height:15px;  
+    right:5px;  
+    bottom:5px;  
+    position:absolute;  
+    color:#6fa5e2;  
+    font-weight:500;      
+} */
+
+  /* Add these styles once per website */
+  .popup_background {
+    z-index: 2000; /* any number */
+  }
+  .popup_wrapper {
+    z-index: 2001; /* any number + 1 */
+  }
+  /* Add inline-block support for IE7 */
+  .popup_align,
+  .popup_content {
+    *display: inline;
+    *zoom: 1;
+  }
+  
+.well {
+    background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+}
+
+.popup_content {
+	width: 180px;
+	height: 150px;
+	left: 0px;
+    top: 100px;
+
+}
+  
+
+.expander {
+    margin-bottom: 5px;
+    width:100%;
+}
+a.expander-header {
+    color: #993300;
+    text-decoration: none;
+}
+.expander-content {
+    background-color: #EBE5D9;
+    border-bottom: 2px solid #EBE5D9;
+    border-left: 2px solid #EBE5D9;
+    border-right: 2px solid #EBE5D9;
+    padding: 0px;
+    
+}
+.expander-header {
+    background-color: #ACC8CC;
+    border: 2px solid #ACC8CC;
+    cursor: pointer;
+    display: block;
+    padding: 0px 5px;
+   
+}
+.toggler {
+    height: 200px;
+    width: 500px;
+}
+
+
+
+.filter-button {
+    background: url("../images/common/filter.gif") no-repeat scroll 5px 5px transparent;
+    border: 1px solid #C2E1EF;
+    color: #336699;
+    margin: 0px;
+    padding-left: 20px !important;
+    height: 25px;
+    cursor: pointer;
+}
+.clear-button {
+    background: url("../images/common/clear.png") no-repeat scroll 5px 5px transparent;
+    border: 1px solid #FBC2C4;
+    color: #D12F19;
+    margin: 0px;
+    padding-left: 20px !important;
+    height: 25px;
+    cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+
+
+fieldset {
+    border: 1px dashed #CCCCCC;
+    padding: 10px;
+    margin-top:5px;
+    background: url("../images/main-bg.jpg") repeat scroll 0 0 #EFEFEF;
+}
+legend {
+    background: none repeat scroll 0 0 #666666;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+    /*letter-spacing: -1px;*/
+    line-height: 1.1;
+    padding: 2px 6px;
+}
+
+input.textnote:focus
+{
+	-moz-transition: all 0.1s ease-in-out 0s;
+	border: 3px solid #ACC8CC;
+    background: none repeat scroll 0 0 #CCFF66; 
+}
+
+textarea.textnote:focus
+{
+	-moz-transition: all 0.1s ease-in-out 0s;
+	border: 3px solid #ACC8CC;
+    background: none repeat scroll 0 0 #CCFF66; 
+}
+
+/* table#data .tftable
+{
+  width: 1024px; 
+ height: 800px;
+ overflow: scroll;
+} */
+
+/* tbody {
+ width: 200px;
+ height: 400px;
+ overflow: auto;
+} */

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="deviation" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="616222f1-e4fa-49e7-b29d-bec55bd36d76">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="165"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="deviation" class="java.lang.Object"/>
+	<parameter name="nameapproval" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\NGUYEN THACH\\DOCUMENTS\\deviation\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="createdate" class="java.util.Date">
+		<fieldDescription><![CDATA[createdate]]></fieldDescription>
+	</field>
+	<field name="user" class="com.pruvn.rms.domain.UserM">
+		<fieldDescription><![CDATA[user]]></fieldDescription>
+	</field>
+	<field name="value" class="java.lang.String">
+		<fieldDescription><![CDATA[value]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="385" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a40e2cef-0e51-411c-ac82-a9dbf1cf3066" x="95" y="16" width="381" height="36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[DEVIATION APPROVAL FORM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="84" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Deviation subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="126" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Id cas number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="147" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[App form number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="168" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cus's national id number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="105" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Cus's full name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="18" y="188" width="123" height="21"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Reason for Deviation]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="84" width="414" height="21" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.subject]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="125" width="414" height="22" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.casnumber]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="147" width="414" height="21" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.appnumber]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="168" width="414" height="21" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.nationalnumber]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="105" width="414" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.fullname]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="35866616-5d19-4c55-8f87-de21b6a361a5" x="20" y="209" width="535" height="176" isPrintWhenDetailOverflows="true"/>
+				<textElement markup="html">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.reasondeviation]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="8dbc609e-d101-478a-8750-c0af6a82101d" x="18" y="64" width="123" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Date of Approval]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="141" y="64" width="414" height="20" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.updateDate]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25">
+			<staticText>
+				<reportElement uuid="d2216952-9074-41f8-8015-9139c68ec774" x="473" y="0" width="82" height="25"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Create Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f76e0be4-43e5-4a46-94d1-443505119543" x="128" y="0" width="345" height="25"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Comment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ccaa2343-ad33-4af2-8b4d-951f710c3bf2" x="0" y="0" width="28" height="25"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[STT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="74c1f616-ad7f-4be7-b771-83c644159b0f" x="28" y="0" width="100" height="25"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[FullName]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="49">
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy HH:mm:ss" isBlankWhenNull="true">
+				<reportElement uuid="97df2f66-69f7-420f-8fa7-ee541ef5a009" stretchType="RelativeToBandHeight" x="473" y="0" width="82" height="49" isPrintWhenDetailOverflows="true"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="368ced08-3490-4326-b9e7-6538a1a35736" stretchType="RelativeToBandHeight" x="128" y="0" width="345" height="49" isPrintWhenDetailOverflows="true"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{value}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="46d6ddf7-d257-4d34-ad37-41643a5d4605" stretchType="RelativeToBandHeight" x="28" y="0" width="100" height="49" isPrintWhenDetailOverflows="true"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user}.fullname]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="641a3834-434a-4a67-a4cf-c7ca0f27c1fe" stretchType="RelativeToBandHeight" x="0" y="0" width="28" height="49" isPrintWhenDetailOverflows="true"/>
+				<box>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="125">
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="201" y="16" width="149" height="21"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reviewed by]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="384" y="16" width="148" height="21"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Approved by]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="384" y="37" width="148" height="22" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameapproval}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="201" y="36" width="149" height="23" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.userreviewer.fullname]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1f6fc561-0b36-443f-b7b8-87868bace22c" x="20" y="16" width="152" height="21" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Requested by]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="682479c2-d0e8-4aca-b920-c80d467a5cf9" x="20" y="37" width="152" height="23" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{deviation}.user.fullname]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="873628c6-3684-4066-8b15-32e93b9eed32" x="22" y="89" width="29" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Note:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="894d4666-08ab-4ae7-960b-c62252cea75c" x="51" y="89" width="481" height="35"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[The requester must ensure that all information is accurately provided and the supporting documents must be scanned on CM and attached to this form for review.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

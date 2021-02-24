@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/layouts/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/layouts/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+	</definition>
+
+	<definition name="auth.definition" template="/WEB-INF/views/layouts/authLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/layouts/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />
+	</definition>
+
+
+	<definition name="login" extends="auth.definition">
+		<put-attribute name="title" value="Authentication page" />
+		<put-attribute name="body" value="/WEB-INF/views/auth/login.jsp" />
+	</definition>
+
+	<definition name="items" extends="base.definition">
+		<put-attribute name="title" value="Choose application" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/WEB-INF/views/items/index.jsp" />
+	</definition>
+
+
+	<definition name="changepwd" extends="base.definition">
+		<put-attribute name="title" value="Change password" />
+		<put-attribute name="body" value="/WEB-INF/views/auth/changepwd.jsp" />
+	</definition>
+
+
+	<definition name="userlist" extends="base.definition">
+		<put-attribute name="title" value="User listing" />
+		<put-attribute name="body" value="/WEB-INF/views/user/userlist.jsp" />
+	</definition>
+
+	<definition name="usermod" extends="base.definition">
+		<put-attribute name="title" value="User modification" />
+		<put-attribute name="body" value="/WEB-INF/views/user/usermod.jsp" />
+	</definition>
+
+	<definition name="permissionmod" extends="base.definition">
+		<put-attribute name="title" value="User's permission modification" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/user/permissionmod.jsp" />
+	</definition>
+
+	<definition name="resetpwd" extends="auth.definition">
+		<put-attribute name="title" value="Reset password" />
+		<put-attribute name="body" value="/WEB-INF/views/auth/resetpwd.jsp" />
+	</definition>
+
+	<definition name="deptlist" extends="base.definition">
+		<put-attribute name="title" value="Department listing" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/department/deptlist.jsp" />
+	</definition>
+
+	<definition name="deptmod" extends="base.definition">
+		<put-attribute name="title" value="Department modification" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/department/deptmod.jsp" />
+	</definition>
+
+	<definition name="levellist" extends="base.definition">
+		<put-attribute name="title" value="User Level listing" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/userlevel/levellist.jsp" />
+	</definition>
+
+	<definition name="levelmod" extends="base.definition">
+		<put-attribute name="title" value="User Level modification" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/userlevel/levelmod.jsp" />
+	</definition>
+	
+	<definition name="groupMmod" extends="base.definition">
+        <put-attribute name="title" value="GroupM modification screen" />
+        <put-attribute name="body" value="/WEB-INF/views/groupM/mod.jsp" />
+    </definition>
+ 
+    <definition name="groupMlist" extends="base.definition">
+        <put-attribute name="title" value="GroupM screen" />
+        <put-attribute name="body" value="/WEB-INF/views/groupM/list.jsp" />
+    </definition>
+    
+    <definition name="branchmod" extends="base.definition">
+        <put-attribute name="title" value="Branch modification screen" />
+        <put-attribute name="body" value="/WEB-INF/views/branch/mod.jsp" />
+    </definition>
+ 
+    <definition name="branchlist" extends="base.definition">
+        <put-attribute name="title" value="Branch screen" />
+        <put-attribute name="body" value="/WEB-INF/views/branch/list.jsp" />
+    </definition>
+    
+    <definition name="productmod" extends="base.definition">
+        <put-attribute name="title" value="Product modification screen" />
+        <put-attribute name="body" value="/WEB-INF/views/product/mod.jsp" />
+    </definition>
+ 
+    <definition name="productlist" extends="base.definition">
+        <put-attribute name="title" value="Product screen" />
+        <put-attribute name="body" value="/WEB-INF/views/product/list.jsp" />
+    </definition>
+
+	<definition name="FreshLoanList" extends="base.definition">
+		<put-attribute name="title" value="Disbursal Loan" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/index.jsp" />
+	</definition>
+
+<!-- 	<definition name="FreshLoanDetail" extends="base.definition">
+		<put-attribute name="title" value="Disbursal Loan Detail" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/detail.jsp" />
+	</definition> -->
+	
+	<definition name="RMTLoanList" extends="base.definition">
+		<put-attribute name="title" value="Disbursal Loan RMT" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/rmt.jsp" />
+	</definition>
+	
+	<definition name="RMTReceiveList" extends="base.definition">
+		<put-attribute name="title" value="Loan Receive" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/rmtReceive.jsp" />
+	</definition>
+
+	
+	
+	<definition name="RMTReturnList" extends="base.definition">
+		<put-attribute name="title" value="Loan Return From RMT" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/rmtReturn.jsp" />
+	</definition>
+
+	<definition name="SuspenseList" extends="base.definition">
+		<put-attribute name="title" value="Suspense Loan" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/suspense.jsp" />
+	</definition>
+	
+	<definition name="LoanWaitList" extends="base.definition">
+		<put-attribute name="title" value="Loan Waiting" />
+		<put-attribute name="body" value="/WEB-INF/views/loan/wait.jsp" />
+	</definition>
+
+
+	<definition name="RecordVerifiedList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Verified" />
+		<put-attribute name="body" value="/WEB-INF/views/record/verified.jsp" />
+	</definition>
+	
+	<definition name="RMTRecordList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Prepare" />
+		<put-attribute name="body" value="/WEB-INF/views/record/index.jsp" />
+	</definition>
+	
+	<definition name="RMTRecordRDList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Ready List" />
+		<put-attribute name="body" value="/WEB-INF/views/record/rd.jsp" />
+	</definition>
+
+	
+	<definition name="RecordNotSendList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Not Send" />
+		<put-attribute name="body" value="/WEB-INF/views/record/notsend.jsp" />
+	</definition>
+	
+	<definition name="RecordPendingList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Pending" />
+		<put-attribute name="body" value="/WEB-INF/views/record/pending.jsp" />
+	</definition>
+	
+	<definition name="RecordPOList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Send To Post Office" />
+		<put-attribute name="body" value="/WEB-INF/views/po/index.jsp" />
+	</definition>
+	
+	<definition name="RecordBranchList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Send To Branch" />
+		<put-attribute name="body" value="/WEB-INF/views/recordbranch/index.jsp" />
+	</definition>
+	
+	<definition name="RecordBranchReceiveList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Receive At Branch" />
+		<put-attribute name="body" value="/WEB-INF/views/recordbranch/receive.jsp" />
+	</definition>
+	
+	<definition name="RecordBranchReturnList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Return From Branch" />
+		<put-attribute name="body" value="/WEB-INF/views/recordbranch/return.jsp" />
+	</definition>
+	
+	<definition name="RecordBranchDeliverList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Delivered" />
+		<put-attribute name="body" value="/WEB-INF/views/recordbranch/deliver.jsp" />
+	</definition>
+	
+	<definition name="RecordPOReturnList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Return From Post Office" />
+		<put-attribute name="body" value="/WEB-INF/views/po/return.jsp" />
+	</definition>
+	
+	<definition name="RecordScanCMList" extends="base.definition">
+		<put-attribute name="title" value="Loan Documents Scan" />
+		<put-attribute name="body" value="/WEB-INF/views/cm/index.jsp" />
+	</definition>
+	
+	<definition name="RecordScanCMCheckList" extends="base.definition">
+		<put-attribute name="title" value="Loan Documents Scan Check" />
+		<put-attribute name="body" value="/WEB-INF/views/cm/check.jsp" />
+	</definition>
+	
+	<definition name="RecordInBoxList" extends="base.definition">
+		<put-attribute name="title" value="Loan Documents In Box" />
+		<put-attribute name="body" value="/WEB-INF/views/cm/inBox.jsp" />
+	</definition>
+	
+	<definition name="SynchronizeDisbLoan" extends="base.definition">
+        <put-attribute name="title" value="Synchronize Disb Loan" />
+        <put-attribute name="body" value="/WEB-INF/views/utilities/index.jsp" />
+    </definition>
+    
+    <definition name="screenmod" extends="base.definition">
+        <put-attribute name="title" value="Screen modification screen" />
+        <put-attribute name="body" value="/WEB-INF/views/screen/mod.jsp" />
+    </definition>
+ 
+    <definition name="screenlist" extends="base.definition">
+        <put-attribute name="title" value="Screen screen" />
+        <put-attribute name="body" value="/WEB-INF/views/screen/list.jsp" />
+    </definition>
+    
+    <definition name="RevertLoan" extends="base.definition">
+        <put-attribute name="title" value="Revert Loan" />
+        <put-attribute name="body" value="/WEB-INF/views/utilities/revert.jsp" />
+    </definition>
+    
+        <definition name="RevertCS" extends="base.definition">
+        <put-attribute name="title" value="Revert Credit Shield" />
+        <put-attribute name="body" value="/WEB-INF/views/utilities/revertCS.jsp" />
+    </definition>
+    
+    <definition name="RecordCSWaitingList" extends="base.definition">
+		<put-attribute name="title" value="Loan Documents Waiting CS" />
+		<put-attribute name="body" value="/WEB-INF/views/record/waitingcs.jsp" />
+	</definition>
+	
+	<definition name="RecordCSCompletedList" extends="base.definition">
+		<put-attribute name="title" value="Loan Documents Completed CS" />
+		<put-attribute name="body" value="/WEB-INF/views/record/completedcs.jsp" />
+	</definition>
+	
+	<!--  Credit Shield tiles -->
+
+	<definition name="CreditShieldList" extends="base.definition">
+		<put-attribute name="title" value="Credit Shield List" />
+		<put-attribute name="body" value="/WEB-INF/views/cs/index.jsp" />
+	</definition>
+	
+	<definition name="icmdocument" extends="base.definition">
+		<put-attribute name="title" value="Credit Shield Document" />
+		<put-attribute name="body" value="/WEB-INF/views/utilities/icmdocument.jsp" />
+	</definition>
+	
+	<definition name="CreditShieldAtRMTList" extends="base.definition">
+		<put-attribute name="title" value="Credit Shield at RMT" />
+		<put-attribute name="body" value="/WEB-INF/views/cs/rmt.jsp" />
+	</definition> 
+
+	<definition name="CreditShieldReceiveList" extends="base.definition">
+		<put-attribute name="title" value="Credit Shield Receive" />
+		<put-attribute name="body" value="/WEB-INF/views/cs/rmtReceive.jsp" />
+	</definition>
+	
+	<definition name="InsuranceCertificateWaitingList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Certificate Waiting List" />
+		<put-attribute name="body" value="/WEB-INF/views/ic/index.jsp" />
+	</definition>
+
+	<definition name="InsuranceCertificatePendingList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Certificate Follow-Up" />
+		<put-attribute name="body" value="/WEB-INF/views/ic/followup.jsp" />
+	</definition>
+	
+	<definition name="InsuranceCertificateFailedList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Certificate Failure List" />
+		<put-attribute name="body" value="/WEB-INF/views/ic/failure.jsp" />
+	</definition>
+	
+	<definition name="InsuranceCertificateCompletedList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Certificate Complete List" />
+		<put-attribute name="body" value="/WEB-INF/views/ic/completed.jsp" />
+	</definition>
+	
+    <definition name="InsuranceCertificateSentList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Certificate Sent List" />
+		<put-attribute name="body" value="/WEB-INF/views/ic/sent.jsp" />
+	</definition>
+    
+    
+    <definition name="AutodebitList" extends="base.definition">
+		<put-attribute name="title" value="Auto debit list" />
+		<put-attribute name="body" value="/WEB-INF/views/autodebit/index.jsp" />
+	</definition>
+    
+    <definition name="DocumentList" extends="base.definition">
+		<put-attribute name="title" value="Document Maintenance List" />
+		<put-attribute name="body" value="/WEB-INF/views/document/index.jsp" />
+	</definition>
+    
+    <definition name="MRCList" extends="base.definition">
+		<put-attribute name="title" value="MRC list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/mrc.jsp" />
+	</definition>
+	
+	<definition name="HomeLoanList" extends="base.definition">
+		<put-attribute name="title" value="Home Loan list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/home_loan.jsp" />
+	</definition>
+	<definition name="LoanKitPostList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/loankit_autopost.jsp" />
+	</definition>
+	<!-- start Change upload auto -->
+	<definition name="LoanRMTList" extends="base.definition">
+		<put-attribute name="title" value="Loan RMT list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/loanRMT_autopost.jsp" />
+	</definition>
+	
+	<definition name="LoanKitReadyPendingList" extends="base.definition">
+		<put-attribute name="title" value="Loan Kit Ready list - Pending" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/loankit_pending.jsp" />
+	</definition>
+	<definition name="LoanReceiveWaitList" extends="base.definition">
+		<put-attribute name="title" value="Loan Receive Wait list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/loanReceive_WaitAuto.jsp" />
+	</definition>
+	<definition name="LoanReceiveScanList" extends="base.definition">
+		<put-attribute name="title" value="Loan Waiting Documents Scan list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/loanWaiting_ScanAuto.jsp" />
+	</definition>
+	<!-- end Change upload auto -->	
+			
+	<definition name="InsuranceList" extends="base.definition">
+		<put-attribute name="title" value="Insurance Cancel list" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadData/insurance.jsp" />
+	</definition>
+	
+	<definition name="TB6List" extends="base.definition">
+		<put-attribute name="title" value="Tb6 list" />
+		<put-attribute name="body" value="/WEB-INF/views/tb6/index.jsp" />
+	</definition>
+	
+	<definition name="TB6SendList" extends="base.definition">
+		<put-attribute name="title" value="Tb6 Send list" />
+		<put-attribute name="body" value="/WEB-INF/views/tb6/send.jsp" />
+	</definition>
+	
+	<definition name="TB6WaitingList" extends="base.definition">
+		<put-attribute name="title" value="Tb6 Waiting list" />
+		<put-attribute name="body" value="/WEB-INF/views/tb6/waiting.jsp" />
+	</definition>
+
+	<definition name="TB6CompleteList" extends="base.definition">
+		<put-attribute name="title" value="Tb6 Complete List" />
+		<put-attribute name="body" value="/WEB-INF/views/tb6/complete.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="ForeclosureList" extends="base.definition">
+		<put-attribute name="title" value="Foreclosure list" />
+		<put-attribute name="body" value="/WEB-INF/views/foreclosure/index.jsp" />
+	</definition>
+	<definition name="StoredLoanList" extends="base.definition">
+		<put-attribute name="title" value="StoredLoanList list" />
+		<put-attribute name="body" value="/WEB-INF/views/storedLoan/index.jsp" />
+	</definition>
+	<definition name="StoredLoanUpdateList" extends="base.definition">
+		<put-attribute name="title" value="StoredLoanUpdate List" />
+		<put-attribute name="body" value="/WEB-INF/views/storedLoan/update.jsp" />
+	</definition>
+	<definition name="StoredList" extends="base.definition">
+		<put-attribute name="title" value="Stored List" />
+		<put-attribute name="body" value="/WEB-INF/views/storedLoan/list.jsp" />
+	</definition>
+	<definition name="ForeclosureSendList" extends="base.definition">
+		<put-attribute name="title" value="Send list" />
+		<put-attribute name="body" value="/WEB-INF/views/foreclosure/send.jsp" />
+	</definition>
+	
+	<definition name="ForeclosureWaitingList" extends="base.definition">
+		<put-attribute name="title" value="Waiting list" />
+		<put-attribute name="body" value="/WEB-INF/views/foreclosure/waiting.jsp" />
+	</definition>
+
+	<definition name="ForeclosureCompleteList" extends="base.definition">
+		<put-attribute name="title" value="Complete List" />
+		<put-attribute name="body" value="/WEB-INF/views/foreclosure/complete.jsp" />
+	</definition>
+
+	
+	<definition name="SearchLoanList" extends="base.definition">
+		<put-attribute name="title" value="Search Loan" />
+		<put-attribute name="body" value="/WEB-INF/views/utilities/search.jsp" />
+	</definition>
+</tiles-definitions>

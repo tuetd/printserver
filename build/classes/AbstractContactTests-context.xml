@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"    
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/tx 	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+		
+	<bean id="db2dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.ibm.db2.jcc.DB2Driver" />
+        <property name="url" value="jdbc:db2://zvnfcmuat01:50000/icmnlsdb" />
+        <property name="username" value="icmadmin" />
+        <property name="password" value="cfc4you" />
+    </bean>
+	<!-- 	DB2 Session factory -->
+	<bean id="db2SessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<!-- Production setting	 -->
+				<prop key="hibernate.connection.driverClassName">com.ibm.db2.jcc.DB2Driver</prop>
+		        <prop key="hibernate.connection.url">jdbc:db2://zvnfcmprd01:50000/icmnlsdb</prop>
+		        <prop key="hibernate.connection.username">etluser</prop>
+		        <prop key="hibernate.connection.password">mnbv!@zxc</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.DB2Dialect</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.c3p0.min_size">5</prop>
+				<prop key="hibernate.c3p0.max_size">20</prop>
+				<prop key="hibernate.c3p0.timeout">1800</prop>
+				<prop key="hibernate.c3p0.max_statements">50</prop>
+				<prop key="hibernate.c3p0.automaticTestTable">c3p0Connectiontest</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="db2HibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	    <property name="sessionFactory">
+	        <ref bean="db2SessionFactory"/>
+	    </property>
+	</bean>
+	
+	<bean id="db2TransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+	        <ref bean="db2SessionFactory"/>
+	    </property>
+	</bean>
+	
+	<!-- RMDB -->
+	<bean id="db2RMDBSessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<!-- Production setting -->	
+				<prop key="hibernate.connection.driverClassName">com.ibm.db2.jcc.DB2Driver</prop>
+		        <prop key="hibernate.connection.url">jdbc:db2://zvnfcmprd01:50000/rmdb</prop>
+		        <prop key="hibernate.connection.username">etluser</prop>
+		        <prop key="hibernate.connection.password">mnbv!@zxc</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.DB2Dialect</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.c3p0.min_size">5</prop>
+				<prop key="hibernate.c3p0.max_size">20</prop>
+				<prop key="hibernate.c3p0.timeout">1800</prop>
+				<prop key="hibernate.c3p0.max_statements">50</prop>
+				<prop key="hibernate.c3p0.automaticTestTable">c3p0Connectiontest</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="db2RMDBHibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+	    <property name="sessionFactory">
+	        <ref bean="db2RMDBSessionFactory"/>
+	    </property>
+	</bean>
+	
+	<bean id="db2RMDBTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+	        <ref bean="db2RMDBSessionFactory"/>
+	    </property>
+	</bean>
+	
+	<bean id="db2CommonDao" class="com.pruvn.rms.dao.impl.DB2CommonDaoImpl">
+		<property name="hibernateTemplate" ref="db2HibernateTemplate"/>
+	</bean>
+	
+	<bean id="db2rmdbCommonDao" class="com.pruvn.rms.dao.impl.DB2RMDBCommonDaoImpl">
+		<property name="hibernateTemplate" ref="db2RMDBHibernateTemplate"/>
+	</bean>
+	
+	<bean id="db2CommonService" class="com.pruvn.rms.service.impl.DB2CommonServiceImpl">
+		<property name="db2CommonDao" ref="db2CommonDao"/>
+		<property name="db2rmdbCommonDao" ref="db2rmdbCommonDao"/>
+	</bean>
+</beans>

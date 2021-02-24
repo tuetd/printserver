@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<!-- Configures Spring Hibernate -->
+	<import resource="hibernate-config.xml" />
+
+	<!-- Configures Spring AOP -->
+	<import resource="aop-config.xml" />
+
+	<!-- Configures Spring DAO -->
+	<import resource="dao-authorization-config.xml" />
+	
+	<!-- Configures FTPS service -->
+	<bean id="fTPSFileTransfer"
+		class="com.pruvn.rms.utils.transfer.FTPSFileTransfer">
+		<property name="host" value="128.235.142.146"></property>
+		<property name="port" value=""></property>
+		<property name="user" value="deviation_loan"></property>
+		<property name="password" value="Prud@nt!al79"></property>
+		<property name="baseDirectory" value=""></property>
+		<property name="protocol" value="SSL"></property>
+		<property name="isCreatedSubdirectory" value="false"></property>
+		<property name="isImplicit" value="false"></property>
+	</bean>
+	
+	<!-- Configures Report -->
+	    <bean class="org.springframework.web.servlet.view.XmlViewResolver">
+	   <property name="location">
+	       <value>/WEB-INF/spring/spring-excel-views.xml</value>
+	   </property>
+	   <property name="order" value="0" />
+	</bean>
+
+	<bean name="dozerMapper" class="org.dozer.DozerBeanMapper" />
+
+	<bean id="genericService"
+		class="com.pruvn.rms.service.abstracts.GenericServiceImpl"
+		abstract="true">
+		<property name="mapper" ref="dozerMapper" />
+	</bean>
+	
+	<bean id="sysEmailEngine" class="com.pruvn.rms.utils.MailUtil" >
+    </bean>
+
+    
+        <!-- Webservice ESB config RMS 23-mar-2017 -->
+   <!--  <bean id="rmsWebservicesServiceImpl" class="com.pruvn.rms.service.impl.RMSWebservicesServiceImpl">
+		<property name="url" value="http://10.148.50.5:8093/api"></property>
+    </bean> -->
+    
+	<bean id="userMService"
+		class="com.pruvn.rms.service.impl.UserMServiceImpl">
+		<property name="userMDAO" ref="userMDAO" />
+		<property name="userDeptADAO" ref="userDeptADAO" />
+		<property name="deptMDAO" ref="deptMDAO" />
+		<property name="userGroupADAO" ref="userGroupADAO" />
+		<property name="userLevelADao" ref="userLevelADao" />
+		<property name="userLevelMDao" ref="userLevelMDao" />
+		<property name="branchDao" ref="branchDao" />
+		<property name="productDao" ref="productDao" />
+	</bean>
+
+	<bean id="deptMService"
+		class="com.pruvn.rms.service.impl.DeptMServiceImpl">
+		<property name="deptMDAO" ref="deptMDAO" />
+	</bean>
+	
+	<bean id="cm_doc_printed_trialService"
+		class="com.pruvn.rms.service.impl.Cm_doc_printed_trialServiceImpl">
+		<property name="cm_doc_printed_trialDAO" ref="cm_doc_printed_trialDAO" />
+	</bean>
+
+	<bean id="groupMService"
+		class="com.pruvn.rms.service.impl.GroupMServiceImpl">
+		<property name="groupMDAO" ref="groupMDAO" />
+	</bean>
+
+	<bean id="userGroupAService"
+		class="com.pruvn.rms.service.impl.UserGroupAServiceImpl">
+		<property name="userGroupADAO" ref="userGroupADAO" />
+		<property name="groupMDAO" ref="groupMDAO" />
+	</bean>
+
+
+	<bean id="passwordValidator" class="com.pruvn.rms.common.PasswordValidator"></bean>
+
+	<bean id="userLevelAService"
+		class="com.pruvn.rms.service.impl.UserLevelAServiceImpl"
+		parent="genericService">
+		<property name="dao" ref="userLevelADao" />
+	</bean>
+
+	<bean id="userLevelMService"
+		class="com.pruvn.rms.service.impl.UserLevelMServiceImpl"
+		parent="genericService">
+		<property name="dao" ref="userLevelMDao" />
+	</bean>
+	
+	<bean id="userLogService" class="com.pruvn.rms.service.impl.UserLogServiceImpl">
+		<property name="userLogDAO" ref="userLogDAO" />
+	</bean>
+	
+	<bean id="autoDebitService" class="com.pruvn.rms.service.impl.AutoDebitServiceImpl">
+		<property name="autoDebitDAO" ref="autoDebitDAO" />
+	</bean>
+	
+	<bean id="autoDebitHistoryService" class="com.pruvn.rms.service.impl.AutoDebitHistoryServiceImpl">
+		<property name="autoDebitHistoryDAO" ref="autoDebitHistoryDAO" />
+	</bean>
+	
+	<bean id="passwordHistoryService" class="com.pruvn.rms.service.impl.PasswordHistoryServiceImpl">
+		<property name="passwordHistoryDAO" ref="passwordHistoryDAO" />
+	</bean>
+	
+	<bean id="baseRecordService" class="com.pruvn.rms.service.impl.BaseRecordServiceImpl" >
+		<property name="recordDAO" ref="recordDAO"/>
+		<property name="logTransactionDAO" ref="logTransactionDAO"/>
+		<property name="userLogDAO" ref="userLogDAO"/>
+		<property name="csRecordDAO" ref="csRecordDAO"/>	
+	</bean>
+	
+	<bean id="loanService" class="com.pruvn.rms.service.impl.LoanServiceImpl" 
+			parent="baseRecordService">
+		<property name="recordFLDAO" ref="recordFLDAO"/>
+		<property name="recordFL1DAO" ref="recordFL1DAO"/>
+		<property name="recordFL2DAO" ref="recordFL2DAO"/>
+		<property name="recordFL3DAO" ref="recordFL3DAO"/>
+		<property name="recordWaitDAO" ref="recordWaitDAO"/>
+		<property name="followUpDAO" ref="followUpDAO"/>
+		<property name="recordSuspenseDAO" ref="recordSuspenseDAO"/>
+	</bean>
+	
+	<bean id="recordService" class="com.pruvn.rms.service.impl.RecordServiceImpl" 
+		parent="baseRecordService" >
+		<property name="recordRRDAO" ref="recordRRDAO"/>
+		<property name="recordRDDAO" ref="recordRDDAO"/>
+		<property name="recordPODAO" ref="recordPODAO"/>
+		<property name="recordPOReturnDAO" ref="recordPOReturnDAO"/>
+		<property name="recordVerifiedDAO" ref="recordVerifiedDAO"/>
+		<property name="recordNotSendDAO" ref="recordNotSendDAO"/>
+		<property name="recordPendingDAO" ref="recordPendingDAO"/>
+		<property name="uploadDataDao" ref="uploadDataDao"/>
+	</bean>
+	
+	<bean id="recordBranchService" class="com.pruvn.rms.service.impl.RecordBranchServiceImpl"
+			parent="baseRecordService" >
+		<property name="recordBranchDAO" ref="recordBranchDAO"/>
+		<property name="recordBranchReceiveDAO" ref="recordBranchReceiveDAO"/>
+		<property name="recordBranchReturnDAO" ref="recordBranchReturnDAO"/>
+		<property name="recordBranchDeliverDAO" ref="recordBranchDeliverDAO"/>
+	</bean>
+	
+	<bean id="recordCMService" class="com.pruvn.rms.service.impl.RecordCMServiceImpl"
+		parent="baseRecordService" >
+		<property name="recordScanCMDAO" ref="recordScanCMDAO"/>
+		<property name="recordScanCMCheckDAO" ref="recordScanCMCheckDAO"/>
+		<property name="recordInBoxDAO" ref="recordInBoxDAO"/>
+	</bean>
+	
+	
+	<bean id="branchService"
+		class="com.pruvn.rms.service.impl.BranchServiceImpl"
+		parent="genericService">
+		<property name="dao" ref="branchDao" />
+	</bean>
+	
+	<bean id="productService"
+		class="com.pruvn.rms.service.impl.ProductServiceImpl"
+		parent="genericService">
+		<property name="dao" ref="productDao" />
+		<property name="branchDao" ref="branchDao" />
+	</bean>
+	
+	<bean id="screenService"
+		class="com.pruvn.rms.service.impl.ScreenServiceImpl"
+		parent="genericService">
+		<property name="dao" ref="screenDao" />
+	</bean>
+	
+	<!-- folder backup image -->
+	<bean id="fileUploadServlet"
+		class="com.pruvn.rms.utils.FileUploadServlet">
+		<property name="urlBackup" value="/uploadfiles/" />
+	</bean>
+	
+	<bean id="utilitiesService" class="com.pruvn.rms.service.impl.UtilitiesServiceImpl"
+			parent="baseRecordService" >
+		<property name="screenDao" ref="screenDao"/>
+	</bean>
+	
+	<bean id="icmServiceImpl" class="com.pruvn.rms.service.impl.ICMServiceImpl">
+		<property name="icmDao" ref="icmDao"/>
+	</bean>
+	
+	<bean id="recordCSService" class="com.pruvn.rms.service.impl.RecordCSServiceImpl"
+		parent="baseRecordService" >
+		<property name="recordCSWaitingDAO" ref="recordCSWaitingDAO"/>
+		<property name="recordCSCompletedDAO" ref="recordCSCompletedDAO"/>
+	</bean>
+	
+	<bean id="baseCSRecordService" class="com.pruvn.rms.service.impl.BaseCSRecordServiceImpl" >
+		<property name="csRecordDAO" ref="csRecordDAO"/>
+		<property name="csLogTransactionDAO" ref="csLogTransactionDAO"/>	
+		<property name="userLogDAO" ref="userLogDAO"/>	
+	</bean>
+	
+	<bean id="creditShieldService" class="com.pruvn.rms.service.impl.CreditShieldServiceImpl" 
+			parent="baseCSRecordService">
+		<property name="csRecordFLDAO" ref="csRecordFLDAO"/>
+		<property name="csRecordRMTDAO" ref="csRecordRMTDAO"/>
+		<property name="csRecordRMTReceiveDAO" ref="csRecordRMTReceiveDAO"/>
+		<property name="followUpDAO" ref="followUpDAO"/>
+	</bean>
+	
+	<bean id="icService" class="com.pruvn.rms.service.impl.InsuranceCertificateServiceImpl" 
+			parent="baseCSRecordService">		 
+		<property name="csRecordWaitingDAO" ref="csRecordWaitingDAO"/>
+		<property name="csRecordPendingDAO" ref="csRecordPendingDAO"/>
+		<property name="csRecordFailedDAO" ref="csRecordFailedDAO"/>
+		<property name="csRecordCompletedDAO" ref="csRecordCompletedDAO"/>	
+		<property name="csUploadDataDao" ref="csUploadDataDao"/>	 
+		<property name="csRecordSentDAO" ref="csRecordSentDAO"/>
+	</bean>
+	
+	<bean id="uploadService" class="com.pruvn.rms.service.impl.UploadServiceImpl"
+			parent="baseRecordService" >
+		<property name="screenDao" ref="screenDao"/>
+		<property name="mrcDao" ref="mrcDao"/>
+		<property name="homeLoanDao" ref="homeLoanDao"/>
+		<property name="insuranceDao" ref="insuranceDao"/>
+	</bean>
+	
+	<bean id="tb6Service" class="com.pruvn.rms.service.impl.TB6ServiceImpl"
+			parent="baseRecordService" >
+		<property name="tb6Dao" ref="tb6Dao"/>
+	</bean>
+	
+	<bean id="foreclosureService" class="com.pruvn.rms.service.impl.ForeclosureServiceImpl"
+			parent="baseRecordService" >
+		<property name="foreclosureDao" ref="foreclosureDao"/>
+	</bean>
+	<bean id="storedLoanService" class="com.pruvn.rms.service.impl.StoredLoanServiceImpl"
+			parent="baseRecordService" >
+		<property name="storedLoanDao" ref="storedLoanDao"/>
+	</bean>
+</beans>

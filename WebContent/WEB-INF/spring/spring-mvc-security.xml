@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+
+    <global-method-security pre-post-annotations="enabled">
+        <!-- AspectJ pointcut expression that locates our "post" method and applies security that way
+        <protect-pointcut expression="execution(* bigbank.*Service.post*(..))" access="ROLE_TELLER"/>
+        -->
+    </global-method-security>
+
+    <http use-expressions="true">
+    	<intercept-url pattern="/css/**" filters="none" />
+    	<intercept-url pattern="/templates/**" filters="none" />
+    	<intercept-url pattern="/images/**" filters="none" />
+    	<intercept-url pattern="/uploadfiles/**" filters="none" />
+    	<intercept-url pattern="/upload/**" filters="none" />
+    	<intercept-url pattern="/service/**" filters="none" />
+    	<intercept-url pattern="/scripts/**" filters="none" />
+        <intercept-url pattern="/admin/**" access="hasAnyRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/loan/**" access="hasAnyRole('ROLE_RM_BRANCH','ROLE_RM_RMT','ROLE_VIEW_LOAN')" />
+        <intercept-url pattern="/record/**" access="hasAnyRole('ROLE_RM_RMT')" />
+        <intercept-url pattern="/cm/**" access="hasAnyRole('ROLE_RM_RMT')" />
+        <intercept-url pattern="/recordbranch/**" access="hasAnyRole('ROLE_RM_RMT','ROLE_RM_BRANCH')" />
+        <intercept-url pattern="/po/**" access="hasAnyRole('ROLE_RM_RMT','ROLE_RM_BRANCH')" />
+        <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_ADMIN','ROLE_HELPDESK','ROLE_HELPDESK_MANAGER')" />
+        
+        <intercept-url pattern="/autodebit/**" access="hasAnyRole('ROLE_AD_ACCEPT','ROLE_AD_SEND')" />
+         <intercept-url pattern="/document/**" access="hasAnyRole('ROLE_AD_ACCEPT','ROLE_AD_SEND')" />
+ 
+        <intercept-url pattern="/cs/**" access="hasAnyRole('ROLE_CS_BRANCH','ROLE_CS_RMT')" />
+        <intercept-url pattern="/ic/**" access="hasAnyRole('ROLE_CS_RMT')" />
+        
+        
+        <intercept-url pattern="/items/**" access="isFullyAuthenticated()" />
+        <intercept-url pattern="/WEB-INF/index.jsp" access="isFullyAuthenticated()" />
+        <intercept-url pattern="/utilities/**" access="isFullyAuthenticated()" />
+ 		<intercept-url pattern="/uploadData/**" access="hasAnyRole('ROLE_ADMIN','ROLE_RM_RMT','ROLE_CS')" />
+ 		<intercept-url pattern="/tb6/**" access="hasAnyRole('ROLE_RM_RMT','ROLE_CS')" />
+ 		<intercept-url pattern="/foreclosure/**" access="hasAnyRole('ROLE_RM_RMT','ROLE_XPU')" />
+        <intercept-url pattern="/**" access="permitAll" />
+        <form-login login-page="/auth/login.html" authentication-success-handler-ref="authenticationSuccessHandler" authentication-failure-url = "/auth/login.html?login_error=1" authentication-failure-handler-ref="authenticationFailurHandler"/>
+        <logout  invalidate-session="true" success-handler-ref="myLogoutSuccessHandler" />
+        
+        <access-denied-handler error-page="/WEB-INF/views/error/403.jsp"/>
+        <remember-me />
+
+        <!-- Uncomment to limit the number of sessions a user can have -->
+        <session-management invalid-session-url="/auth/login.html">
+            <concurrency-control max-sessions="1" error-if-maximum-exceeded="false" />
+        </session-management>
+
+    </http>
+    
+    <authentication-manager>
+		<authentication-provider user-service-ref="authUserDetailService" >
+			<password-encoder hash="md5"/>
+		</authentication-provider>
+    </authentication-manager>
+	
+	<beans:bean id="authenticationSuccessHandler" class="com.pruvn.rms.handler.AuthenticationSuccessHandler">
+	    <beans:property name="userMService" ref="userMService" />
+	    <beans:property name="userLogService" ref="userLogService" />
+	    <beans:property name="expirationDays" value="90" />
+	</beans:bean>
+	
+	<beans:bean id="myLogoutSuccessHandler" class="com.pruvn.rms.handler.MyLogoutSuccessHandler">
+	    <beans:property name="defaultTargetUrl" value="/auth/login.html" ></beans:property>
+	    <beans:property name="userLogService" ref="userLogService" />
+    </beans:bean>
+	
+	<beans:bean id="authUserDetailService" class="com.pruvn.rms.handler.AuthUserDetailService">
+	    <beans:property name="userMService" ref="userMService" />
+	</beans:bean>
+
+	<beans:bean id="authenticationFailurHandler" class="com.pruvn.rms.handler.MyLoginFailureHandler">
+		<beans:property name="defaultFailureUrl" value="/auth/login.html?login_error=1" />
+		<beans:property name="minutesLimitLogin" value="2" ></beans:property>
+         <beans:property name="maxCountLogin" value="3" ></beans:property>
+         <beans:property name="expirationDays" value="90" />
+         <beans:property name="userMService" ref="userMService" ></beans:property>
+         <beans:property name="userLogService" ref="userLogService"  ></beans:property>
+	</beans:bean>	
+</beans:beans>
